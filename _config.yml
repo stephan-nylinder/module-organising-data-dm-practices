@@ -16,7 +16,7 @@ title: "Data Organization"
 # Life cycle stage of the lesson
 # See this page for more details: https://cdh.carpentries.org/the-lesson-life-cycle.html
 # Possible values: "pre-alpha", "alpha", "beta", "stable"
-life_cycle: "pre-alpha"
+life_cycle: "stable"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -28,7 +28,7 @@ kind: "lesson"
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
 # Please don't change it: <USERNAME>/<PROJECT> is correct.
-repository: wna_se/workshop-data-organisation
+repository:  <USERNAME>/<PROJECT>
 
 # Email address, no mailto:
 email: "data@nbis.se"
