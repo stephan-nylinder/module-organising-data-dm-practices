@@ -8,7 +8,7 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
 # incubator: Carpentries Incubator
-carpentry: "swc"
+carpentry: "nbis"
 
 # Overall title for pages.
 title: "Data Organization"
@@ -31,9 +31,10 @@ kind: "lesson"
 repository: wna_se/workshop-data-organisation
 
 # Email address, no mailto:
-email: "team@carpentries.org"
+email: "data@nbis.se"
 
 # Sites.
+nbis_site: "https://nbis.se/"
 amy_site: "https://amy.carpentries.org/"
 carpentries_github: "https://github.com/carpentries"
 carpentries_pages: "https://carpentries.github.io"
