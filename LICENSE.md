@@ -6,27 +6,19 @@ root: .
 {% include links.md %}
 ## Instructional Material
 The instructional content of this lesson an adaptation of previous works and is made available under [CC-BY 4.0][cc-by-human] 
-by [NBIS - National Bioinformatics Infrastructure Sweden][nbis-site] 2020–{{ 'now' | date: "%Y"}}.
+by [NBIS - National Bioinformatics Infrastructure Sweden]({{ site.nbis_site}}) 2020.
 
-Adaptation of lesson [FIXME: name of lesson](url)<br>
+Adapted a selection of episodes from [Data Organization in Spreadsheets for Ecologists](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html)<br>
 Licensed under [CC-BY 4.0][cc-by-human] 2018–{{ 'now' | date: "%Y"}}
 by <a href="{{ site.carpentries_site }}">The Carpentries</a><br>
 Licensed under [CC-BY 4.0][cc-by-human] 2016–2018
 by <a href="{{ site.dc_site }}">Data Carpentry</a>
 
-Adaptation of lesson [FIXME: name of lesson](url)<br>
-Licensed under [CC-BY 4.0][cc-by-human] 2018–{{ 'now' | date: "%Y"}}
-by <a href="{{ site.carpentries_site }}">The Carpentries</a><br>
-Licensed under [CC-BY 4.0][cc-by-human] 2016–2018
-by <a href="{{ site.dc_site }}">Data Carpentry</a>
+Adapted a selection of episodes from [Life Sciences Workshop](https://carpentries-incubator.github.io/life-sciences-workshop/)<br>
+Licensed under [CC-BY 4.0][cc-by-human] 2020-{{ 'now' | date: "%Y"}}
+by <a href="{{ site.carpentries_site }}">The Carpentries</a>.
 
-Adaptation of lesson [FIXME: name of lesson](url)<br>
-Licensed under [CC-BY 4.0][cc-by-human] 2018–{{ 'now' | date: "%Y"}}
-by <a href="{{ site.carpentries_site }}">The Carpentries</a><br>
-Licensed under [CC-BY 4.0][cc-by-human] 2016–2018
-by <a href="{{ site.swc_site }}">Software Carpentry Foundation</a>
-
-Using a rebranded fork of [The Carpentries style][styles].
+The website was built using a rebranded fork of [The Carpentries style][styles].
 
 The following is a human-readable summary of
 (and not a substitute for) the [full legal text of the CC BY 4.0
