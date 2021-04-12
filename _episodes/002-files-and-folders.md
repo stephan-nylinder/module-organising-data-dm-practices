@@ -102,113 +102,29 @@ Two important starting points for your file naming strategy are:
 
 
 ### Create documentation files
+Systematically documented research data is the key to making the data publishable, discoverable, citable and reusable. Clear and sufficiently detailed documentation improve the overall data quality. It is vital to document both the study for which the data has been collected and the data itself. These two levels of documentation are called project-level and data-level documentation and can both be saves as files and stored in your file hierarchy.
 
-![data](../fig/folders/slide_docs.png)
-
-structure is to create documentation files and  someone called out readme's earlier in the chat so what if we give data access to a collaborator  um you know a new student joins the project or it's three years later and we have  forgotten the various stages of the of you know the project that happened what do  we do so we need context and we usually add it um with some metadata in the form of descriptive  text files or readme files and a good way to think of readme files or metadata is as an information  kiosk so you place a small number of information in strategic places so that people who are  lost can find what they want or where to go so to so create this documentation or  readme file across your directory levels and briefly uh describe the contents so let's see  this in action so for example a readme text file  
+A common practice it to use plain text files – a very simple form of text documents that only contain characters. These files are often called README-files and can be placed strategically across your file hierarchy to help people find what they want or direct them to where further project-level or data-level documentations can be found. 
 
 ![data](../fig/folders/slide_docs2.png)
 
-at the project level will contain some  information about that project including  
-maybe the names and the contacts of each of the  researchers and the project folder file structure  
-however if you have more than a few data files  it can quickly become critical to add metadata  
-files to describe all the files within each  directory so for example at the experiment level  
-a readme should include your naming conventions  and briefly describe all the contents such as  
-how data was collected any data versions  and just any other important information  
-so we will be talking about readmes in a future  session so i highly encourage you to tune in for  
-
 ### Examples
-that great so we've gone through our principles so  let's look at some examples at different directory  
+The number of subdirectories and nested folders will grow based  on many contributing factors like the complexity of a project, the length of a project or the number  of team members working on a project. A multi-year project that may result in lots of folders and files, this is to encourage you to establish a structure ahead of the project 
+and adapt the workflow as needed and to remain  organized throughout the duration of the project. 
+You don't want to let the hierarchy get too deep so think of ways to streamline folders where you can and how you organize your folders really depends on the attributes that are most helpful to your project and, again, how many files you will be working with. 
 
 ![data](../fig/folders/slide_ex1.png)
 
-levels and with varying level of detail and these  will use the principles we just went through  
-and hopefully um they will help you determine  what best structure and organization works for  
-you and your type of project so here is a very  high level look at what you may see available
-see four available directories here the  top level directory is for an organization  
-then divided by departments teams  and then projects and we will talk  
-more about this during the dropbox class  in a few weeks but you may have some shared  
-subdirectories that are available for  collaboration across departments and groups  
-so it is important to understand how your  department or team operates because that should  
-
 ![data](../fig/folders/slide_ex2.png)
-
-be reflected within your file structure so next  example this home directory has two subdirectories  
-documents and project and within the project  folder there are further subdirectories for  
-your raw data analyze data and some figures  so remember here to always keep your raw data  
-separate another good practice is to make  the files or the folder with your raw data  
-read read only so that someone doesn't  inadvertently alter it in some way  
-and here we see the projects code dot r file and  examples of both a project level readme and a  
-data set level readme text file so in addition we  see that this group is also maintaining documents  
-for resumes and reports which is keeping the  administrative files separate from our working  
 
 ![data](../fig/folders/slide_ex3.png)
 
-research files okay so looking at a project with a  little more going on uh we see that the number of  
-subdirectories and nested folders will grow based  on many contributing factors like the complexity  
-of a project the length of a project or the number  of team members working on a project so in this  
-single project directory there is an example of  a multi-year project that may result in lots of  
-folders and lots of files this is to encourage  you to establish a structure ahead of the project  
-and adapt the workflow as needed and try to remain  organized throughout the duration of your project  
-also remember you don't want to let this  get too deep so think of ways to streamline  
-folders where you can how you organize your  folders really depends on those attributes  
-and those attributes that are important to your  project and again how many files you will be  
+The following is a structure proposed for computational biology projects. The data folder is for storing our fixed data sets and we see data sets are organized by date. You can see README  files in each of the yeast and worm data folders. The src folder contains source code and code, the bin folder compiled binaries or  scripts and the results directory is for tracking  computational experiments performed on the data. This could be a helpful structure to follow  if you are running a computational experiment.
 
 ![data](../fig/folders/slide_ex4.png)
 
-working with okay so this is a very specific  example for organizing a computational biology  
-project a nice practical example maybe for  some of you and we have a project named msms  
-with a few subdirectories and the doc directory  has additional subdirectories for our manuscripts  
-the data directory is for storing our fixed data  sets and we see data sets are organized by date  
-using that iso standard and you can see readme  files in each of the yeast and worm data folders  
-then the source folders for source  code and the source code ms-analysis.c  
-is compiled to create a script files script  file that is documented in that document folder  
-so the bin folder is for compiled binaries or  scripts and the python script is called by both  
-of the run all driver  scripts for the results files  
-and finally the results directory is for tracking  computational experiments performed on that data  
-so the driver script runoff automatically  generates the three subdirectories split one split  
-two and split three corresponding to those to the  three cross validation splits for this project  
-so this is a really good structure to follow  if you are running a computational experiment  
-and also i hope this highlights how  automation can actually keep you  
-
-![data](../fig/folders/slide_ex5.png)
-
-organized as well so lastly and related  to the previous example is a strategy for  
-keeping data science projects consistent across  all the systems and platforms you may be using  
-so here we see a practical example of how you  would structure your local project directory on  
-your computer and how that structure should  then be mirrored on your github repository  
-so this makes going between the two platforms  seamless and also allows you to easily sync push  
-or pull files when working with them also keeping  good records of all your current and completed  
-projects enables you to create a repository where  you can save all your projects for future use  
-this is also emphasizing good practice to  maintain two versions of your project and files  
-you know one locally and then one that's backed  up great so we've gone through some practices  
-
-![data](../fig/folders/slide_summary.png)
-
-and some practical examples so here is a nice  resource a checklist you can use to follow the top  
-five practices we outlined today and the worksheet  does also have a generic example we looked at  
-so hopefully this is a useful resource um for  you to include in your group or lab protocols  
-to ensure that everyone is following these best  practices so you can download this checklist from  
-the link on the slides and i will also  send out the link in a follow-up email  
-
-### Takeaways
-okay to summarize today's session remember  organization is a key aspect of data management  
-and will help keep the project on track by saving  time storage and data loss remember to think  
-hard at the beginning of your project about how  you are going to organize your data as it grows  
-something that works well for one  file or two files won't necessarily  
-work for you know 100 files so try to  structure project folders hierarchically  
-and divide data into those  categories that we talked about
-there are many different ways  that many different categories  
-that we can use so directories can  be organized in many different ways  
-so therefore most importantly consider what makes  sense for you and your project team and how people  
-new to the project might look for files so again  i can't emphasize this enough but establishing a  
-system from the start allows for standardized data  collecting and analysis by you know a whole team  
-so remember we have a few more webinars left  this summer next week we will build on the  
-structures we talked about today focusing on  naming files and folders within our system  
-so thank you for joining today the recording  and the slides will be posted on our website  
-i would appreciate your feedback  on today's session so please  
-fill out the survey at the link provided  on the slide so thank you everyone i will  
-send out an email with the recording and  the slides and the checklist resource
+<!--
+### Summary
 
 * There is a folder for the raw data, which do not get altered, or intermixed with data that is the result of manual or programmatic manipulation. I.e., derived data is kept separate from raw data, and raw data are not duplicated.
 * Code is kept separate from data.
@@ -217,107 +133,58 @@ send out an email with the recording and  the slides and the checklist resource
 * There should be a README in every directory, describing the purpose of the directory and its contents.
 * Use file naming schemes that makes it easy to find files and understand what they are (for humans and machines)
 * Use non-proprietary formats – .csv rather than .xlsx
-
-
-
-
+-->
 
 ## How to name files and folders
 
-https://orchid00.github.io/ReproducibleResearchThings/02-naming/index.html
+Use a File Naming Convention is a framework or protocol if you like for naming your files in a way that describes what files contain and importantly, how they relate to other files. 
 
-https://datacarpentry.org/rr-organization1/
+| ---- |---|
+| Bad                                                 | Better |
+| ---- |---|
+| myabstract.docx                                     | 2014-06-08_abstract-for-sla.docx |
+| Joe’s Filenames Use Spaces and Punctuation.xlsx     | joes-filenames-are-getting-better.xlsx |
+| figure 1.png                                        | fig01_scatterplot-talk-length-vs-interest.png |
+| fig 2.png                                           | fig02_histogram-talk-attendance.png |
+| JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt     | 1986-01-28_raw-data-from-challenger-o-rings.txt |
 
-https://carpentries-incubator.github.io/life-sciences-workshop/02-data-management-filenaming-and-folders/index.html
-
-
-* Machine readable
-* Human readable
-* Play well with default ordering
-
-* Identifies the file
-* Don't rely on file names to store metadata
-* Conventions to correlate files
-
-### Using folders for group level processing
-
-* Absolute / relative path
-* Access control
-* Back-up
-* Storage media
-* Archived versions
-* Write protection
-* Temporary
-
-### Creating a file naming convention
-Briney, Kristin A. (2020) File Naming Convention Worksheet. [Teaching Resource] (Unpublished) https://resolver.caltech.edu/CaltechAUTHORS:20200601-161923247 
-
-
-#### NO
-```
-myabstract.docx
-Joe’s Filenames Use Spaces and Punctuation.xlsx
-figure 1.png
-fig 2.png
-JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt
-```
-
-#### YES
-```
-2014-06-08_abstract-for-sla.docx
-joes-filenames-are-getting-better.xlsx
-fig01_scatterplot-talk-length-vs-interest.png
-fig02_histogram-talk-attendance.png
-1986-01-28_raw-data-from-challenger-o-rings.txt
-```
+> ### Discussion
+> What are potential benefits of a File Naming Convention?
+>
+>> ### Potential benefits of a File Naming Convention
+>> - Easier to process - All team members won’t have to over think the file naming process
+>> - Easier to facilitate access, retrieval and storage of files
+>> - Easier to browse through files saving time and effort
+>> - Harder to lose!
+>> - Having logical and known naming conventions in place can also help you with version control (See Version Control for more information).
+>> - Check for obsolete or duplicate records
+> {: .solution}
+{: .discussion}
 
 ### Three principles for (file) names:
 
-1. Machine readable
-1. Human readable
-1. Plays well with default ordering
-
-***
-#### Awesome file names :)
+1. Machine readable – avoid spaces, deliverate punctuation, no accented characters, consistent letter casing
+1. Human readable - a name describes the content of the file, connects to concept of a *slug* from semantic URLs
+1. Plays well with default ordering – put something numeric first, use the ISO 8601 standard for dates, left pad other numbers with zeros
 
 <img src="../fig/awesome_names.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="500px" style="display: block; margin: auto;" />
 
-***
-#### Machine readable
-
-
-##### Machine readable
-
-- Regular expression and globbing friendly
-    - Avoid spaces, punctuation, accented characters, case sensitivity
-    - Easy to compute on
-
-- Deliberate use of delimiters
-
-***
-##### Globbing
+#### Search and filtering friendly
 
 **Except of complete file listing**:
 
 <img src="../fig/plasmid_names.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="500px" style="display: block; margin: auto;" />
 
-*** 
-**Example of globbing to narrow file listing**:
 
-<img src="../fig/plasmid_names.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="500px" style="display: block; margin: auto;" />
-
-***
 **Same using Mac OS Finder search facilities**:
 
 <img src="../fig/plasmid_mac_os_search.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="700px" style="display: block; margin: auto;" />
 
-***
 **Same using regex in `R`**:
 
 <img src="../fig/plasmid_regex.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="600px" style="display: block; margin: auto;" />
 
-***
-##### Punctuation
+#### Encode/extract metadata from filenames
 
 Deliberate use of "-" and "_" allows recovery of meta-data from the filenames:
 
@@ -326,88 +193,51 @@ Deliberate use of "-" and "_" allows recovery of meta-data from the filenames:
 
 <img src="../fig/plasmid_delimiters.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" width="600px" style="display: block; margin: auto;" />
 
-***
+
 <img src="../fig/plasmid_delimiters_code.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="600px" style="display: block; margin: auto;" />
 
 This happens to be `R` but also possible in the `shell`, `Python`, etc.
 
-***
-#### Recap: machine readable
-
-- Easy to search for files later
-- Easy to narrow file lists based on names
-- Easy to extract info from file names, e.g. by splitting
-- New to regular expressions and globbing? Be kind to yourself and avoid
-- Spaces in file names
-- Punctuation
-- Accented characters
-- Different files named `foo` and `Foo`
-
-#### Human readable
-
-##### Human readable
-
-- Name contains info on content
-- Connects to concept of a *slug* from semantic URLs
-
-*** 
-##### Example
+##### Descriptive filenames
 
 **Which set of file(name)s do you want at 3 a.m. before a deadline**?
 
 <img src="../fig/human_readable_not_options.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="500px" style="display: block; margin: auto;" />
 
-***
-##### Embrace the *slug*
 
-<img src="../fig/slug.jpg" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="400px" style="display: block; margin: auto;" />
+##### Embrace the *slug*
 
 <img src="../fig/slug_filenames.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="400px" style="display: block; margin: auto;" />
 
-***
+
 ##### Recap: Human readable
 
 Easy to figure out what the heck something is, based on its name
 
-***
 
 #### Plays well with default ordering
-
-##### Plays well with default ordering
-
-- Put something numeric first
-- Use the ISO 8601 standard for dates
-- Left pad other numbers with zeros
-
-##### Examples
 
 **Chronological order**:
 
 <img src="../fig/chronological_order.png" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" width="600px" style="display: block; margin: auto;" />
 
-***
 **Logical order**: Put something numeric first
 
 <img src="../fig/logical_order.png" title="plot of chunk unnamed-chunk-12" alt="plot of chunk unnamed-chunk-12" width="600px" style="display: block; margin: auto;" />
-
-***
 
 **Dates**: Use the ISO 8601 standard for dates: YYYY-MM-DD
 
 <img src="../fig/chronological_order.png" title="plot of chunk unnamed-chunk-13" alt="plot of chunk unnamed-chunk-13" width="600px" style="display: block; margin: auto;" />
 
-***
-
 <img src="../fig/map_mmddyyy.tiff" title="plot of chunk unnamed-chunk-14" alt="plot of chunk unnamed-chunk-14" width="600px" style="display: block; margin: auto;" />
 
 [From twitter](https://twitter.com/donohoe/status/597876118688026624)
 
-***
 **Left pad other numbers with zeros**
 
 <img src="../fig/logical_order.png" title="plot of chunk unnamed-chunk-15" alt="plot of chunk unnamed-chunk-15" width="600px" style="display: block; margin: auto;" />
 
-If you don’t left pad, you get this:
+If you don’t left pad, you may get this:
 
 ```
  10_final-figs-for-publication.R
@@ -415,38 +245,21 @@ If you don’t left pad, you get this:
  2_fit-model.R
 ```
 
-which is just sad :(
-
-***
-##### Recap: Plays well with default ordering
-
-- Put something numeric first
-- Use the ISO 8601 standard for dates
-- Left pad other numbers with zeros
-
-#### Recap
-
-*** 
-##### Three principles for (file) names
-
-1. Machine readable
-1. Human readable
-1. Plays well with default ordering
-
-##### Pros
-
-- Easy to implement NOW
-- Payoffs accumulate as your skills evolve and projects get more complex.
-
-***
-Go forth and use awesome file names :)
-
-<img src="../fig/chronological_order.png" title="plot of chunk unnamed-chunk-16" alt="plot of chunk unnamed-chunk-16" width="600px" style="display: block; margin: auto;" />
-
-<img src="../fig/logical_order.png" title="plot of chunk unnamed-chunk-17" alt="plot of chunk unnamed-chunk-17" width="600px" style="display: block; margin: auto;" />
+> ### Create your own File Naming Convention 
+> [Briney, Kristin A. (2020) File Naming Convention Worksheet. [Teaching Resource] (Unpublished)](https://resolver.caltech.edu/CaltechAUTHORS:20200601-161923247)
+> 1. What group of files will this naming convention cover?
+> 1. What information (metadata) is important about these files and makes each file distinct?
+> 1. Do you need to abbreviate any of the metadata or encode it?
+> 1. What is the order for the metadata in the file name?
+> 1. What characters will you use to separate each piece of metadata in the file name?
+> 1. Will you need to track different versions of each file?
+> 1. Write down your naming convention pattern
+> 1. Document this convention in a README.txt (or save this worksheet) and keep it with your files
+{: .callout}
 
 > ### Further reading
 >
 > - [ELIXIR (2021) Data organisation. In Research Data Management Kit. A deliverable from the EU-funded ELIXIR-CONVERGE project (grant agreement 871075).](https://rdmkit.elixir-europe.org/data_organisation.html)
+> - [Briney, Kristin A. (2020) File Naming Convention Worksheet. [Teaching Resource] (Unpublished)](https://resolver.caltech.edu/CaltechAUTHORS:20200601-161923247)
 >
 {: .callout}
