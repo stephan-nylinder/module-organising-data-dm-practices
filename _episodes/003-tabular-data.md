@@ -1,6 +1,6 @@
 ---
 title: Structuring tabular data in spreadsheets
-teaching: 10
+teaching: 20
 exercises: 10
 questions:
 - What are good practices for structuring data and metadata in spreadsheets?

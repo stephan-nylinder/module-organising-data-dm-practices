@@ -1,7 +1,7 @@
 ---
 title: Data entry and validation 
 teaching: 10
-exercises: 10
+exercises: 15
 questions:
 - What are examples of practices for quality control in spreadsheets?
 objectives:

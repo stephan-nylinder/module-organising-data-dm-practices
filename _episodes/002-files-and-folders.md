@@ -1,7 +1,7 @@
 ---
 title: "Organising files and folders"
 teaching: 20
-exercises: 10
+exercises: 5
 questions:
 - What are good practices for organising files and documentation to support your project?
 objectives:

@@ -1,7 +1,7 @@
 ---
 title: Data storage and processing
 teaching: 10
-exercises: 5
+exercises: 10
 questions:
 - What are good practices for storing the data that will be processed during your project?
 
