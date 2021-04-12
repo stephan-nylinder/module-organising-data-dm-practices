@@ -38,6 +38,12 @@ $color-testimonial: #fc8dc1 !default;
     border-radius: 4px 0 0 4px;
 }
 
+@media print {
+  .life-cycle {display: none;}
+  .container > div {display: none;}
+  footer {display: none;}
+}
+
 div.error   { @include cdSetup($color-error); }
 div.warning { @include cdSetup($color-warning); }
 div.output  { @include cdSetup($color-output); }
@@ -150,7 +156,7 @@ $codeblock-padding: 5px !default;
 
   margin: 15px 5px 10px 0;
 
-  h2 {
+  h2, h3 {
     padding-top: $codeblock-padding;
     padding-bottom: $codeblock-padding;
     font-size: 20px;
@@ -159,7 +165,7 @@ $codeblock-padding: 5px !default;
     margin-top: 0px;
     margin-left: -$codeblock-padding; // to move back to the left margin of the enclosing blockquote
   }
-  h2:before {
+  h2:before, h3:before {
     font-family: 'Glyphicons Halflings';
     content: $glyph;
     float: left;
@@ -208,7 +214,7 @@ font-size: 18px;
 blockquote p {
     margin: 5px;
 }
-blockquote :not(h2) + p {
+blockquote :not(h2,h3) + p {
     padding-top: 1em;
 }
 
@@ -240,14 +246,16 @@ article img {
     max-width: 100%;
 }
 
-article h2 {
+article > h2,
+article > blockquote > h2,
+article > blockquote > h3 {
   margin: 48px 0 16px;
   border-bottom: solid 1px #eaecef;
   padding-bottom: 0.3em;
   line-height: 1.25;
 }
 
-article h3 { margin: 40px 0 16px; }
+article > h3 { margin: 40px 0 16px; }
 
 article pre {
     margin: 0;

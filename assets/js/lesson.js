@@ -7,14 +7,14 @@ $(".solution").click(function(event) {
     var trigger = $(event.target).has(".fold-unfold").length > 0
                || $(event.target).filter(".fold-unfold").length > 0;
     if (trigger) {
-        $(">*:not(h2)", this).toggle(400);
-        $(">h2>span.fold-unfold", this).toggleClass("glyphicon-collapse-down glyphicon-collapse-up");
+        $(">*:not(h2, h3)", this).toggle(400);
+        $(">h2>span.fold-unfold, >h3>span.fold-unfold", this).toggleClass("glyphicon-collapse-down glyphicon-collapse-up");
         event.stopPropagation();
     }
 });
 $(".solution").each(function() {
-    $(">*:not(h2)", this).toggle();
-    var h2 = $("h2:first", this);
+    $(">*:not(h2, h3)", this).toggle();
+    var h2 = $("h2:first, h3:first", this);
     h2.append("<span class='fold-unfold glyphicon glyphicon-collapse-down'></span>");
 });
 

@@ -1,6 +1,39 @@
 ---
 layout: base
 ---
+<style>
+    ul.toc ul, ol.toc ol {
+      display:none;
+    }
+    .callout.toc > ul ul, 
+    .callout.toc > ol ol, 
+    .callout.toc > ul > li:first-child,
+    .callout.toc > ol > li:first-child {
+      display:none;
+    }
+    article > p,
+    article > ul,
+    article > ol,
+    article > blockquote > p {
+        max-width: 50em;
+    }
+    .img-box {
+        width: 100%;
+        max-width: 100%;
+        display:flex;
+    }
+    .img-box img {
+        width: auto;
+        min-width: 33%;
+        max-width: 100%;
+        flex-shrink: 3;
+        object-fit: scale-down;
+    }
+
+    img {
+        max-height: 50vh;
+    }
+</style>
 {% include episode_navbar.html episode_navbar_title=true %}
 <article>
 {% include episode_title.html %}

@@ -18,7 +18,13 @@ Adapted a selection of episodes from [Life Sciences Workshop](https://carpentrie
 Licensed under [CC-BY 4.0][cc-by-human] 2020-{{ 'now' | date: "%Y"}}
 by <a href="{{ site.carpentries_site }}">The Carpentries</a>.
 
-The website was built using a rebranded fork of [The Carpentries style][styles].
+Adapted a selection of sections from [The Data Management Expert Guide](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide)<br>
+Licensed under [CC-BY 4.0][cc-by-human] 2017–{{ 'now' | date: "%Y"}}
+by <a href="https://www.cessda.eu/About/Consortium/CESSDA-ERIC">CESSDA ERIC</a>
+
+The website was built using a rebranded fork of [The Carpentries style][styles]<br>
+Licensed under [CC-BY 4.0][cc-by-human] and [MIT license][mit-license] 2016–{{ 'now' | date: "%Y"}}
+by <a href="{{ site.swc_site }}">Software Carpentry</a>
 
 The following is a human-readable summary of
 (and not a substitute for) the [full legal text of the CC BY 4.0
@@ -37,26 +43,24 @@ license terms.
 Under the following terms:
 
 * **Attribution**---You must give appropriate credit (mentioning that
-  your work is derived from work that is Copyright © Software
-  Carpentry and, where practical, linking to
-  http://software-carpentry.org/), provide a [link to the
+  your work is derived from work that is Copyright © NBIS - National Bioinformatics Infrastructure Sweden, © The Carpentries, © Data Carpentry and © Software
+  Carpentry respectively and, where practical, linking to
+  the corresponsing websites https://nbis.se, https://carpentries.org/, https://datacarpentry.org/ and https://software-carpentry.org/), provide a [link to the
   license][cc-by-human], and indicate if changes were made. You may do
   so in any reasonable manner, but not in any way that suggests the
   licensor endorses you or your use.
 
-**No additional restrictions**---You may not apply legal terms or
+* **No additional restrictions**---You may not apply legal terms or
 technological measures that legally restrict others from doing
 anything the license permits.  With the understanding that:
 
-Notices:
-
-* You do not have to comply with the license for elements of the
-  material in the public domain or where your use is permitted by an
-  applicable exception or limitation.
-* No warranties are given. The license may not give you all of the
-  permissions necessary for your intended use. For example, other
-  rights such as publicity, privacy, or moral rights may limit how you
-  use the material.
+  * You do not have to comply with the license for elements of the
+    material in the public domain or where your use is permitted by an
+    applicable exception or limitation.
+  * No warranties are given. The license may not give you all of the
+    permissions necessary for your intended use. For example, other
+    rights such as publicity, privacy, or moral rights may limit how you
+    use the material.
 
 ## Software
 
