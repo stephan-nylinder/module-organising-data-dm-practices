@@ -35,14 +35,14 @@ Depending on your background and experiences you could be thinking of different 
 * Helps you to keep and maintain a record of the project
 * Projects can easily be understood by others (including your future self)
 
-It’s natural for some of your files get unorganised from time to time—perhaps your downloads or desktop folder—and in those cases there may be multiple copies and versions of files cluttering your view and making it challenging to find what you're looking for. You can avoid this clutter by planning for organising your files ahead of time, and any system is better than none.
+It’s natural for some of your files to become unorganised from time to time—perhaps your downloads or desktop folder—and in those cases there may be multiple copies and versions of files cluttering your view and making it challenging to find what you're looking for. You can avoid this clutter by planning for organising your files ahead of time, and any system is better than none.
 <!--
 ![Unorganised files on desktop](../fig/desktop.png)
 ![](../fig/beer_messy_tidy.png)
 -->
 ![Unorganised files on desktop](../fig/files_messy_tidy.png)
 
-In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or—more commonly—that someone could be your future self not remembering what you were up to when you created a particular set of files.  Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time reproducing results from previous experiments or completely reconstructing an analysis to address minor flaws, new data or a new technique
+In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or—more commonly—that someone could be your future self not remembering what you were up to when you created a particular set of files.  Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time reproducing results from previous experiments or completely reconstructing an analysis to address minor flaws, new data or a new technique.
 
 
 ## How to organise files and folders
@@ -54,12 +54,12 @@ Folders are containers for your files and are sometimes called directories. A fo
 
 ![data](../fig/folders/hierarchy.png)
 
-In cases where files needs to be disperserd across several storage solutions, it can be a good idea to imagine a virtual top level of the folder hierarchy where each subdirectory correspons to a storage solution. This virtual hierarchy can be described in a shared document to allow your collaborators to determine on which storage solution any any given file should be located.
+In cases where files needs to be disperserd across several storage solutions, it can be a good idea to imagine a virtual top level of the folder hierarchy where each subdirectory corresponds to a storage solution. This virtual hierarchy can be described in a shared document to allow your collaborators to determine on which storage solution any given file should be located.
 
 ### Use folders to divide files into categories
 Put each project in its own folder named after that project. Ideally you want to keep the folder’s name under 32 characters long while at the same time including a combination of the project title a unique identifier and the date. 
 
-Consider the best hierarchy for the files in the project and decide whether a deep or shallow hierarchy is preferable. If you have several independent data collections, it is advisable to create a separate data folder for each collection. But you can use any meaningul characteristic or file attribute as a basis for organising your file, which of them will be most helpful varies widely across domains and specific projects. 
+Consider the best hierarchy for the files in the project and decide whether a deep or shallow hierarchy is preferable. If you have several independent data collections, it is advisable to create a separate data folder for each collection. But you can use any meaningul characteristic or file attribute as a basis for organising your files, which of them will be most helpful varies widely across domains and specific projects. 
 
 ![data](../fig/data1.png)
 ![data](../fig/data2.png)
@@ -102,7 +102,7 @@ Two important starting points for your file naming strategy are:
 
 
 ### Create documentation files
-Systematically documented research data is the key to making the data publishable, discoverable, citable and reusable. Clear and sufficiently detailed documentation improve the overall data quality. It is vital to document both the study for which the data has been collected and the data itself. These two levels of documentation are called project-level and data-level documentation and can both be saves as files and stored in your file hierarchy.
+Systematically documented research data is the key to making the data publishable, discoverable, citable and reusable. Clear and sufficiently detailed documentation improve the overall data quality. It is vital to document both the study for which the data has been collected and the data itself. These two levels of documentation are called project-level and data-level documentation and can both be saved as files and stored in your file hierarchy.
 
 A common practice it to use plain text files – a very simple form of text documents that only contain characters. These files are often called README-files and can be placed strategically across your file hierarchy to help people find what they want or direct them to where further project-level or data-level documentations can be found. 
 
@@ -119,7 +119,7 @@ You don't want to let the hierarchy get too deep so think of ways to streamline 
 
 ![data](../fig/folders/slide_ex3.png)
 
-The following is a structure proposed for computational biology projects. The data folder is for storing our fixed data sets and we see data sets are organized by date. You can see README  files in each of the yeast and worm data folders. The src folder contains source code and code, the bin folder compiled binaries or  scripts and the results directory is for tracking  computational experiments performed on the data. This could be a helpful structure to follow  if you are running a computational experiment.
+The following is a structure proposed for computational biology projects. The data folder is for storing our fixed data sets and we see data sets are organized by date. You can see README  files in each of the yeast and worm data folders. The src folder contains source code and code, the bin folder contains compiled binaries and scripts, and the results directory is for tracking  computational experiments performed on the data. This could be a helpful structure to follow  if you are running a computational experiment.
 
 ![data](../fig/folders/slide_ex4.png)
 
@@ -137,7 +137,7 @@ The following is a structure proposed for computational biology projects. The da
 
 ## How to name files and folders
 
-Use a File Naming Convention is a framework or protocol if you like for naming your files in a way that describes what files contain and importantly, how they relate to other files. 
+A File Naming Convention is a framework, or protocol if you like, for naming your files in a way that describes what the files contain and, importantly, how they relate to other files. 
 
 | ---- |---|
 | Bad                                                 | Better |
@@ -154,7 +154,7 @@ Use a File Naming Convention is a framework or protocol if you like for naming y
 >> ### Potential benefits of a File Naming Convention
 >> - Easier to process - All team members won’t have to over think the file naming process
 >> - Easier to facilitate access, retrieval and storage of files
->> - Easier to browse through files saving time and effort
+>> - Easier to browse through files, saving time and effort
 >> - Harder to lose!
 >> - Having logical and known naming conventions in place can also help you with version control (See Version Control for more information).
 >> - Check for obsolete or duplicate records
@@ -163,7 +163,7 @@ Use a File Naming Convention is a framework or protocol if you like for naming y
 
 ### Three principles for (file) names:
 
-1. Machine readable – avoid spaces, deliverate punctuation, no accented characters, consistent letter casing
+1. Machine readable – avoid spaces, deliberate punctuation, no accented characters, consistent letter casing
 1. Human readable - a name describes the content of the file, connects to concept of a *slug* from semantic URLs
 1. Plays well with default ordering – put something numeric first, use the ISO 8601 standard for dates, left pad other numbers with zeros
 
@@ -198,19 +198,19 @@ Deliberate use of "-" and "_" allows recovery of meta-data from the filenames:
 
 This happens to be `R` but also possible in the `shell`, `Python`, etc.
 
-##### Descriptive filenames
+#### Descriptive filenames
 
 **Which set of file(name)s do you want at 3 a.m. before a deadline**?
 
 <img src="../fig/human_readable_not_options.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="500px" style="display: block; margin: auto;" />
 
 
-##### Embrace the *slug*
+#### Embrace the *slug*
 
 <img src="../fig/slug_filenames.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="400px" style="display: block; margin: auto;" />
 
 
-##### Recap: Human readable
+#### Recap: Human readable
 
 Easy to figure out what the heck something is, based on its name
 

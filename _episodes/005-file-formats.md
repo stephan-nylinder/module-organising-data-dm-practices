@@ -8,7 +8,7 @@ questions:
 objectives:
 - Understand what to consider when choosing data file formats
 - Import and export tabular data in text-based file formats (CSV, TSV)
-- Identify and address potential issues when importing or exporiting from spreatsheets
+- Identify and address potential issues when importing or exporting from spreadsheets
 
 keypoints:
 - Use .csv file format for data storage and processing
@@ -35,9 +35,9 @@ Proprietary file formats are owned and copyrighted by a specific company. Their 
 **Example**: We talked about how Excel stores **dates** as numbers in the previous episode. The numbers used to represent dates varies across versions of the software. In a scenario where you’re combining data stored in Excel Spreadsheets from multiple sources this could introduce a source of errors. 
 
 ### Long-term data preservation: file formats for the future
-tandard, open and widespread formats are advisable for long-term storage as they typically undergo fewer changes. Contrary to proprietary formats (see above) specification of open formats is publicly available. Some of them are standardised and maintained by a standards organisation and we may assume that their readability in the future is ensured. Examples of open formats are PDF/A, CSV, TIFF, ASCII, Open Document Format (ODF), XML, Office Open XML, JPEG 2000, PNG, SVG, HTML, XHTML, RSS, CSS, etc.
+Standard, open and widespread formats are advisable for long-term storage as they typically undergo fewer changes. Contrary to proprietary formats (see above) specification of open formats is publicly available. Some of them are standardised and maintained by a standards organisation and we may assume that their readability in the future is ensured. Examples of open formats are PDF/A, CSV, TIFF, ASCII, Open Document Format (ODF), XML, Office Open XML, JPEG 2000, PNG, SVG, HTML, XHTML, RSS, CSS, etc.
 
-**Tab-delimited** or **CSV** (more common) files are plain text files where the columns are separated by commas, hence 'comma separated variables' or CSV. The advantage of a CSV over an Excel/SPSS/etc. file is that we can open and read a CSV file using just about any software, including a simple **text editor**. Data in a CSV can also be **easily imported** into other formats and environments, such as SQLite and R. Most spreadsheet programs can save to delimited text formats like CSV.
+**Tab-delimited** or **CSV** (more common) files are plain text files where the columns are separated by commas, hence 'comma separated variables' or CSV. The advantage of a CSV over an Excel/SPSS/etc. file is that we can open and read a CSV file using just about any software, including a simple **text editor**. Data in a CSV format can also be **easily imported** into other formats and environments, such as SQLite and R. Most spreadsheet programs can save to delimited text formats like CSV.
 
 ### Data conversion and possible data loss
 It is advisable to store your data for use in the future, which means converting them from a current data format to a long-term preservation format. Most software applications offer export or exchange formats that allow a text-formatted file to be created for importing into another program. A typical example is Microsoft Excel, which through the 'Save As' command, can save spreadsheet data in comma delimited format (*.csv or comma separated values). The structure of the rows and columns is preserved through commas and line returns. However, multiple worksheets must be saved as separate *.csv files and any text formatting or macros in the native format will be lost on conversion.
@@ -79,7 +79,7 @@ To save a file you have opened in Excel in `*.csv` format:
 
 An important note for backwards compatibility: you can open CSVs in Excel!
 
-## How to address potential issues when importing or exporiting from spreatsheets
+## How to address potential issues when importing or exporting from spreadsheets
 However, there are some significant problems with this particular format. Quite often the data values themselves may include commas (,). In that case, the software which you use (including Excel) will most likely incorrectly display the data in columns. It is because the commas which are a part of the data values will be interpreted as a delimiter.
 
 Data could look like this:
@@ -115,4 +115,4 @@ Now opening this file as a `csv` in Excel will not lead to an extra column, beca
 
 If the dataset you're dealing with contains hundreds or thousands of records, cleaning them up manually (by either removing commas from the data values or putting the values into quotes - "") is not only going to take hours and hours but may potentially end up with you accidentally introducing many errors.
 
-Cleaning up datasets is one of the major problems in many scientific disciplines. The approach almost always depends on the particular context. However, it is a good practice to clean the data in an automated fashion, for example by writing and running a script. The Python and R lessons will give you the basis for developing skills to build relevant scripts.
+Cleaning up datasets is one of the major problems in many scientific disciplines. The approach almost always depends on the particular context. However, it is a good practice to clean the data in an automated fashion, for example by writing and running a script.

@@ -38,7 +38,7 @@ There are many possible types of changes in the data:
 - New data may be included;
 - The data file structure may be changed for the purpose of increasing operability, etc.
 
-As a result of above-mentioned data management processes, several different versions of the data file are usually created. They are important, as they allow you to step back to versions before particular changes were made. Versions may be used simultaneously for different purposes or replace one another. When data files are being published to make them widely available, the treatment of errors, inclusion of new data and/or changes in a data file structure may result also in the publication of new editions of the same data file which may substantially differ in their content (e.g. when new country data are included into an international data file).
+As a result of above-mentioned data management processes, several different versions of the data files are usually created. They are important, as they allow you to step back to versions before particular changes were made. Versions may be used simultaneously for different purposes or replace one another. When data files are being published to make them widely available, the treatment of errors, inclusion of new data and/or changes in a data file structure may result also in the publication of new editions of the same data file which may substantially differ in their content (e.g. when new country data are included into an international data file).
 
 Version and edition management will help to:
 
@@ -64,7 +64,7 @@ Version and edition management will help to:
 
 
 ## Plan a storage strategy
-It is an important aspect of yourdata management planning to determine what your storage needs are and select solutions accordingly. Factors that play a role are, for example, data sensitivity, ease of access, file size and overall data volume. You can also ask yourself where, how and by whom your data will be produced, accessed, transformed, and transferred throughout and beyond the project.
+It is an important aspect of your data management planning to determine what your storage needs are and select solutions accordingly. Factors that play a role are, for example, data sensitivity, ease of access, file size and overall data volume. You can also ask yourself where, how and by whom your data will be produced, accessed, transformed, and transferred throughout and beyond the project.
 
 ![Data life cycle](../fig/storage/life-cycle.png)
 
@@ -105,7 +105,7 @@ One way of categorising different types of storage options is:
 >> - Do: use in combination with a suitable security strategy to protect data and files against unauthorised access (see 'Security').
 >> - Do: use in combination with strict versioning rules (see 'Data authenticity, versions and editions')
 >> - Do: think about long-term archival solutions for data that is complete and has been analysed. Valuable storage space might be released in this way.
->> - Do: work with rights and permissions to ensure that not everyone has access to everything if this is not required (e.g. access to master files more restricted than access to working files).
+>> - Do: work with rights and permissions to ensure that not everyone has access to everything if this is not required (e.g. make access to master files more restricted than access to working files).
 > {: .solution}
 >
 {: .discussion}
