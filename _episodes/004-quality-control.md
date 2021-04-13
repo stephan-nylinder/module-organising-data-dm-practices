@@ -23,7 +23,7 @@ keypoints:
 
 
 ## Good practices for minimising errors in data entry
-This section gives a summary of recommendations on minimising errors in survey data entry is given (UK Data Service, 2017a; ICPSR, 2012; Groves et al., 2004).
+This section gives a summary of recommendations on minimising errors in survey data entry (UK Data Service, 2017a; ICPSR, 2012; Groves et al., 2004).
 
 ### Check the completeness of records
 Check if your data files contain the correct number of records, number of variables or length of the records, etc.
@@ -108,7 +108,7 @@ for when a non-valid value is entered, by not allowing other values or just give
 ![Image of Error Alert tab](../fig/4_data-validation-error-msg.png)
 
 
-to display a (pop up) message about the correct values for a column with Data Validation set, use the `Input Message` tab.
+To display a (pop up) message about the correct values for a column with Data Validation set, use the `Input Message` tab.
 
 ![Image of Input Message tab](../fig/4_data-validation-input-message.png)
 
@@ -122,7 +122,7 @@ right option from the list.
 
 > ### Exercise
 >
-> Create a spreadsheet with data entry validation based on the data disctionary.
+> Create a spreadsheet with data entry validation based on the data dictionary.
 >
 >> ### Solution
 >> 1. ddd

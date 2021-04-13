@@ -16,7 +16,7 @@ keypoints:
 
 ---
 > ## About this episode 
-> We organize data in spreadsheets in the ways that we as humans want to work with the data, but computers require that data be organized in particular ways. In order to use tools that make computation more efficient, we need to structure our data the way that computers need the data. This episode will cover:
+> We organize data in spreadsheets in the ways that we as humans want to work with the data, but computers require that data is organized in particular ways. In order to use tools that make computation more efficient, we need to structure our data the way that computers need the data. This episode will cover:
 >
 > 1. TOC
 > {:toc}
@@ -45,7 +45,7 @@ so you should be mindful of your data organization when doing your data entry.
 You'll want to organize your data in a way that allows other programs and people to easily understand and use the data.
 
 
-**Note:** the best layouts/formats (as well as software and
+**Note:** The best layouts/formats (as well as software and
 interfaces) for **data entry** and **data analysis** might be
 different. It is important to take this into account, and ideally
 automate the conversion from one to another.
@@ -55,11 +55,11 @@ automate the conversion from one to another.
 When working with spreadsheets during data clean up or analyses, it's
 very easy to end up with a spreadsheet that looks very different from the one
 you started with. In order to be able to reproduce your analyses or figure out
-what you did when your leadership team ask for a different analysis,
+what you did when your leadership team asks for a different analysis,
 you **must:**
 
 - **create a new file or tab with your cleaned or analyzed data.** Do
-  not modify that original dataset, or you will never know where you
+  not modify the original dataset, or you will never know where you
   started!
 - **keep track of the steps you took in your clean up or analysis.**
   You should track these steps as a scientist would each step in an
@@ -131,7 +131,7 @@ So, instead we should have:
 > 1. With the person next to you, work on the messy data so that a
   computer will be able to understand it. Clean up the 2016 and 2017
   tabs, and put them all together in one spreadsheet.
-> 1. What you think was wrong with this data and how did you fix it?
+> 1. What do you think was wrong with this data and how did you fix it?
 {: .challenge}
 
 
@@ -177,7 +177,7 @@ But what about worksheet tabs? That seems like an easy way to organize data, rig
 
 This is bad practice for two reasons:
 **1)** you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and
-**2)** even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer how to combine tabs - and if the tabs are inconsistently formatted, you might even have to do it by hand!
+**2)** even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the data because you will have to combine these data into a single data table. You will have to explicitly tell the computer how to combine tabs - and if the tabs are inconsistently formatted, you might even have to do it by hand!
 
 The next time you’re entering data, and you go to create another tab or table, I want you to ask yourself “Self, could I avoid adding this tab by adding another column to my original spreadsheet?”
 
@@ -297,7 +297,7 @@ and stores the dates may be problematic.
 
 Excel **stores dates as a number** - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
 
-It is safer to store dates with MONTH, DAY and YEAR in separate columns or as YEAR and DAY-OF-YEAR] in separate columns.
+It is safer to store dates with MONTH, DAY and YEAR in separate columns or as YEAR and DAY-OF-YEAR in separate columns.
 
 
 > ### Further reading
