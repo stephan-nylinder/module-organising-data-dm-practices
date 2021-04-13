@@ -24,7 +24,7 @@ keypoints:
 {: .callout .toc}
 
 ## Good practices for structuring data tables
-The most common mistake made is treating the program like it is a notebook by relying on context, notes in the margin, spatial layout of data and fields to convey information.
+The most common mistake made is treating the spreadsheet program like it is a notebook by relying on context, notes in the margin, spatial layout of data and fields to convey information.
 As humans,
 we can (usually) interpret these things,
 but computers are unintelligent,

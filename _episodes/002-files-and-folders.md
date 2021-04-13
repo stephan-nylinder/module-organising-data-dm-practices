@@ -54,7 +54,7 @@ Folders are containers for your files and are sometimes called directories. A fo
 
 ![data](../fig/folders/hierarchy.png)
 
-In cases where files needs to be disperserd across several storage solutions, it can be a good idea to imagine a virtual top level of the folder hierarchy where each subdirectory correspons to a storage solution. This virtual hierarchy can be described in a shared document to allow your collaborators to determine on which storage solution any any given file should be located.
+In cases where files needs to be disperserd across several storage solutions, it can be a good idea to imagine a virtual top level of the folder hierarchy where each subfolder correspons to a storage solution. This virtual hierarchy can be described in a shared document to allow your collaborators to determine on which storage solution any any given file should be located.
 
 ### Use folders to divide files into categories
 Put each project in its own folder named after that project. Ideally you want to keep the folder’s name under 32 characters long while at the same time including a combination of the project title a unique identifier and the date. 
@@ -109,9 +109,9 @@ A common practice it to use plain text files – a very simple form of text docu
 ![data](../fig/folders/slide_docs2.png)
 
 ### Examples
-The number of subdirectories and nested folders will grow based  on many contributing factors like the complexity of a project, the length of a project or the number  of team members working on a project. A multi-year project that may result in lots of folders and files, this is to encourage you to establish a structure ahead of the project 
-and adapt the workflow as needed and to remain  organized throughout the duration of the project. 
-You don't want to let the hierarchy get too deep so think of ways to streamline folders where you can and how you organize your folders really depends on the attributes that are most helpful to your project and, again, how many files you will be working with. 
+How many folders and how deeply nested subfolders you use will depend on many factors, such as the complexity or length of the project or the number of collaborators working on a project. A multi-year project with many contributors and subcontracors may result in lots of folders and files.
+
+You should try to establish a structure early and be prepared to adapt it as needed to remain organized throughout the duration of the project. The best way to organize your folders really depends on the attributes that are most helpful to your project and, again, how many files you will be working with. 
 
 ![data](../fig/folders/slide_ex1.png)
 
@@ -119,7 +119,7 @@ You don't want to let the hierarchy get too deep so think of ways to streamline 
 
 ![data](../fig/folders/slide_ex3.png)
 
-The following is a structure proposed for computational biology projects. The data folder is for storing our fixed data sets and we see data sets are organized by date. You can see README  files in each of the yeast and worm data folders. The src folder contains source code and code, the bin folder compiled binaries or  scripts and the results directory is for tracking  computational experiments performed on the data. This could be a helpful structure to follow  if you are running a computational experiment.
+The following is a structure proposed for computational biology projects. The data folder is for storing our fixed data sets and we see data sets are organized by date. You can see README  files in each of the yeast and worm data folders. The src folder contains source code and code, the bin folder compiled binaries or  scripts and the results folder is for tracking  computational experiments performed on the data. This could be a helpful structure to follow  if you are running a computational experiment.
 
 ![data](../fig/folders/slide_ex4.png)
 
@@ -129,8 +129,8 @@ The following is a structure proposed for computational biology projects. The da
 * There is a folder for the raw data, which do not get altered, or intermixed with data that is the result of manual or programmatic manipulation. I.e., derived data is kept separate from raw data, and raw data are not duplicated.
 * Code is kept separate from data.
 * Use a version control system (at least for code) 
-* There is a scratch directory for experimentation. Everything in the scratch directory can be deleted at any time without negative impact.
-* There should be a README in every directory, describing the purpose of the directory and its contents.
+* There is a scratch fodler for experimentation. Everything in the scratch fodler can be deleted at any time without negative impact.
+* There should be a README in every fodler, describing the purpose of the fodler and its contents.
 * Use file naming schemes that makes it easy to find files and understand what they are (for humans and machines)
 * Use non-proprietary formats – .csv rather than .xlsx
 -->
@@ -167,22 +167,22 @@ Use a File Naming Convention is a framework or protocol if you like for naming y
 1. Human readable - a name describes the content of the file, connects to concept of a *slug* from semantic URLs
 1. Plays well with default ordering – put something numeric first, use the ISO 8601 standard for dates, left pad other numbers with zeros
 
-<img src="../fig/awesome_names.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="500px" style="display: block; margin: auto;" />
+![](../fig/awesome_names.png)
 
 #### Search and filtering friendly
 
 **Except of complete file listing**:
 
-<img src="../fig/plasmid_names.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="500px" style="display: block; margin: auto;" />
+![](../fig/plasmid_names.png)
 
 
 **Same using Mac OS Finder search facilities**:
 
-<img src="../fig/plasmid_mac_os_search.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="700px" style="display: block; margin: auto;" />
+![](../fig/plasmid_mac_os_search.png)
 
 **Same using regex in `R`**:
 
-<img src="../fig/plasmid_regex.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="600px" style="display: block; margin: auto;" />
+![](../fig/plasmid_regex.png)
 
 #### Encode/extract metadata from filenames
 
@@ -191,10 +191,10 @@ Deliberate use of "-" and "_" allows recovery of meta-data from the filenames:
 - "_" underscore used to delimit units of meta-data I want later.
 - "-" hyphen used to delimit words so my eyes don't bleed.
 
-<img src="../fig/plasmid_delimiters.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" width="600px" style="display: block; margin: auto;" />
+![](../fig/plasmid_delimiters.png)
 
 
-<img src="../fig/plasmid_delimiters_code.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="600px" style="display: block; margin: auto;" />
+![](../fig/plasmid_delimiters_code.png)
 
 This happens to be `R` but also possible in the `shell`, `Python`, etc.
 
@@ -202,12 +202,12 @@ This happens to be `R` but also possible in the `shell`, `Python`, etc.
 
 **Which set of file(name)s do you want at 3 a.m. before a deadline**?
 
-<img src="../fig/human_readable_not_options.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="500px" style="display: block; margin: auto;" />
+![](../fig/human_readable_not_options.png)
 
 
 ##### Embrace the *slug*
 
-<img src="../fig/slug_filenames.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="400px" style="display: block; margin: auto;" />
+![](../fig/slug_filenames.png)
 
 
 ##### Recap: Human readable
@@ -219,23 +219,18 @@ Easy to figure out what the heck something is, based on its name
 
 **Chronological order**:
 
-<img src="../fig/chronological_order.png" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" width="600px" style="display: block; margin: auto;" />
+![](../fig/chronological_order.png)
 
 **Logical order**: Put something numeric first
 
-<img src="../fig/logical_order.png" title="plot of chunk unnamed-chunk-12" alt="plot of chunk unnamed-chunk-12" width="600px" style="display: block; margin: auto;" />
+![](../fig/logical_order.png)
 
 **Dates**: Use the ISO 8601 standard for dates: YYYY-MM-DD
-
-<img src="../fig/chronological_order.png" title="plot of chunk unnamed-chunk-13" alt="plot of chunk unnamed-chunk-13" width="600px" style="display: block; margin: auto;" />
-
-<img src="../fig/map_mmddyyy.tiff" title="plot of chunk unnamed-chunk-14" alt="plot of chunk unnamed-chunk-14" width="600px" style="display: block; margin: auto;" />
-
-[From twitter](https://twitter.com/donohoe/status/597876118688026624)
+![](../fig/chronological_order.png)
 
 **Left pad other numbers with zeros**
 
-<img src="../fig/logical_order.png" title="plot of chunk unnamed-chunk-15" alt="plot of chunk unnamed-chunk-15" width="600px" style="display: block; margin: auto;" />
+![](../fig/logical_order.png)
 
 If you don’t left pad, you may get this:
 
