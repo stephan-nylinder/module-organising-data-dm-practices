@@ -100,6 +100,25 @@ date,type,len_hours,num_registered,num_attended,trainer,cancelled
 29 Mar,RDM,1,27,24,JM,N
 ~~~
 
+Or like this if you're using the Swedish version:
+
+~~~
+date;type;len_hours;num_registered;num_attended;trainer;cancelled
+29 apr;OA;1,5;1,5;15;JM;N
+3 mar;OA;60;19;25;PG;N
+3 jul;OA;1;25;20;PG; JM ;N
+4 jan;OA;1;26;17;JM;N
+29 mar;RDM;1;27;24;JM,N
+~~~
+
+> ### Note
+> 
+> Regional settings in Excel will influence the content of the CSV.
+> The Swedish language version of Excel will use a semi-colon as the separator instead on a comma.
+> Excel functions that output localised text and numbers will also vary. The standard decimal separator in Swedish is a comma and names of months and days will appear as they do in your spreadsheet.
+>
+{: .callout}
+
 In record `3 Jul,OA,1,25,20,PG, JM ,N` the value for *trainer* includes a comma for multiple trainers (`PG, JM`).
 If we try to read the above into Excel (or other spreadsheet programme), we will get something like this:
 
