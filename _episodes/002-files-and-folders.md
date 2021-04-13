@@ -210,12 +210,7 @@ This happens to be `R` but also possible in the `shell`, `Python`, etc.
 ![](../fig/slug_filenames.png)
 
 
-#### Recap: Human readable
-
-Easy to figure out what the heck something is, based on its name
-
-
-#### Plays well with default ordering
+### Plays well with default ordering
 
 **Chronological order**:
 
