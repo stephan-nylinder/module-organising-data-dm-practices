@@ -61,13 +61,22 @@ Put each project in its own folder named after that project. Ideally you want to
 
 Consider the best hierarchy for the files in the project and decide whether a deep or shallow hierarchy is preferable. If you have several independent data collections, it is advisable to create a separate data folder for each collection. But you can use any meaningul characteristic or file attribute as a basis for organising your files, which of them will be most helpful varies widely across domains and specific projects. 
 
+The following examples illustrate some caveats in naming files, folders and versions.
+
 ![data](../fig/data1.png)
 ![data](../fig/data2.png)
 ![data](../fig/data3.png)
 {: .img-box}
 
+The following examples illustrates how nesting can vary 
+
+![data](../fig/folders/slide_attribute2.png)
+![data](../fig/folders/slide_attribute3.png)
+{: .img-box}
+
 > ### Discussion
-> What are examples of characteristics or file attributes that could be helpful categories?
+> What characteristics do you use to create folders and subfolders in your projects? \
+> E.g., data type, collection year, ...
 >
 >> ### Examples of helpful characteristics or file attributes
 >> * Year or other date
@@ -82,12 +91,6 @@ Consider the best hierarchy for the files in the project and decide whether a de
 >> * Team member, institution or project site
 > {: .solution}
 {: .discussion}
-
-
-
-![data](../fig/folders/slide_attribute2.png)
-![data](../fig/folders/slide_attribute3.png)
-{: .img-box}
 
 ### Choose a file naming strategy
 Two important starting points for your file naming strategy are:
@@ -149,7 +152,7 @@ A File Naming Convention is a framework, or protocol if you like, for naming you
 | JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt     | 1986-01-28_raw-data-from-challenger-o-rings.txt |
 
 > ### Discussion
-> What are potential benefits of a File Naming Convention?
+> What are examples of potential benefits of agreeing on a File Naming Convention for a project?
 >
 >> ### Potential benefits of a File Naming Convention
 >> - Easier to process - All team members won’t have to over think the file naming process
