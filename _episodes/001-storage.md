@@ -22,7 +22,7 @@ keypoints:
 {: .callout .toc}
 
 
-## Manage integrity and authenticity of data
+## Maintain data integrity and authenticity
 Processing and analysis of data inevitably result in a number of edits in the data file. However, it is necessary to preserve the authenticity of the original research information contained in the data throughout the whole data lifecycle.
 
 ![Data provenance](../fig/storage/Provenance.jpg)
@@ -46,9 +46,9 @@ Version and edition management will help to:
 - Prevent unauthorised modification of files and loss of information, thereby preserving data authenticity.
 
 > ### Discussion
-> How do you manage data integrity and authenticity?
->> ### Examples of best practice rules
->> The best practice rules (UK Data Service, 2017a; Krejčí, 2014) may be summarised as follows:
+> What do you do to maintain data integrity and authenticity in your projects and what else could you be doing?
+>> ### Examples of practices
+>> Some best practice rules (UK Data Service, 2017a; Krejčí, 2014) can be summarised as follows:
 >> - Establish the terms and conditions of data use and make them known to team members and other users;
 >> - Create a ‘master file’ and take measures to preserve its authenticity, i.e. place it in an adequate location and define access rights and responsibilities – who is authorised to make what kind of changes;
 >> - Distinguish between versions shared by researchers and working versions of individuals;
@@ -75,7 +75,11 @@ One way of categorising different types of storage options is:
 * Networked drives – Shared drives on university servers, NAS servers (Network Attached Storage) or infrastructures (such as SNIC)
 
 > ### Discussion
-> What are examples of do:s and don’t:s for each category?
+> What storage categories do you use and what factors do you consider when selecting which category to use or not to use? 
+> * Portable devices – Laptops, tablets, external hard-drives, flash drives and Compact Discs
+> * Cloud storage - E.g. Google Drive, OneDrive, Dropbox, a University’s OwnCloud, Open Science Framework and Tresorit
+> * Local storage – Desktop computers and personal laptops
+> * Networked drives – Shared drives on university servers, NAS servers (Network Attached Storage) or infrastructures (such as SNIC)
 >
 >> ### Portable devices
 >> - Do: use for temporary, short-term storage for non-sensitive data, e.g. in the field or to transport data and files when online transmission is not possible.
@@ -114,7 +118,7 @@ One way of categorising different types of storage options is:
 A backup strategy in one sentence would be: Make at least three backup copies of the data on at least two different types of storage media, keep storage devices in separate locations with at least one off-site, regularly check whether they work, ensure you know the process and follow it. 
 
 > ### Discussion
-> Whare are examples plausible causes of data loss?
+> What are examples of potential causes for data loss in a research project?
 >
 >> ### Examples
 >> - Hardware failure;
