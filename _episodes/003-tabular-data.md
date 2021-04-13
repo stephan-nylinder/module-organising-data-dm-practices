@@ -24,31 +24,36 @@ keypoints:
 {: .callout .toc}
 
 ## Good practices for structuring data tables
-The most common mistake made is treating the spreadsheet program like it is a notebook by relying on context, notes in the margin, spatial layout of data and fields to convey information.
-As humans,
-we can (usually) interpret these things,
-but computers are unintelligent,
-and unless we explain to the computer what every single thing means
-(and that can be hard!)
-it will not be able to see how our data fit together.
+The most common mistake made is treating spreadsheet programs like lab notebooks, that is,
+relying on context, notes in the margin,
+spatial layout of data and fields to convey information. As humans, we
+can (usually) interpret these things, but computers don't view information the same way, and
+unless we explain to the computer what every single thing means (and
+that can be hard!), it will not be able to see how our data fits
+together.
 
-Using the power of computers,
-we can manage and analyze data in much more effective and faster ways,
-but to use that power,
-we have to set up our data for the computer to be able to understand it
-(and computers are very literal).
+Using the power of computers, we can manage and analyze data in much more 
+effective and faster ways, but to use that power, we have to set up
+our data for the computer to be able to understand it (and computers are very 
+literal).
 
-This is why it’s extremely important to set up well-formatted tables from the outset **before** you even start collecting data to analyse.
-**Data organization is the foundation of your data-related work.**
-Unorganized data can make it harder to work with your data,
-so you should be mindful of your data organization when doing your data entry.
-You'll want to organize your data in a way that allows other programs and people to easily understand and use the data.
+This is why it’s extremely important to set up well-formatted
+tables from the outset – **before** you even start entering data from
+your very first preliminary experiment. Data organization is the
+foundation of your research project. It can make it easier or harder
+to work with your data throughout your analysis, so it's worth
+thinking about when you're doing your data entry or setting up your
+experiment. You can set things up in different ways in spreadsheets,
+but some of these choices can limit your ability to work with the data in other programs or
+have the you-of-6-months-from-now or your collaborator work with the
+data.
 
-
-**Note:** The best layouts/formats (as well as software and
-interfaces) for **data entry** and **data analysis** might be
-different. It is important to take this into account, and ideally
-automate the conversion from one to another.
+> ### Note
+> The best layouts/formats (as well as software and
+> interfaces) for **data entry** and **data analysis** might be
+> different. It is important to take this into account, and ideally
+> automate the conversion from one to another.
+{: .callout}
 
 ### Keeping track of your analyses
 
@@ -131,7 +136,22 @@ So, instead we should have:
 > 1. With the person next to you, work on the messy data so that a
   computer will be able to understand it. Clean up the 2016 and 2017
   tabs, and put them all together in one spreadsheet.
-> 1. What do you think was wrong with this data and how did you fix it?
+> 1. What do you think was wrong with this data and how would you fix it?
+>
+>> ### Solution
+>> - [Multiple tables](#tables)
+>> - [Multiple tabs](#tabs)
+>> - [Not filling in zeros](#zeros)
+>> - [Using bad null values](#null)
+>> - [Using formatting to convey information](#formatting)
+>> - [Using formatting to make the data sheet look pretty](#formatting_pretty)
+>> - [Placing comments or units in cells](#units)
+>> - [More than one piece of information in a cell](#info)
+>> - [Field name problems](#field_name)
+>> - [Special characters in data](#special)
+>> - [Inclusion of metadata in data table](#metadata)
+>> - [Using software specific date formats](#dates)
+> {: .solution}
 {: .challenge}
 
 
@@ -139,9 +159,9 @@ So, instead we should have:
 
 > ### Discussion
 >
-> What was wrong with the data in the previous exercise and how did you fix it?
+> What structural issues do you often find in spreadsheets and how do you address them?
 >
->> ### Examples from the section below
+>> ### Possible things avoid
 >> - [Multiple tables](#tables)
 >> - [Multiple tabs](#tabs)
 >> - [Not filling in zeros](#zeros)
@@ -156,7 +176,6 @@ So, instead we should have:
 >> - [Using software specific date formats](#dates)
 > {: .solution}
 {: .discussion}
-
 
 ### Multiple tables {#tables}
 
@@ -203,7 +222,7 @@ However, there's a difference between a zero and a blank cell in a spreadsheet. 
 The spreadsheets or statistical programs will likely mis-interpret blank cells that are meant to be zero. This is equivalent to leaving out data. Zero observations are real data! Leaving zero data blank is not good in a written format, but NEVER okay when you move your data into a digital format.
 
 
-### Using bad null values {#null}
+### Using bad null values {#null} (missing data)
 
 **Example**: using -999 or other numerical values (or zero).
 
