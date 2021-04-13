@@ -43,7 +43,7 @@ Standard, open and widespread formats are advisable for long-term storage as the
 It is advisable to store your data for use in the future, which means converting them from a current data format to a long-term preservation format. Most software applications offer export or exchange formats that allow a text-formatted file to be created for importing into another program. A typical example is Microsoft Excel, which through the 'Save As' command, can save spreadsheet data in comma delimited format (*.csv or comma separated values). The structure of the rows and columns is preserved through commas and line returns. However, multiple worksheets must be saved as separate *.csv files and any text formatting or macros in the native format will be lost on conversion.
 
 > ### Discussion
-> What are examples for information that may be lost during data conversion?
+> What are examples for information that may be lost when converting data between file formats?
 >
 >> ### Examples
 >> - In the conversion of a statistical dataset (i.e. survey data), parts of the dataset may be lost, same as missing data definitions, decimal numbers, changes in data formats (e.g., numerical into string data type), data also may be truncated;
@@ -58,26 +58,33 @@ The conversion itself should be done by a researcher familiar with the data, so 
 
 Due to differences in national character sets you should pay attention also to character coding for text based file formats. Some coding systems (e.g., Windows 1250) do not cover all character sets at the same time. As a result, an adequate language environment (Central European languages) has to be set to ensure correct display, which cannot be done at all times. Other coding systems (e.g., UTF 8) allow correct display of symbols of several character sets simultaneously.
 
-> ### Exercise
->
-> Open the file in a text editor and compare it to the Excel file
->
->> ### Examples from the section below
->> - ...
-> {: .solution}
-{: .challenge}
-
-
 ## How to work with text-based file formats in spreadsheets
 To save a file you have opened in Excel in `*.csv` format:
 
+1. Make sure that the tab your want to export is open
 1. From the top menu select 'File' and 'Save as'.
-2. In the 'Format' field, from the list, select 'Comma Separated Values' (`*.csv`).
-3. Double check the file name and the location where you want to save it and hit 'Save'.
+1. In the 'Format' field, from the list, select 'Comma Separated Values' (`*.csv`).
+1. Double check the file name and the location where you want to save it and hit 'Save'.
 
 ![Saving an Excel file to CSV](../fig/excel-to-csv.png)
 
 An important note for backwards compatibility: you can open CSVs in Excel!
+
+> ### Exercise
+>
+> 1. Open the [training data spreadsheet](../data/training_attendance.xlsx)
+> 1. Export the data under the tab `2016` in `*.csv` format
+> 1. Open the `.csv` file in your text editor and compare it to the spreasheet
+> 1. Open the `.csv` file in your spreadsheet software and compare  
+> 1. What are the differences?
+>
+>> ### Examples from the section below
+>> - The cells `RDM Training` and `Open access` no longer span the columns below them
+>> - The bold face text formatting is lost
+>> - The colored cells are lost
+> {: .solution}
+{: .challenge}
+
 
 ## How to address potential issues when importing or exporting from spreadsheets
 However, there are some significant problems with this particular format. Quite often the data values themselves may include commas (,). In that case, the software which you use (including Excel) will most likely incorrectly display the data in columns. It is because the commas which are a part of the data values will be interpreted as a delimiter.
