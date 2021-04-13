@@ -123,15 +123,17 @@ right option from the list.
 > ### Exercise
 >
 > Given the following partial data dictionary:
-> | Current variable name | ENA Variable name | Measurement unit | Allowed values | Definition | Description |
+>
+> | Variable name | ENA Variable name | Measurement unit | Allowed values | Definition | Description |
 > |-|-|-|-|-|-|
 > | strain | strain |  | NCIT ontology:<br> C56BL/6 Mouse (NCIT:C14424),<br> BALB/cJ Mouse (NCIT:C14657) | The mouse strain of the animal |  |
 > | developmental stage | dev_stage |  | BTO ontology:<br> pup (BTO:0004377),<br> adult (BTO:0001043),<br> embryo (BTO:0000379) |  |  |
 > | sex | sex |  | male, female, unknown | Sex of the animal |  |
+> | age |  | days,weeks (?) |  | Age of animal |  |
 > | date | collection_date |  | format: YYYY-MM-DD, >=2021-01-01 & <=today | Date of experiment ??? |  |
 > 
 > 1. Create a new spreadsheet document
-> 2. Add column headings correspoding to values in the `ENA Valiable name` column in the data dictionary
+> 2. Add column headings correspoding to values in the `Variable name` column in the data dictionary
 > 3. Set up validation for each column
 > 4. Try to add some values
 >
@@ -152,7 +154,8 @@ criteria or from lowest to highest. This makes it easy to scan your data for out
 checks in a programming language like Python or R, or in OpenRefine or SQL.
 
 > ### Exercise
->
+> 1. Open [training data spreadsheet](../data/training_attendance.xlsx)
+> 1. Click on the tab `Dates`
 > 1. Make sure the `num_attended` column is highlighted.
 > 1. Go to **Format** then **Conditional Formatting**.
 > 1. Apply any 2-Color Scale formatting rule.
