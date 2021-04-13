@@ -120,6 +120,17 @@ right option from the list.
 
 ![Image of drop-down menu](../fig/4_data-validation-auto-complete.png)
 
+> ### Note
+> 
+> Regional settings in Excel will influence the how values are separated in lists.
+> The Swedish language version of Excel will use a semicolon as the separator instead of a comma. This will affect `Validation critera`, with `Allow`: `List`.
+>
+> ![English list separateor: comma](../fig/eng-validation.png)
+> ![Swedish list separateor: semicolon](../fig/swe-validation.png)
+> {: .img-box}
+>
+{: .callout}
+
 > ### Exercise
 >
 > Given the following partial data dictionary:

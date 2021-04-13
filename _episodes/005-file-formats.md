@@ -114,7 +114,7 @@ date;type;len_hours;num_registered;num_attended;trainer;cancelled
 > ### Note
 > 
 > Regional settings in Excel will influence the content of the CSV.
-> The Swedish language version of Excel will use a semi-colon as the separator instead on a comma.
+> The Swedish language version of Excel will use a semicolon as the separator instead of a comma.
 > Excel functions that output localised text and numbers will also vary. The standard decimal separator in Swedish is a comma and names of months and days will appear as they do in your spreadsheet.
 >
 {: .callout}
