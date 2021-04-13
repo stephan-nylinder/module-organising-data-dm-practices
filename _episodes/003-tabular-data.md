@@ -222,7 +222,7 @@ However, there's a difference between a zero and a blank cell in a spreadsheet. 
 The spreadsheets or statistical programs will likely mis-interpret blank cells that are meant to be zero. This is equivalent to leaving out data. Zero observations are real data! Leaving zero data blank is not good in a written format, but NEVER okay when you move your data into a digital format.
 
 
-### Using bad null values {#null} (missing data)
+### Using bad null values (missing data) {#null}
 
 **Example**: using -999 or other numerical values (or zero).
 
