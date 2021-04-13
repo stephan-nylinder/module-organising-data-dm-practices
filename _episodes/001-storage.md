@@ -128,19 +128,19 @@ A backup strategy in one sentence would be: Make at least three backup copies of
 {: .discussion}
 
 
-#### Creating a backup strategy in 10 steps
-
-1. Find out whether your institution has a backup strategy
-2. Determine what you want to back up
-3. Decide how many backups you will need and how frequently to back up
-4. Decide where backups will be stored
-5. Determine how much storage capacity will be needed
-6. Determine if there are tools you could use to automate backup
-7. Determine how long backups will be kept and how they will be destroyed
-8. Determine how personal data will be protected
-9. Devise a disaster recovery plan
-10. Assign responsibilities 
-
+> ### Creating a backup strategy in 10 steps
+> 
+> 1. Find out whether your institution has a backup strategy
+> 2. Determine what you want to back up
+> 3. Decide how many backups you will need and how frequently to back up
+> 4. Decide where backups will be stored
+> 5. Determine how much storage capacity will be needed
+> 6. Determine if there are tools you could use to automate backup
+> 7. Determine how long backups will be kept and how they will be destroyed
+> 8. Determine how personal data will be protected
+> 9. Devise a disaster recovery plan
+> 10. Assign responsibilities 
+{: .callout}
 
 > ### Further reading
 >
