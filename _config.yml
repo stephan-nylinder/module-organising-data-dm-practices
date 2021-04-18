@@ -9,7 +9,7 @@
 # cp: Carpentries (to use for instructor traning for instance)
 # incubator: Carpentries Incubator
 carpentry: "nbis"
-theme: jekyll-template-nbis
+remote_theme: NBISweden/styles-dm-practices
 
 # Overall title for pages.
 title: "Data organisation practices"
@@ -92,13 +92,10 @@ defaults:
 
 # Files and directories that are not to be copied.
 exclude:
-  - Makefile
-  - bin/
-  - .Rproj.user/
-  - .vendor/
-  - vendor/
-  - .docker-vendor/
   - Gemfile*
+  - environment.yml
+  - README.md
+  
 
 # Turn on built-in syntax highlighting.
 highlighter: rouge
