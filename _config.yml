@@ -9,6 +9,7 @@
 # cp: Carpentries (to use for instructor traning for instance)
 # incubator: Carpentries Incubator
 carpentry: "nbis"
+theme: jekyll-template-nbis
 
 # Overall title for pages.
 title: "Data organisation practices"
@@ -97,6 +98,7 @@ exclude:
   - .vendor/
   - vendor/
   - .docker-vendor/
+  - Gemfile*
 
 # Turn on built-in syntax highlighting.
 highlighter: rouge
