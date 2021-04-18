@@ -74,7 +74,7 @@ you **must:**
 
 This might be an example of a spreadsheet setup:
 
-![spreadsheet setup](../fig/spreadsheet-setup-updated.png)
+![spreadsheet setup](../fig/tabular-data/spreadsheet-setup-updated.png)
 
 We will put these principles into practice today during your exercises.
 
@@ -102,7 +102,7 @@ delivered the workshop.
 
 If they were to keep track of the data like this:
 
-![multiple-info example](../fig/multiple-info.png)
+![multiple-info example](../fig/tabular-data/multiple-info.png)
 
 the problem is that the number of attendees of different types (post-graduate
 researcher (PGR), post-doctoral research associate (PDRA), and other) are in
@@ -118,7 +118,7 @@ variables**, **rows = observations**, **cells = data** (values).
 
 So, instead we should have:
 
-![single-info example](../fig/single-info.png)
+![single-info example](../fig/tabular-data/single-info.png)
 
 > ### Exercise
 >
@@ -187,7 +187,7 @@ row as an observation. You’re also potentially using the same field
 name in multiple places, which will make it harder to clean your data
 up into a usable form. The example below depicts the problem:
 
-![Screengrab of spreadsheet showing formatting errors - multiple tables in one sheet](../fig/2_Multiple_Tables.png)
+![Screengrab of spreadsheet showing formatting errors - multiple tables in one sheet](../fig/tabular-data/2_Multiple_Tables.png)
 
 
 ### Multiple tabs {#tabs}
@@ -230,18 +230,18 @@ The spreadsheets or statistical programs will likely mis-interpret blank cells t
 
 From White et al, 2013, [Nine simple ways to make it easier to (re)use your data.](https://ojs.library.queensu.ca/index.php/IEE/article/view/4608) Ideas in Ecology and Evolution:
 
-![White et al.](../fig/3_white_table_1.jpg)
+![White et al.](../fig/tabular-data/3_white_table_1.jpg)
 
 
 ### Using formatting to convey information  {#formatting}
 
 **Example**: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.
 
-![formatting](../fig/formatting.png)
+![formatting](../fig/tabular-data/formatting.png)
 
 **Solution**: create a new field to encode which data should be excluded.
 
-![good formatting](../fig/good_formatting.png)
+![good formatting](../fig/tabular-data/good_formatting.png)
 
 
 ### Using formatting to make the data sheet look pretty {#formatting_pretty}
@@ -312,7 +312,7 @@ A spreadsheet application will display the dates in
 seemingly correct way (for the human eye) but how it actually handles
 and stores the dates may be problematic. 
 
-![Many formats, many ambiguities](../fig/5_excel_dates_1.jpg)
+![Many formats, many ambiguities](../fig/tabular-data/5_excel_dates_1.jpg)
 
 Excel **stores dates as a number** - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
 

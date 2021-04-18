@@ -26,6 +26,7 @@ keypoints:
 Processing and analysis of data inevitably result in a number of edits in the data file. However, it is necessary to preserve the authenticity of the original research information contained in the data throughout the whole data lifecycle.
 
 ![Data provenance](../fig/storage/Provenance.jpg)
+Credit: This image was created by Scriberia for [The Turing Way community](https://the-turing-way.netlify.app/) and is used under a CC-BY licence.
 
 
 There are many possible types of changes in the data:

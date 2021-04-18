@@ -37,10 +37,10 @@ Depending on your background and experiences you could be thinking of different 
 
 It’s natural for some of your files to become unorganised from time to time—perhaps your downloads or desktop folder—and in those cases there may be multiple copies and versions of files cluttering your view and making it challenging to find what you're looking for. You can avoid this clutter by planning for organising your files ahead of time, and any system is better than none.
 <!--
-![Unorganised files on desktop](../fig/desktop.png)
-![](../fig/beer_messy_tidy.png)
+![Unorganised files on desktop](../fig/files-and-folders/desktop.png)
+![](../fig/files-and-folders/beer_messy_tidy.png)
 -->
-![Unorganised files on desktop](../fig/files_messy_tidy.png)
+![Unorganised files on desktop](../fig/files-and-folders/files_messy_tidy.png)
 
 In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or—more commonly—that someone could be your future self not remembering what you were up to when you created a particular set of files.  Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time reproducing results from previous experiments or completely reconstructing an analysis to address minor flaws, new data or a new technique.
 
@@ -52,7 +52,7 @@ Spend some time planning how you are going to organise your data at the beginnin
 ### Organise files hierarchically
 Folders are containers for your files and are sometimes called directories. A folder can contain other folders—sometimes called subfolders (or subdirectories)—and you can organise your files hierarchically by creating a structure of folders and subfolders. Each folder corresponds to a category that should be mutually exlusive with other folders at the same level. And since a file can only be placed in one folder—at one place in the hierarchy—you should aim to create a structure that make it easy for yourself and your collaborators to determine where any given file should be located.
 
-![data](../fig/folders/hierarchy.png)
+![data](../fig/files-and-folders/hierarchy.png)
 
 In cases where files needs to be disperserd across several storage solutions, it can be a good idea to imagine a virtual top level of the folder hierarchy where each subfolder correspons to a storage solution. This virtual hierarchy can be described in a shared document to allow your collaborators to determine on which storage solution any given file should be located.
 
@@ -63,15 +63,15 @@ Consider the best hierarchy for the files in the project and decide whether a de
 
 The following examples illustrate some caveats in naming files, folders and versions.
 
-![data](../fig/data1.png)
-![data](../fig/data2.png)
-![data](../fig/data3.png)
+![data](../fig/files-and-folders/data1.png)
+![data](../fig/files-and-folders/data2.png)
+![data](../fig/files-and-folders/data3.png)
 {: .img-box}
 
 The following examples illustrates how nesting can vary 
 
-![data](../fig/folders/slide_attribute2.png)
-![data](../fig/folders/slide_attribute3.png)
+![data](../fig/files-and-folders/slide_attribute2.png)
+![data](../fig/files-and-folders/slide_attribute3.png)
 {: .img-box}
 
 > ### Discussion
@@ -101,7 +101,7 @@ Two important starting points for your file naming strategy are:
     In both quantitative and qualitative research file naming should be systematic and consistent across all files in the study. A group of cooperating researchers should follow the same file naming strategy and file names should be independent of the location of the file on a computer.
 
 
-![data](../fig/folders/slide_files.png)
+![data](../fig/files-and-folders/slide_files.png)
 
 
 ### Create documentation files
@@ -109,22 +109,22 @@ Systematically documented research data is the key to making the data publishabl
 
 A common practice it to use plain text files – a very simple form of text documents that only contain characters. These files are often called README-files and can be placed strategically across your file hierarchy to help people find what they want or direct them to where further project-level or data-level documentations can be found. 
 
-![data](../fig/folders/slide_docs2.png)
+![data](../fig/files-and-folders/slide_docs2.png)
 
 ### Examples
 How many folders and how deeply nested subfolders you use will depend on many factors, such as the complexity or length of the project or the number of collaborators working on a project. A multi-year project with many contributors and subcontracors may result in lots of folders and files.
 
 You should try to establish a structure early and be prepared to adapt it as needed to remain organized throughout the duration of the project. The best way to organize your folders really depends on the attributes that are most helpful to your project and, again, how many files you will be working with. 
 
-![data](../fig/folders/slide_ex1.png)
+![data](../fig/files-and-folders/slide_ex1.png)
 
-![data](../fig/folders/slide_ex2.png)
+![data](../fig/files-and-folders/slide_ex2.png)
 
-![data](../fig/folders/slide_ex3.png)
+![data](../fig/files-and-folders/slide_ex3.png)
 
 The following is a structure proposed for computational biology projects. The data folder is for storing our fixed data sets and we see data sets are organized by date. You can see README  files in each of the yeast and worm data folders. The src folder contains source code and code, the bin folder contains compiled binaries and scripts, and the results directory is for tracking  computational experiments performed on the data. This could be a helpful structure to follow  if you are running a computational experiment.
 
-![data](../fig/folders/slide_ex4.png)
+![data](../fig/files-and-folders/slide_ex4.png)
 
 <!--
 ### Summary
@@ -170,22 +170,22 @@ A File Naming Convention is a framework, or protocol if you like, for naming you
 1. Human readable - a name describes the content of the file, connects to concept of a *slug* from semantic URLs
 1. Plays well with default ordering – put something numeric first, use the ISO 8601 standard for dates, left pad other numbers with zeros
 
-![](../fig/awesome_names.png)
+![](../fig/files-and-folders/awesome_names.png)
 
 #### Search and filtering friendly
 
 **Except of complete file listing**:
 
-![](../fig/plasmid_names.png)
+![](../fig/files-and-folders/plasmid_names.png)
 
 
 **Same using Mac OS Finder search facilities**:
 
-![](../fig/plasmid_mac_os_search.png)
+![](../fig/files-and-folders/plasmid_mac_os_search.png)
 
 **Same using regex in `R`**:
 
-![](../fig/plasmid_regex.png)
+![](../fig/files-and-folders/plasmid_regex.png)
 
 #### Encode/extract metadata from filenames
 
@@ -194,10 +194,10 @@ Deliberate use of "-" and "_" allows recovery of meta-data from the filenames:
 - "_" underscore used to delimit units of meta-data I want later.
 - "-" hyphen used to delimit words so my eyes don't bleed.
 
-![](../fig/plasmid_delimiters.png)
+![](../fig/files-and-folders/plasmid_delimiters.png)
 
 
-![](../fig/plasmid_delimiters_code.png)
+![](../fig/files-and-folders/plasmid_delimiters_code.png)
 
 This happens to be `R` but also possible in the `shell`, `Python`, etc.
 
@@ -205,30 +205,30 @@ This happens to be `R` but also possible in the `shell`, `Python`, etc.
 
 **Which set of file(name)s do you want at 3 a.m. before a deadline**?
 
-![](../fig/human_readable_not_options.png)
+![](../fig/files-and-folders/human_readable_not_options.png)
 
 
 #### Embrace the *slug*
 
-![](../fig/slug_filenames.png)
+![](../fig/files-and-folders/slug_filenames.png)
 
 
 ### Plays well with default ordering
 
 **Chronological order**:
 
-![](../fig/chronological_order.png)
+![](../fig/files-and-folders/chronological_order.png)
 
 **Logical order**: Put something numeric first
 
-![](../fig/logical_order.png)
+![](../fig/files-and-folders/logical_order.png)
 
 **Dates**: Use the ISO 8601 standard for dates: YYYY-MM-DD
-![](../fig/chronological_order.png)
+![](../fig/files-and-folders/chronological_order.png)
 
 **Left pad other numbers with zeros**
 
-![](../fig/logical_order.png)
+![](../fig/files-and-folders/logical_order.png)
 
 If you don’t left pad, you may get this:
 
