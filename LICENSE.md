@@ -22,6 +22,10 @@ Adapted a selection of sections from [The Data Management Expert Guide](https://
 Licensed under [CC-BY 4.0][cc-by-human] 2017–{{ 'now' | date: "%Y"}}
 by <a href="https://www.cessda.eu/About/Consortium/CESSDA-ERIC">CESSDA ERIC</a>
 
+Adapted selection of presentations from [the Great Data Cleanup Summer Campaign](https://osf.io/hjntb/)<br>
+Licensed under [CC-BY 4.0][cc-by-human] 2020-{{ 'now' | date: "%Y"}}
+by <a href="https://osf.io/6p7j4/">Julie Goldman</a>
+
 The website was built using a rebranded fork of [The Carpentries style][styles]<br>
 Licensed under [CC-BY 4.0][cc-by-human] and [MIT license][mit-license] 2016–{{ 'now' | date: "%Y"}}
 by <a href="{{ site.swc_site }}">Software Carpentry</a>
