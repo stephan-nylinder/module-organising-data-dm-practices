@@ -14,6 +14,18 @@ keypoints:
 - Use conditional formatting to identify possible errors in spreadsheets
 
 ---
+
+[data_validation]: ../fig/quality-control/data_validation.png
+[data_validation_window]: ../fig/quality-control/data_validation_window.png
+[4_data-validation-whole-num]: ../fig/quality-control/4_data-validation-whole-num.png
+[4_data-validation-alert]: ../fig/quality-control/4_data-validation-alert.png
+[4_data-validation-error-msg]: ../fig/quality-control/4_data-validation-error-msg.png
+[4_data-validation-input-message]: ../fig/quality-control/4_data-validation-input-message.png
+[4_data-validation-auto-complete]: ../fig/quality-control/4_data-validation-auto-complete.png
+[eng-validation]: ../fig/quality-control/eng-validation.png
+[swe-validation]: ../fig/quality-control/swe-validation.png
+[4_conditional-formatting]: ../fig/quality-control/4_conditional-formatting.png
+
 > ## About this episode 
 > When you have a well-structured data table, you can use several simple techniques within your spreadsheet to ensure the data you enter is free of errors. These approaches include techniques that are implemented **prior to entering data** (**quality assurance**) and techniques that are used **after entering data to check for errors** (**quality control**).
 > 1. TOC
@@ -74,13 +86,13 @@ in each data column.
 
 2. On the `Data` tab select `Data Validation`
 
-   ![Image of Data Validation button on Data tab](../fig/quality-control/data_validation.png)
+   ![Image of Data Validation button on Data tab][data_validation]
 
 3. In the `Allow` box select the kind of data that should be in the
    column. Options include whole numbers, decimals, lists of items, dates, and
    other values.
 
-   ![Image of Data Validation window](../fig/quality-control/data_validation_window.png)
+   ![Image of Data Validation window][data_validation_window]
 
 4. After selecting an item enter any additional details. For example if you've
    chosen a list of values then enter a comma-delimited list of allowable
@@ -95,22 +107,22 @@ allow whole numbers between 1 and 100.
 3. In the `Allow` box select `Whole number`
 4. Set the minimum and maximum values to 1 and 100.
 
-![Image of Data Validation window for validating plot values](../fig/quality-control/4_data-validation-whole-num.png)
+![Image of Data Validation window for validating plot values][4_data-validation-whole-num]
 
 Now let's try entering a new value in the `num_registered` column that isn't a valid class size. The spreadsheet stops us from entering the wrong value and asks us if we would like to try again.
 
-![Image of error when trying to enter invalid data](../fig/quality-control/4_data-validation-alert.png)
+![Image of error when trying to enter invalid data][4_data-validation-alert]
 
 You can customize the resulting message to be more informative by entering
 your own message in the `Error Alert` tab, and you can edit the `Style`
 for when a non-valid value is entered, by not allowing other values or just give a warning about non valid entries. 
 
-![Image of Error Alert tab](../fig/quality-control/4_data-validation-error-msg.png)
+![Image of Error Alert tab][4_data-validation-error-msg]
 
 
 To display a (pop up) message about the correct values for a column with Data Validation set, use the `Input Message` tab.
 
-![Image of Input Message tab](../fig/quality-control/4_data-validation-input-message.png)
+![Image of Input Message tab][4_data-validation-input-message]
 
 Quality assurance can make data entry easier as well as more robust. For
 example, if you use a list of options to restrict data entry, the spreadsheet
@@ -118,15 +130,15 @@ will provide you with a drop-downlist of the available items. So, instead of
 trying to remember the workshop title abbreviation, you can just select the
 right option from the list.
 
-![Image of drop-down menu](../fig/quality-control/4_data-validation-auto-complete.png)
+![Image of drop-down menu][4_data-validation-auto-complete]
 
 > ### Note
 > 
 > Regional settings in Excel will influence the how values are separated in lists.
 > The Swedish language version of Excel will use a semicolon as the separator instead of a comma. This will affect `Validation critera`, with `Allow`: `List`.
 >
-> ![English list separateor: comma](../fig/quality-control/eng-validation.png)
-> ![Swedish list separateor: semicolon](../fig/quality-control/swe-validation.png)
+> ![English list separateor: comma][eng-validation]
+> ![Swedish list separateor: semicolon][swe-validation]
 > {: .img-box}
 >
 {: .callout}
@@ -174,7 +186,7 @@ checks in a programming language like Python or R, or in OpenRefine or SQL.
 >
 >> ### Solution
 >> We can see two outlier cells of 0 and can see these two classes were canceled.
->>![Conditional Formatting](../fig/quality-control/4_conditional-formatting.png)
+>>![Conditional Formatting][4_conditional-formatting]
 >>{: .output}
 > {: .solution}
 {: .challenge}

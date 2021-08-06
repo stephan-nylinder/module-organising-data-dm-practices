@@ -14,6 +14,10 @@ keypoints:
 - Good data organization is the foundation of any research project
 
 ---
+
+[Provenance]: ../fig/storage/Provenance.jpg
+[life-cycle]: ../fig/storage/life-cycle.png
+
 > ## About this episode 
 > The data that you collect, organise, prepare, and analyse to answer your research questions, and the documentation describing it are the lifeblood of your research. Put bluntly: without data, there is no research. It is therefore essential that you take adequate measures to protect your data against accidental loss and against unauthorised manipulation.
 > 1. TOC
@@ -25,7 +29,7 @@ keypoints:
 ## Maintain data integrity and authenticity
 Processing and analysis of data inevitably result in a number of edits in the data file. However, it is necessary to preserve the authenticity of the original research information contained in the data throughout the whole data lifecycle.
 
-![Data provenance](../fig/storage/Provenance.jpg)
+![Data provenance][Provenance]
 Credit: This image was created by Scriberia for [The Turing Way community](https://the-turing-way.netlify.app/) and is used under a CC-BY licence.
 
 
@@ -67,7 +71,7 @@ Version and edition management will help to:
 ## Plan a storage strategy
 It is an important aspect of your data management planning to determine what your storage needs are and select solutions accordingly. Factors that play a role are, for example, data sensitivity, ease of access, file size and overall data volume. You can also ask yourself where, how and by whom your data will be produced, accessed, transformed, and transferred throughout and beyond the project.
 
-![Data life cycle](../fig/storage/life-cycle.png)
+![Data life cycle][life-cycle]
 
 One way of categorising different types of storage options is:
 * Portable devices – Laptops, tablets, external hard-drives, flash drives and Compact Discs

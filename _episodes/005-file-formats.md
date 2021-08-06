@@ -14,6 +14,10 @@ keypoints:
 - Use .csv file format for data storage and processing
 - Be careful when using commas in values
 ---
+
+[excel-to-csv]: ../fig/file-formats/excel-to-csv.png
+[csv-mistake]: ../fig/file-formats/csv-mistake.png
+
 > ## About this episode 
 > All digital file formats are in danger of becoming outdated. If that happens, future software may not be able to read or show the information in the files correctly. In order to minimise the risk that files become unreadable, you should choose a file format that is likely to be usable in the future.
 >
@@ -66,7 +70,7 @@ To save a file you have opened in Excel in `*.csv` format:
 1. In the 'Format' field, from the list, select 'Comma Separated Values' (`*.csv`).
 1. Double check the file name and the location where you want to save it and hit 'Save'.
 
-![Saving an Excel file to CSV](../fig/file-formats/excel-to-csv.png)
+![Saving an Excel file to CSV][excel-to-csv]
 
 An important note for backwards compatibility: you can open CSVs in Excel!
 
@@ -122,7 +126,7 @@ date;type;len_hours;num_registered;num_attended;trainer;cancelled
 In record `3 Jul,OA,1,25,20,PG, JM ,N` the value for *trainer* includes a comma for multiple trainers (`PG, JM`).
 If we try to read the above into Excel (or other spreadsheet programme), we will get something like this:
 
-![Issue with importing csv format](../fig/file-formats/csv-mistake.png)
+![Issue with importing csv format][csv-mistake]
 
 The value for 'trainer' was split into two columns (instead of being put in one column `F`). This can propagate to a number of further errors. For example, the "extra" column will be interpreted as a column with many missing values (and without a proper header!).
 
