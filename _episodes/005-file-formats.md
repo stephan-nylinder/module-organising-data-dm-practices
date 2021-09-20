@@ -95,25 +95,25 @@ However, there are some significant problems with this particular format. Quite 
 
 Data could look like this:
 
-~~~
+<pre>
 date,type,len_hours,num_registered,num_attended,trainer,cancelled
 29 Apr,OA,1.5,1.5,15,JM,N
 3 Mar,OA,60,19,25,PG,N
 3 Jul,OA,1,25,20,PG, JM ,N
 4 Jan,OA,1,26,17,JM,N
 29 Mar,RDM,1,27,24,JM,N
-~~~
+</pre>
 
 Or like this if you're using the Swedish version:
 
-~~~
+<pre>
 date;type;len_hours;num_registered;num_attended;trainer;cancelled
 29 apr;OA;1,5;1,5;15;JM;N
 3 mar;OA;60;19;25;PG;N
 3 jul;OA;1;25;20;PG; JM ;N
 4 jan;OA;1;26;17;JM;N
 29 mar;RDM;1;27;24;JM,N
-~~~
+</pre>
 
 > ### Note
 > 
@@ -132,14 +132,14 @@ The value for 'trainer' was split into two columns (instead of being put in one 
 
 If you want to store your data in `csv` format and expect that your data values may contain commas, you can avoid the problem discussed above by putting the values to be included in the same column in quotes (""). Applying this rule, the data might look like this:
 
-~~~
+<pre>
 date,type,len_hours,num_registered,num_attended,trainer,cancelled
 29 Apr,OA,1.5,1.5,15,JM,N
 3 Mar,OA,60,19,25,PG,N
 3 Jul,OA,1,25,20,"PG, JM",N
 4 Jan,OA,1,26,17,JM,N
 29 Mar,RDM,1,27,24,JM,N
-~~~
+</pre>
 
 Now opening this file as a `csv` in Excel will not lead to an extra column, because Excel will only use commas that fall outside of quotation marks as delimiting characters. However, if you are working with an already existing dataset in which the data values are not included in "" but which have commas as both delimiters and parts of data values, you are potentially facing a major problem with data cleaning.
 
