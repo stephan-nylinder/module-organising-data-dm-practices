@@ -19,6 +19,7 @@ keypoints:
 
 [//]: # (Figures used in this document)
 [files_messy_tidy]: ../fig/files-and-folders/files_messy_tidy.png
+[hierarchy]: ../fig/files-and-folders/hierarchy.png
 [data1]: ../fig/files-and-folders/data1.png
 [data2]: ../fig/files-and-folders/data2.png
 [data3]: ../fig/files-and-folders/data3.png
@@ -64,10 +65,7 @@ Depending on your background and experiences you could be thinking of different 
 * Projects can easily be understood by others (including your future self)
 
 It’s natural for some of your files to become unorganised from time to time—perhaps your downloads or desktop folder—and in those cases there may be multiple copies and versions of files cluttering your view and making it challenging to find what you're looking for. You can avoid this clutter by planning for organising your files ahead of time, and any system is better than none.
-<!--
-![Unorganised files on desktop][desktop]
-![][beer_messy_tidy]
--->
+
 ![Unorganised files on desktop][files_messy_tidy]
 
 In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or—more commonly—that someone could be your future self not remembering what you were up to when you created a particular set of files.  Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time reproducing results from previous experiments or completely reconstructing an analysis to address minor flaws, new data or a new technique.
