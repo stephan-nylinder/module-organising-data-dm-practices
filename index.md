@@ -2,9 +2,9 @@
 layout: lesson
 ---
 
-Good data organisation is the foundation of any research project. It not only sets you up well for an analysis, but it also makes it easier to come back to the project later and share with collaborators, including your most important collaborator – future you.
+Good data organisation is the foundation of any research project. It not only sets you up well for an analysis, but it also makes it easier to come back to the project later and share with collaborators, including your most important collaborator – the future you.
 
-Much of the information of a project is digital, and we need to keep track of our digital records in the same way we have a lab notebook and sample freezer. In this lesson, we’ll go through the project organisation and documentation that will make an efficient research workflow possible. Not only will this make you a more effective researcher, it also prepares your data and project for publication, as grant agencies and publishers increasingly require this information.
+Much of the information of a project is digital, and we need to keep track of our digital records in the same way we have a lab notebook and sample freezer. In this lesson, we’ll go through the project organisation and documentation that will make an efficient research workflow possible. Not only will this make you a more effective researcher, it also prepares your data and project for publication. Grant agencies and publishers increasingly require this information.
 
 <!--In this lesson, we’ll be using examples from published studies with different types of data and digital files. You will learn:-->
 This lesson is divided into five episodes where you will learn:
