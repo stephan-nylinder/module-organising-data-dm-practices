@@ -12,7 +12,7 @@ objectives:
 keypoints:
 - Organisation is a key aspect of data management and will help keep the project on track by saving time and minimising risk 
 - Think hard at the beginning of your project about how you are going to organise your data as it grows
-- Structure project folders hierarchically to divide data into categories that can easilly be understood and described
+- Structure project folders hierarchically to divide data into categories that can easily be understood and described
 - Consider what makes sense for your project and research team, and how people new to the project might look for data files and documentation
 
 ---
@@ -80,12 +80,12 @@ Folders are containers for your files and are sometimes called directories. A fo
 
 ![data][hierarchy]
 
-In cases where files needs to be disperserd across several storage solutions, it can be a good idea to imagine a virtual top level of the folder hierarchy where each subfolder correspons to a storage solution. This virtual hierarchy can be described in a shared document to allow your collaborators to determine on which storage solution any given file should be located.
+In cases where files needs to be disperserd across several storage solutions, it can be a good idea to imagine a virtual top level of the folder hierarchy where each subfolder corresponds to a storage solution. This virtual hierarchy can be described in a shared document to allow your collaborators to determine on which storage solution any given file should be located.
 
 ### Use folders to divide files into categories
-Put each project in its own folder named after that project. Ideally you want to keep the folder’s name under 32 characters long while at the same time including a combination of the project title a unique identifier and the date. 
+Put each project in its own folder named after that project. Ideally you want to keep the folder’s name under 32 characters long while at the same time including a combination of the project title, a unique identifier and the date. 
 
-Consider the best hierarchy for the files in the project and decide whether a deep or shallow hierarchy is preferable. If you have several independent data collections, it is advisable to create a separate data folder for each collection. But you can use any meaningul characteristic or file attribute as a basis for organising your files, which of them will be most helpful varies widely across domains and specific projects. 
+Consider the best hierarchy for the files in the project and decide whether a deep or shallow hierarchy is preferable. If you have several independent data collections, it is advisable to create a separate data folder for each collection. But you can use any meaningful characteristic or file attribute as a basis for organising your files, which of them will be most helpful varies widely across domains and specific projects. 
 
 The following examples illustrate some caveats in naming files, folders and versions.
 
@@ -138,7 +138,7 @@ A common practice it to use plain text files – a very simple form of text docu
 ![data][slide_docs2]
 
 ### Examples
-How many folders and how deeply nested subfolders you use will depend on many factors, such as the complexity or length of the project or the number of collaborators working on a project. A multi-year project with many contributors and subcontracors may result in lots of folders and files.
+How many folders and how deeply nested subfolders you use will depend on many factors, such as the complexity or length of the project or the number of collaborators working on a project. A multi-year project with many contributors and subcontractors may result in lots of folders and files.
 
 You should try to establish a structure early and be prepared to adapt it as needed to remain organized throughout the duration of the project. The best way to organize your folders really depends on the attributes that are most helpful to your project and, again, how many files you will be working with. 
 
