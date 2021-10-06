@@ -65,7 +65,7 @@ Due to differences in national character sets you should pay attention also to c
 ## How to work with text-based file formats in spreadsheets
 To save a file you have opened in Excel in `*.csv` format:
 
-1. Make sure that the tab your want to export is open
+1. Make sure that the tab you want to export is open
 1. From the top menu select 'File' and 'Save as'.
 1. In the 'Format' field, from the list, select 'Comma Separated Values' (`*.csv`).
 1. Double check the file name and the location where you want to save it and hit 'Save'.
