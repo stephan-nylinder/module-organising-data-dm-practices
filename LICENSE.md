@@ -5,7 +5,7 @@ root: .
 ---
 {% include links.md %}
 ## Instructional Material
-The instructional content of this lesson an adaptation of previous works and is made available under [CC-BY 4.0][cc-by-human] 
+The instructional content of this lesson is an adaptation of previous works and is made available under [CC-BY 4.0][cc-by-human] 
 by [NBIS - National Bioinformatics Infrastructure Sweden]({{ site.nbis_site}}) 2020.
 
 Adapted a selection of episodes from [Data Organization in Spreadsheets for Ecologists](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html)<br>
@@ -65,6 +65,27 @@ anything the license permits.  With the understanding that:
     permissions necessary for your intended use. For example, other
     rights such as publicity, privacy, or moral rights may limit how you
     use the material.
+
+## Figures and example data
+The figures and example data referenced in this lesson are licensed as outlined in the table below:
+{% comment %} See _data/licensing.tsv {% endcomment %}
+
+<table>
+<thead>
+  <th>Figure / example data</th>
+  <th>License</th>
+</thead>
+<tbody>
+{% for entry in site.data.licensing %}
+<tr>
+  <td markdown="1">
+  [{{ entry.contentUrl }}](./{{ entry.contentUrl }})
+  </td>
+  <td>{{  entry.license }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 
 ## Software
 
