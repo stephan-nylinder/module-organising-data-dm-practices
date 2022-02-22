@@ -18,8 +18,61 @@ keypoints:
 > ## About this episode 
 > Scientific results are no stronger than the data they are based on, and the data strength is dependent on its integrity and authenticity. Developing good practise for maintaning data integrity and authenticity is therefore essential to guarantee high quality results.
 
+## Raw data
+By raw data we mean collected or assembled data in a project that has not been subject to modifications, or removal of outliers. Raw data is data as we receive it after collection and before we start working on it. It is also the most important form of data, requiring special attention, as the quality of your raw data is decisive for the quality of all derived results. Alterations to raw data will affect all downstream results and may prevent reproducibility. 
+
+Any raw data should be treated in such a way that it:
+
+* Prevents unintended modification
+* Is clear who has read/write priviliges
+* Can be published and reused
+
+## Versions of raw data
+Imagine a data collection. The data is compiled in a file and given a file name. Some time later we want to add new data. We collect and add it to the original file. Even later we add a second layer of additional data. Three potential versions of our raw data now exist. Do we acknowledge all three as sets to be stored independently, or do we only recognise the latest? It depends on what data organisation strategy we apply!
+
+- Single file + Internal documentation
+All relevant information on what was added to the orignal data and when are stored in the data file itself, and explained spatially or by labeling. Retreaval of the original data can be acheived based on the included information.
+
+    Pros: One data file to keep track of. Information and data stored together
+    Cons: May not be possible to extract versions of data without risk of introducing human error. May end up mixing data that should be stored separately (e.g. restricted vs. non-restricted data).
+
+- Multiple files + Exernal documentation
+Each version of data is stored separately. All relevant information on what was added to the orignal data and when are stored in separate (README-)file.
+
+    Pros: Easy to identify file versions for specific uses. Data in file not obscured by non-data information. 
+    Cons: Increased file management. Long term storage and publication of data can be complicated. 
+
+
+## Analyses and code
+Analyses and data modifications should be documented in such a way that your treatment and results are reproducible. For example:
+
+- For results based on a subset of data
+    * Documetentation should describe how (and why) the data subset was selected from raw data and if the subset was subject to subsequent modifications prior to analysis
+    * The analyses performed on the data subset should be described in such a way that the results are reproducible by others.
+    * Any script used should be stored in proximity with the results, referencing what data it was used for 
+
+## Tabular data
+A data spreadsheet is first and foremost a mode of data organisation. A common misconception is to treat a spreadsheet as a data file combined with a notebook, separating data and information based on visual distance and adding explanatory text notes in adjacent cells. From a human point of view, this makes sense. We want to visually see the information in a way we can relate to what we do with the data. From a computers perspective it makes little sense. It requires extensive explanation for a computer to interpret spreadsheet data the same way a human does.
+
+
+## Tabular data vs analysis
+
+Human vs machine readabilty
+
+
+> ### Note
+> The best layouts/formats (as well as software and
+> interfaces) for **data entry** and **data analysis** might be
+> different. It is important to take this into account, and ideally
+> automate the conversion from one to another.
+{: .callout}
+
+
+
+
+
 ## File structure
-Any structure is better than no structure at all. Regardless of who we are we all apply, implicit or explicit, some kind of plan or structure to our data. Structure is often based on the concept of clustering, and clustering is often done either from a bottom-up or top-down perspective. 
+Any structure is better than no structure! Structure is often based on the concept of clustering, and clustering is often done either from a bottom-up or top-down perspective. 
 
 Bottom up
 Similar or related files tend to be kept together in folders. Folders are then clustered in super folders, etc.
@@ -46,6 +99,11 @@ Considering your own file structure, or the file structure used in your research
 - Who the "inventor" of your file structure is (title, not name!), and to what extent can you influence how it is organized?
 - One thing you believe you could improve in your current file structure.
 
+### Three principles for (file) names:
+
+1. Machine readable – avoid spaces, deliberate punctuation, accented characters, inconsistent letter casing
+2. Human readable - a name describes the content of the file, connects to concept of a *slug* from semantic URLs
+3. Default ordering – put something numeric first, use the ISO 8601 standard for dates (YYYYMMDD, or YYYY-MM-DD), left pad other numbers with zeros (01, 02, 03... 10)
 
 ## File naming
 A File naming convention is a framework, or protocol, for naming your files in a way that describes the file contents and, importantly, how they relate to other files.
@@ -53,24 +111,37 @@ A File naming convention is a framework, or protocol, for naming your files in a
 A well suited file naming protocol should:
 
 - Make it easy to understand what the file is and what it contains, from just reading the file name (Human readable)
-- Avoid special characters, and replace whitespace with - or _ (Machine readable)
-- Include file version information when applicable
-- Contain numbers and dates in ISO format
+    * Balance with the amount of elements: too many makes it difficult to understand vs too few makes it general
+    * Order the elements from general to specific
+    * Use meaningful abbreviations
+    * Use underscore (_), hypen (- ) or capitalized letters to separate elements in the name. Don’t use spaces or special characters: ?!& , * % # ; * ( ) @$ ^ ~ ‘ { } [ ] < >
+    * Use date format ISO8601: YYYYMMDD, and time if needed HHMMSS
+    * Include a version number if appropriate
+    * Write your file naming convention down and explain abbreviations in your data documentation
 
-### Three principles for (file) names:
 
-1. Machine readable – avoid spaces, deliberate punctuation, accented characters, inconsistent letter casing
-2. Human readable - a name describes the content of the file, connects to concept of a *slug* from semantic URLs
-3. Default ordering – put something numeric first, use the ISO 8601 standard for dates (YYYYMMDD, or YYYY-MM-DD), left pad other numbers with zeros (01, 02, 03... 10)
-
-### Bulk file names:
+### Bulk file names
 Data producing equipment (and software) sometimes generate files with pre-defined names. These can be made up of a serial number or text string along with machine specific information. To a non-user such files may seem incomprehensible, and may require explanation in order to make sense. To preserve the third-person view of files where the file name does not provide information of content or origin, sufficient documentation is required. Use sub-folders to cluster such files in manageable numbers and add README-files for orientation and explanation (Remember your future self!).
 
-### Bulk file name changes:
 Sometimes continuous file name changes need to be done to generated data or analysis files. Manual modifications can be cumbersome and introduce typos. Consider using a bulk file name change tool to save time and prevent errors and maintain consistency.
 
 
-### Documentation of file structure:
+Tools for bulk renaming
+    * Mac - Renamer4Mac (Mac)
+    * Windows - Bulk Rename Utility (Windows, free)
+
+
+Examples of good file names:
+
+- Honeybee project, experiment 2 done in Helsinki, data file created on the second of December 2020
+    * File name: 20201202_HB_EXP2_HEL_DATA_V03.xls
+    * Explanation: Time_ProjectAbbreviation_ExperimentNumber_Location_TypeOfData_VersionNumber
+
+- Cropped image of an ant head taken on the third of December 2020 by Meg Megson
+    * 20201203_MM_HEAD_CROPPED_V1.psd
+    * Time_CreatorData_TypeModification_Version
+
+### Documentation of file structure
 Everyone knows their file system. A well documented file system where structure and hierachy is explained may seem unnecessary to many, but can be an essential tool for the longivety of the data. There are two cases where this is particularly important:
 
 - Shared projects
@@ -80,6 +151,27 @@ In any setting where data is shared in a research group or among colleagues a do
 Regardless of how many are involved in a project, at some time after it ends memory will start to fade on the specifics of file names and contents. Counting ones future self into the category of "third persons", a file structure documentation will be beneficial for when you need to go back to your data, or when someone else will reuse the data and/or results.
 
 File structures are best explained and elaborated on in plain text README-files (plural). A good practice is to summarize the contents of folders on separate levels, trying to answer the question "What do someone else need to know about the contents of this folder in order to understand it?". Adding such knowledge will increase both data findability and reuseability.
+
+
+Example of folder structure and explanation in README.txt:
+
+project/  
+  code/                 code needed to go from input files to final results   
+  data/                 raw and primary data (never edit!)   
+     raw_external/  
+     raw_internal/
+     meta/  
+  doc/                  documentation of the study  
+  intermediate/         output files from intermediate analysis steps  
+  logs/                 logs from the different analysis steps  
+  notebooks/            notebooks that document your day-to-day work  
+  results/              output from workflows and analyses  
+     figures/  
+     reports/  
+     tables/  
+  scratch/              temporary files that can safely be deleted or lost  
+  README.txt            file and folder description  
+
 
 ### Conditions and use:
 Knowing who does what to what, when it happens, and why, is essential in maintaining data integrity. If not already present, consider upgrading you file structure with an explicit Conditions and use agreement, and apply it in file permissions.   
