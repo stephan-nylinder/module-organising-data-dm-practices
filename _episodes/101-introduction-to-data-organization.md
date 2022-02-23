@@ -26,6 +26,10 @@ keypoints:
 In this episode we will look at data organization from a data life cycle perspective. 
 
 
+## Mentimeter exercise
+Question: What measures do you take in order to avoid file chaos in your data organisation?
+
+
 ## The data life cycle
 
 When we consider different aspects of data organization, we can benefit from considering the general data lifecycle.
@@ -74,14 +78,10 @@ In research we need to consider data organization from both the individual resea
 Thus, we need to settle for a file structure and data organization process that works for us in both the short and long term, while also being viable in the future. 
 
 
-## The thid-person view
+## The third-person view
 When settling for a data and file structure we need to take into account more than our own personal preferences. The ultimate goal for research data is making it FAIR, thereby increasing it usefulness for the scientific society of today and tomorrow. Data can, should, and will, be important to more researchers than ourselves. It should therefore be prepared and treated in such a way that it can be read and interpreted by others, as well as adapted for indexing in a data repository. This may come in conflict with our everyday use of the data. The data and file structure we find most convenient for ourselves, here, today, may not be the most convenient structure for our future selves, other researchers in general, or from a long term storage perspective.
 
 Maintaining a file system adaptable to our own changing research requirements, while also being genereally understandable tomorrow, can be a challenging task. We need to consider the present as well as tomorrow, and own view as well as others.
-
-<!--- 
-## Exercise on filename interpretability?
-Add exrcise --->
 
 ### Reducing disorder
 The perfect file system does not exist. No matter the intention or effort, all file systems tend to accumulate disorder over time. Good file system management is better focused on practices decreasing the level of disorder than eliminating it completely. Managing a file system does not by necessity require a lot of time. By selecting a manageable interval for file system maintanance we can optimize effort vs. gain. Regular scheduled maintanance over a project life span can achieve more and require less time in total, than a single effort when the project is in an end phase.
@@ -90,8 +90,14 @@ Having a well defined idea of our intended file system prior to beginning data c
 
 <!--- Bilder på disorder vs. time --->
 
-## Etherpad exercise 1
-Knowing we never keep everything in perfect order, and that all file systems are flawed, what measures can we take in order to establish and maintain a file system over time? Consider issues that might be associated with short, middle, and long-term file system management.
+## Exercise 1
+Rank the following data organization steps from 1-5 (1 being the one you believe you (will) spend most time doing, and 5 the least). Also mark with an "X" the steps you have implemented in your own research. 
+
+- File naming convention
+- Folder naming convention
+- File versioning system
+- File organisation documentation (README.txt)
+- File and folder maintanance (moving, deleting)
 
 
 ## Preserving file/data timelines
@@ -104,16 +110,11 @@ As data and files are created and used, they tend to split in different versions
 - File versioning
     An easy-to-track and widely used way to document file history is to do file versioning (file_1.0.txt, file_1.1.txt, file.2.0.txt, etc.), where each new version of the file receives a new version number. Coupled with a separate document, or registration system, where each version is explained, anyone will be able to track changes through time.
 
-
-## Etherpad exercise 2
-Rank the following data organization steps from 1-5 (1 being the one you believe you (will) spend most time doing, and 5 the least). Also mark with an "X" the steps you have implemented in your own research. 
-
-- File naming convention
-- Folder naming convention
-- File versioning system
-- File system documentation
-- File and folder maintanance (deleting)
-
+<!---
+## Exercise 2
+ 
+## Exercise on filename interpretability?
+Add exrcise --->
 
 >> ### Examples of practices
 >> Some best practice rules (UK Data Service, 2017a; Krejčí, 2014) can be summarised as follows:

@@ -14,6 +14,8 @@ keypoints:
 - Be careful not to settle for a too rigid file system
 ---
 
+<!-- Slå ihop med 005 --->
+
 > ## About this episode 
 > Research data can be organized in nearly an infinite number of different ways. When settling for a system we need to consider our own preferences, the ones we share project or data with, and how data will be preserved and reused in the future. We also need to consider that all file systems will accumulate disorder over time, and what measures we can take in order to make sure the level of disorder becomes a problem. 
 
