@@ -57,7 +57,7 @@ A data spreadsheet is first and foremost a mode of data organisation. A common m
 Consider the spatial organisation of data even before you begin adding data to your spreadsheet. The spreadsheet consists of row, columns, and cells. Make sure you:
 
 1. Put all your **variables in columns** - The thing you're measuring, like 'Length', 'Attendance', or 'Gene'
-2. Put each **observation in its own row** - The inndividual measures, like '180', 'Present', or 'MTND1-6'
+2. Put each **observation in its own row** - The individual measures, like '180', 'Present', or 'MTND1-6'
 3. **Don't combine multiple pieces of information in one cell** - Sometimes it just seems like one thing, but it is easier to later combine single cell information, than to separate combined data into single cells
 4. Do not split combinable data in separate tables - Even if it makes sense from a human perpsective, it can make export and analysis of your data unnecessesarily complex. 
 5. For storage, export and interoperability, export the cleaned data to a **text based format** like TSV, or CSV. This ensures that anyone can use the data, and is the format required by most data repositories.
