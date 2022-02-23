@@ -86,13 +86,10 @@ Deliberatly use "-" and "_" to allow recovery of meta-data from the filenames:
 Download the compressed file [File name] from [Download location] and unzip on your laptop. The file contains a collection of files from an imaginary project, somewhat resembling what the initial phase of a project can look like. Given the files provided:
 
 - Create a proper hierarchical folder system based on the file names and contents
-- Rename files in a consistent manner if required, such that it reflects both contents and file version 
- 
-(- Meta tag files with keywords according to file contents)
-- Create a smart folder for a set of meta tagged files 
+- Rename files in a consistent manner if required, such that it reflects both contents and file version  
+- Optionally, create a file for meta tagging files with keywords according to file contents
 
 
-<!--- Textfile vs binära filer --->
 <!--- Skriv om delmomentet utifrån begränsningar i hierakiskt filsystem --->
 
 ```

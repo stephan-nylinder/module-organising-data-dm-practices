@@ -64,9 +64,20 @@ Consider the spatial organisation of data even before you begin adding data to y
 
 An additional advice - If you are multiple contributors collecting data in the same spreadsheet, make sure you enter the data in the same way. Having a spreadsheet containing data in multiple formats is guarateed to cause problems! 
 
+Things to avoid (at all costs!) when working with tabular data, is to enrich or visually enhance the data to fascilitate human interpretation. Try to always avoid:
+
+* Using colors to enhance cells
+* Spatially distribute data more than necessary (computers prefer serially organised cells!)
+* Mix data with analyses (Such as including data visualisations in Excel, e.g. Diagrams)
+* Not treating null values (missing for humans is not equal to missing for a computer)
+
 For more in depth knowledge on spreadsheet clean-up we recommend the self guided exercise **here** <!-- add link to tabular data module -->
 
 A more practical take on working with spreadsheet data is available in our **OpenRefine module** <!-- add link to OpenRefine module --> 
+
+## Long term preservation of tabular data
+Consider always saving binary data in alternative formats for long term storage or data archiving. This is especially true for tabular data. Proper file formats are CSV or TSV files, where data is stored with a minimal amount of formatting. It not only preserves the integrity of the data itself, but also reduces file sizes and increases data interoperability. Plain or enriched text can be read by most software on multiple platforms.
+
 
 ## File organisation
 Any idea of organisation is better than no organisation! Organisation is often based on the concept of clustering, and clustering is often done either from a bottom-up or top-down perspective. 
