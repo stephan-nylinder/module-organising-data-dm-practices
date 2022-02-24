@@ -74,7 +74,7 @@ One way of categorising different types of storage options is:
 ## Plan a backup and disaster recovery strategy
 A backup strategy in one sentence would be: Make at least three backup copies of the data on at least two different types of storage media, keep storage devices in separate locations with at least one off-site, regularly check whether they work, ensure you know the process and follow it.
 
-<!--- Y: three copies rather than three backup copies? if backuped copies, this means that you should have four copies of your files, which seems a bit over the top. Also, consider changing 'ensure you' to 'ensure everyone' or 'ensure all projec members', or something similar, i.e. everyone working with the files needs to follow the backup strategy --->
+<!--- Y: three copies rather than three backup copies? if backuped copies, this means that you should have four copies of your files, which seems a bit over the top. Also, consider changing 'ensure you' to 'ensure everyone' or 'ensure all project members', or something similar, i.e. everyone working with the files needs to follow the backup strategy --->
 
 > ### Discussion
 > What are examples of potential causes for data loss in a research project?
