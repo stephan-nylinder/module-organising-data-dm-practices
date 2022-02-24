@@ -28,7 +28,7 @@ Raw data should be treated in such a way that it:
 * Can be published and reused
 
 ## Versions of raw data
-Imagine a data collection. The data is compiled in a file and given a file name. Some time later we want to add new data. We collect and add it to the original file. Even later we add a second layer of additional data. Three potential versions of our raw data now exist. Do we acknowledge all three as sets independently, or do we only recognise the latest? The answer depends on what data organisation strategy we apply!
+Imagine a data collection. The data is compiled in a file and given a file name. Some time later we want to add new data. We collect and add it to the original file. Even later we add a second layer of additional data. Three potential versions of our raw data now exist. Do we acknowledge all three as independent sets, or do we only recognise the latest? The answer depends on what data organisation strategy we apply!
 
 - Single file + Internal documentation
 All relevant information on what was added to the orignal data, and when, are stored in the data file itself and explained spatially or by labeling. Retrieval of the original data can be achieved based on the included information.
@@ -37,7 +37,7 @@ All relevant information on what was added to the orignal data, and when, are st
     Cons: May not be possible to extract versions of data without risk of introducing human error. May end up mixing data that should be stored separately (e.g. restricted vs. non-restricted data). Information added in file may disrupt data readability.
 
 - Multiple files + External documentation
-Each version of data is stored separately. All relevant information on what was added to the original data and when are stored in separate a (README-)file.
+Each version of data is stored separately. All relevant information on what was added to the original data and when are stored in a separate (README-)file.
 
     Pros: Easy to identify file versions for specific uses. Data in file not obscured by non-data information. 
     Cons: Increased file management. Long term storage and publication of data can be complicated. 
@@ -61,7 +61,7 @@ Consider the spatial organisation of data even before you begin adding data to y
 3. **Don't combine multiple pieces of information in one cell** - Sometimes it just seems like one thing, but it is easier to later combine single cell information, than to separate combined data into single cells
 4. Do not split combinable data in separate tables - Even if it makes sense from a human perspective, it can make export and analysis of your data unnecessarily complex. 
 5. For storage, export and interoperability, export the cleaned data to a **text based format** like TSV, or CSV. This ensures that anyone can use the data, and is the format required by most data repositories.
-
+<!-- Y: perhaps also mention data dictionary here, i.e. recommend to explain what column headings mean and units of measure (and to keep this metadata close to file, eg in separate tab)? -->
 An additional advice - If you are multiple contributors collecting data in the same spreadsheet, make sure you enter the data in the same way. Having a spreadsheet containing data in multiple formats is guaranteed to cause problems! 
 
 Things to avoid (at all costs!) when working with tabular data, is to enrich or visually enhance the data to facilitate human interpretation. Try to always avoid:
@@ -108,13 +108,13 @@ Considering your own file structure, or the file structure used in your research
 - One thing you believe you could improve in your current file structure.
 
 ### Three principles for (file) names:
-
+<!--- Y: This section should be moved to File naming section --->
 1. Machine readable – Avoid spaces, deliberate punctuation, accented characters, inconsistent letter casing
-2. Human readable - A name describes the content of the file, connects to concept of a *slug* from semantic URLs
+2. Human readable - A name describes the content of the file, connects to concept of a *slug* from semantic URLs<!--- Y: give an example of slug -->
 3. Default ordering – Put something numeric first, use the ISO 8601 standard for dates (YYYYMMDD, or YYYY-MM-DD), left pad other numbers with zeros (01, 02, 03... 10)
 
 ## File naming
-A File naming convention is a framework, or protocol, for naming your files in a way that describes the file contents and, importantly, how they relate to other files. Adopting a good file naming convention will increase file findability, making it easier to locate and search for in multiple combinations. 
+A file naming convention is a framework, or protocol, for naming your files in a way that describes the file contents and, importantly, how they relate to other files. Adopting a good file naming convention will increase file findability, making it easier to locate and search for in multiple combinations. 
 
 A well suited file naming protocol should:
 
@@ -148,7 +148,7 @@ Tools for bulk renaming
     * Windows/Mac/Linux - R
 
 ### Documentation of file organisation
-Everyone knows their files and folders. A well documented file organisation where structure and hierarchy is explained may seem unnecessary to many, but can be an essential tool for the longevety of the data. There are two cases where this is particularly important:
+Everyone knows their files and folders. A well documented file organisation where structure and hierarchy is explained may seem unnecessary to many, but can be an essential tool for the longevity of the data. There are two cases where this is particularly important:
 
 - Shared projects
 In any setting where data is shared in a research group or among colleagues a documented file system can act as a guarantee that files are handled in a similar fashion by all involved. In situations where some individuals are more focused on data production, and others on data analysis, an explicit description of what files goes where along with file contents, may act as safeguards for data integrity and authenticity.
@@ -182,4 +182,5 @@ project/
 ### Conditions and use:
 Knowing who does what to what, when it happens, and why, is essential in maintaining data integrity. If not already present, consider upgrading your file structure with an explicit Conditions and use agreement, and apply it in file permissions. When considering raw data this is particularly important. Edits and changes to raw data should be restricted and limited to only a few trusted individuals with particular responsibilities.
 
-The same may be true for other files and folders as well. Large projects including many collaborators should have explicit permissions on file access. While it may seem democratic and trustfully in allowing everyone equal access to everything, restricted and/or limited access will reduce the risk of accidents and mistakes.
+The same may be true for other files and folders as well. Large projects including many collaborators should have explicit permissions on file access. While it may seem democratic and trustful in allowing everyone equal access to everything, restricted and/or limited access will reduce the risk of accidents and mistakes.
+<!--- Y: what is the difference btw restricted and limited? Either explain or use only one of the words --->
