@@ -3,7 +3,7 @@ title: Introduction to data organization
 teaching: 20
 exercises: 10
 questions:
-- What are our data, and how do we keep it in order?
+- What is our data, and how do we keep it in order?
 
 objectives:
 - Understand what to consider for maintaining data organization strategies in a project
@@ -36,7 +36,7 @@ When we consider different aspects of data organization, we can benefit from con
 
 [//]: # "[life-cycle]: ../fig/storage/life-cycle.png"
 
-Throughout its lifecycle, data can, and will, be subejct to many possible types of changes:
+Throughout its lifecycle, data can, and will, be subject to many possible types of changes:
 
 * Data will be created/accumulated/collected; 
 * Data cleaning procedures may be implemented;
@@ -73,21 +73,21 @@ Sometimes a project will increase in size and scope, sub-projects will form, and
 ### Whom are we organizing the data for?
 Humans are an organizing species. We all recognize the benefits from keeping things in order, having an overview, and knowing where things are. It helps us being efficient in what we do, and brings a sense of relief and security not having to search for things we need. However, we also have individual measures and standards for interpreting the quality of data organization. What makes sense to me may be illogical to someone else, and vice versa.
 
-In research we need to consider data organization from both the individual researchers perspective as well as from the research community perspective. As individuals, we want to organize a file system so that it makes sense to us. After all, we are the ones that will work with the data on a daily basis. At the same time we may be part of a larger group where data is shared among several researchers. Even further, the data end point is not the individual, the group, or even present day, but unknown researchers reusing our data in a yet-to-be future. 
+In research we need to consider data organization from both the individual researchers perspective as well as from the research community perspective. As individuals, we want to organize a file system so that it makes sense to us. After all, we are the ones that will work with the data on a daily basis. At the same time we may be part of a larger group where data is shared among several researchers. Even further, the data endpoint is not the individual, the group, or even present day, but unknown researchers reusing our data in a yet-to-be future. 
 
 Thus, we need to settle for a file structure and data organization process that works for us in both the short and long term, while also being viable in the future. 
 
 <!--- Y: the section above (whom) and the section below (third-person) are overlapping, consider merging and reducing -->
 
 ## The third-person view
-When settling for a data and file structure we need to take into account more than our own personal preferences. The ultimate goal for research data is making it FAIR, thereby increasing it usefulness for the scientific society of today and tomorrow. Data can, should, and will, be important to more researchers than ourselves. It should therefore be prepared and treated in such a way that it can be read and interpreted by others, as well as adapted for indexing in a data repository. This may come in conflict with our everyday use of the data. The data and file structure we find most convenient for ourselves, here, today, may not be the most convenient structure for our future selves, other researchers in general, or from a long term storage perspective.
+When settling for a data and file structure we need to take into account more than our own personal preferences. The ultimate goal for research data is making it FAIR, thereby increasing its usefulness for the scientific society of today and tomorrow. Data can, should, and will, be important to more researchers than ourselves. It should therefore be prepared and treated in such a way that it can be read and interpreted by others, as well as adapted for indexing in a data repository. This may come in conflict with our everyday use of the data. The data and file structure we find most convenient for ourselves, here, today, may not be the most convenient structure for our future selves, other researchers in general, or from a long term storage perspective.
 
-Maintaining a file system adaptable to our own changing research requirements, while also being genereally understandable tomorrow, can be a challenging task. We need to consider the present as well as tomorrow, and own view as well as others.
+Maintaining a file system adaptable to our own changing research requirements, while also being generally understandable tomorrow, can be a challenging task. We need to consider the present as well as tomorrow, and our own view as well as others.
 
 ### Reducing disorder
-The perfect file system does not exist. No matter the intention or effort, all file systems tend to accumulate disorder over time. Good file system management is better focused on practices decreasing the level of disorder than eliminating it completely. Managing a file system does not by necessity require a lot of time. By selecting a manageable interval for file system maintanance we can optimize effort vs. gain. Regular scheduled maintanance over a project life span can achieve more and require less time in total, than a single effort when the project is in an end phase.
+The perfect file system does not exist. No matter the intention or effort, all file systems tend to accumulate disorder over time. Good file system management is better focused on practices decreasing the level of disorder than eliminating it completely. Managing a file system does not by necessity require a lot of time. By selecting a manageable interval for file system maintenance we can optimize effort vs. gain. Regular scheduled maintenance over a project life span can achieve more and require less time in total, than a single effort when the project is in an end phase.
 
-Having a well defined idea of our intended file system prior to beginning data collection can have substantial impact on the time required for file system maintainance later in a project. Starting data collection without such an idea can require a major effort by the time the project ends. 
+Having a well defined idea of our intended file system prior to beginning data collection can have substantial impact on the time required for file system maintenance later in a project. Starting data collection without such an idea can require a major effort by the time the project ends. 
 
 <!--- Bilder på disorder vs. time --->
 
@@ -98,7 +98,7 @@ Rank the following data organization steps from 1-5 (1 being the one you believe
 - Folder naming convention
 - File versioning system
 - File organisation documentation (README.txt)
-- File and folder maintanance (moving, deleting)
+- File and folder maintenance (moving, deleting)
 
 <!--- Y: I misinterpreted the exercise, thought it was about what I think is most important, not most time-consuming... I suggest emphasizing 'spend most time' with italics or bold in case others misinterpret aw well 
 
@@ -106,10 +106,10 @@ Also, add a solution, so those not participating in course get some feedback ---
 
 ## Preserving file/data timelines
 
-As data and files are created and used, they tend to split in different versions. Reasons may include modifying the contents of files, adding and/or substracting data, or creating versions for trying different kinds of analyses or analysis setups. Versions tend to accumulate over time, and without an explicit strategy may eventually make file structure overview difficult or even impossible. We can take measures to decrease such disorder:
+As data and files are created and used, they tend to split in different versions. Reasons may include modifying the contents of files, adding and/or subtracting data, or creating versions for trying different kinds of analyses or analysis setups. Versions tend to accumulate over time, and without an explicit strategy may eventually make file structure overview difficult or even impossible. We can take measures to decrease such disorder:
 
 - A coherent file naming strategy. 
-    By avoiding non-hierachical file names (file.txt, file_new.txt, file_newer.txt, file_try.txt, file_add.txt etc.) we can circumvent having to re-interpret file chronology in the future. This is of particular importance when we publish data. There should never be confusion over which file was e.g. the published version. One way to prevent this is to version files.
+    By avoiding non-hierarchical file names (file.txt, file_new.txt, file_newer.txt, file_try.txt, file_add.txt etc.) we can circumvent having to re-interpret file chronology in the future. This is of particular importance when we publish data. There should never be confusion over which file was e.g. the published version. One way to prevent this is to version files.
 
 - File versioning
     An easy-to-track and widely used way to document file history is to do file versioning (file_1.0.txt, file_1.1.txt, file.2.0.txt, etc.), where each new version of the file receives a new version number. Coupled with a separate document, or registration system, where each version is explained, anyone will be able to track changes through time.
