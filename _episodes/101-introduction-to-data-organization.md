@@ -28,7 +28,7 @@ In this episode we will look at data organization from a data life cycle perspec
 
 ## Mentimeter exercise
 Question: What measures do you take in order to avoid file chaos in your data organisation?
-
+<!--- Y: add a solution so that stand-alone readers, not participating in course, can get some sort of verification on their thoughts -->
 
 ## The data life cycle
 
@@ -45,7 +45,7 @@ Throughout its lifecycle, data can, and will, be subejct to many possible types 
 * New information may be added from external sources;
 * File formats may be changed;
 * New data may be included;
-* The data file structure may be changed for the purpose of increasing operability, etc.
+* The data file structure may be changed for the purpose of increasing operability, etc.;
 * Long term storage may require additional documentation
 
 There are also possible types of changes to the data structure itself:
@@ -77,6 +77,7 @@ In research we need to consider data organization from both the individual resea
 
 Thus, we need to settle for a file structure and data organization process that works for us in both the short and long term, while also being viable in the future. 
 
+<!--- Y: the section above (whom) and the section below (third-person) are overlapping, consider merging and reducing -->
 
 ## The third-person view
 When settling for a data and file structure we need to take into account more than our own personal preferences. The ultimate goal for research data is making it FAIR, thereby increasing it usefulness for the scientific society of today and tomorrow. Data can, should, and will, be important to more researchers than ourselves. It should therefore be prepared and treated in such a way that it can be read and interpreted by others, as well as adapted for indexing in a data repository. This may come in conflict with our everyday use of the data. The data and file structure we find most convenient for ourselves, here, today, may not be the most convenient structure for our future selves, other researchers in general, or from a long term storage perspective.
@@ -99,6 +100,9 @@ Rank the following data organization steps from 1-5 (1 being the one you believe
 - File organisation documentation (README.txt)
 - File and folder maintanance (moving, deleting)
 
+<!--- Y: I misinterpreted the exercise, thought it was about what I think is most important, not most time-consuming... I suggest emphasizing 'spend most time' with italics or bold in case others misinterpret aw well 
+
+Also, add a solution, so those not participating in course get some feedback --->
 
 ## Preserving file/data timelines
 
@@ -114,8 +118,9 @@ As data and files are created and used, they tend to split in different versions
 ## Exercise 2
  
 ## Exercise on filename interpretability?
-Add exrcise --->
+Add exercise --->
 
+<!--- Y: the examples above seems to span the whole module? If so, consider either dividing the bullets to the page they belong, or put this section on last (104) page --->
 >> ### Examples of practices
 >> Some best practice rules (UK Data Service, 2017a; Krejčí, 2014) can be summarised as follows:
 >> - Establish the terms and conditions of data use and make them known to team members and other users;
