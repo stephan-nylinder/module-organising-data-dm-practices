@@ -17,7 +17,7 @@ keypoints:
 <!-- Slå ihop med 005 --->
 
 > ## About this episode 
-> Research data can be organized in nearly an infinite number of different ways. When settling for a system we need to consider our own preferences, the ones we share project or data with, and how data will be preserved and reused in the future. We also need to consider that all file systems will accumulate disorder over time, and what measures we can take in order to make sure the level of disorder becomes a problem. 
+> Research data can be organized in nearly an infinite number of different ways. When settling for a system we need to consider our own preferences, the ones we share project or data with, and how data will be preserved and reused in the future. We also need to consider that all file systems will accumulate disorder over time, and what measures we can take in order to make sure that the level of disorder does not become a problem. 
 
 
 # Plan a storage strategy
@@ -72,7 +72,9 @@ One way of categorising different types of storage options is:
 {: .discussion}
 
 ## Plan a backup and disaster recovery strategy
-A backup strategy in one sentence would be: Make at least three backup copies of the data on at least two different types of storage media, keep storage devices in separate locations with at least one off-site, regularly check whether they work, ensure you know the process and follow it. 
+A backup strategy in one sentence would be: Make at least three backup copies of the data on at least two different types of storage media, keep storage devices in separate locations with at least one off-site, regularly check whether they work, ensure you know the process and follow it.
+
+<!--- Y: three copies rather than three backup copies? if backuped copies, this means that you should have four copies of your files, which seems a bit over the top. Also, consider changing 'ensure you' to 'ensure everyone' or 'ensure all projec members', or something similar, i.e. everyone working with the files needs to follow the backup strategy --->
 
 > ### Discussion
 > What are examples of potential causes for data loss in a research project?
