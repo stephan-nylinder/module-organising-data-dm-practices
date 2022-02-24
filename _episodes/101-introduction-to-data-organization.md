@@ -73,7 +73,7 @@ Sometimes a project will increase in size and scope, sub-projects will form, and
 ### Whom are we organizing the data for?
 Humans are an organizing species. We all recognize the benefits from keeping things in order, having an overview, and knowing where things are. It helps us being efficient in what we do, and brings a sense of relief and security not having to search for things we need. However, we also have individual measures and standards for interpreting the quality of data organization. What makes sense to me may be illogical to someone else, and vice versa.
 
-In research we need to consider data organization from both the individual researchers perspective as well as from the research community perspective. As individuals, we want to organize a file system so that it makes sense to us. After all, we are the ones that will work with the data on a daily basis. At the same time we may be part of a larger group where data is shared among several researchers. Even further, the data endpoint is not the individual, the group, or even present day, but unknown researchers reusing our data in a yet-to-be future. 
+In research we need to consider data organization from both the individual researcher's perspective as well as from the research community perspective. As individuals, we want to organize a file system so that it makes sense to us. After all, we are the ones that will work with the data on a daily basis. At the same time we may be part of a larger group where data is shared among several researchers. Even further, the data endpoint is not the individual, the group, or even present day, but unknown researchers reusing our data in a yet-to-be future. 
 
 Thus, we need to settle for a file structure and data organization process that works for us in both the short and long term, while also being viable in the future. 
 
@@ -110,9 +110,9 @@ As data and files are created and used, they tend to split in different versions
 
 - A coherent file naming strategy. 
     By avoiding non-hierarchical file names (file.txt, file_new.txt, file_newer.txt, file_try.txt, file_add.txt etc.) we can circumvent having to re-interpret file chronology in the future. This is of particular importance when we publish data. There should never be confusion over which file was e.g. the published version. One way to prevent this is to version files.
-
+<!--- Y: it is a bit confusing when file naming strategy talks about chronology and version files, when file versioning comes as a separate bullet. Also, as file naming is covered in depth in next episode, at least refer to this ('More on file naming later', or something like that) Or, perhaps this section about preserving file/data timelines should be in next episode? --->
 - File versioning
-    An easy-to-track and widely used way to document file history is to do file versioning (file_1.0.txt, file_1.1.txt, file.2.0.txt, etc.), where each new version of the file receives a new version number. Coupled with a separate document, or registration system, where each version is explained, anyone will be able to track changes through time.
+    An easy-to-track and widely used way to document file history is to do file versioning (file_1.0.txt, file_1.1.txt, file_2.0.txt, etc.), where each new version of the file receives a new version number. Coupled with a separate document, or registration system, where each version is explained, anyone will be able to track changes through time.
 
 <!---
 ## Exercise 2
@@ -120,7 +120,7 @@ As data and files are created and used, they tend to split in different versions
 ## Exercise on filename interpretability?
 Add exercise --->
 
-<!--- Y: the examples above seems to span the whole module? If so, consider either dividing the bullets to the page they belong, or put this section on last (104) page --->
+<!--- Y: the examples below seems to span the whole module? If so, consider either dividing the bullets to the page they belong, or put this section on last (104) page --->
 >> ### Examples of practices
 >> Some best practice rules (UK Data Service, 2017a; Krejčí, 2014) can be summarised as follows:
 >> - Establish the terms and conditions of data use and make them known to team members and other users;
