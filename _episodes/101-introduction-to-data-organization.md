@@ -26,9 +26,19 @@ keypoints:
 In this episode we will look at data organization from a data life cycle perspective. 
 
 
-## Mentimeter exercise
-Question: What measures do you take in order to avoid file chaos in your data organisation?
-<!--- Y: add a solution so that stand-alone readers, not participating in course, can get some sort of verification on their thoughts -->
+> ### Mentimeter exercise
+> Question: What measures do you take in order to avoid file chaos in your data organisation?
+>
+>> ### Examples of measures to take in order to avoid file chaos
+>> * Proper file naming 
+>> * Versioning of files 
+>> * Performing regular data cleaning 
+>> * Agreeing on file access limitations 
+>> * Adopting ISO standards for dates/times 
+>> * Having a well defined folder structure 
+> {: .solution}
+{: .discussion}
+
 
 ## The data life cycle
 
