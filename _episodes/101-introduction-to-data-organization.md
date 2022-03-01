@@ -81,18 +81,11 @@ Sometimes a project will increase in size and scope, sub-projects will form, and
 
 
 ### Whom are we organizing the data for?
-Humans are an organizing species. We all recognize the benefits from keeping things in order, having an overview, and knowing where things are. It helps us being efficient in what we do, and brings a sense of relief and security not having to search for things we need. However, we also have individual measures and standards for interpreting the quality of data organization. What makes sense to me may be illogical to someone else, and vice versa.
+Humans are an organizing species. We all recognize the benefits from keeping things in order, having an overview, and knowing where things are. It helps us being efficient in what we do, and brings a sense of relief and security not having to search for things we need. However, we also have individual measures and standards for interpreting the quality of data organization. What makes sense to me may be illogical to you, and vice versa.
 
-In research we need to consider data organization from both the individual researcher's perspective as well as from the research community perspective. As individuals, we want to organize a file system so that it makes sense to us. After all, we are the ones that will work with the data on a daily basis. At the same time we may be part of a larger group where data is shared among several researchers. Even further, the data endpoint is not the individual, the group, or even present day, but unknown researchers reusing our data in a yet-to-be future. 
+In research, when settling for a data and file structure we need to take into account more than our own personal preferences. The ultimate goal for research data is making it FAIR, thereby increasing its usefulness for the scientific society of today and tomorrow. Data can, should, and will, be important to more researchers than ourselves. It should therefore be prepared and treated in such a way that it can be read and interpreted by others, as well as adapted for indexing in a data repository. This may come in conflict with our everyday use of the data. The data and file structure we find most convenient for ourselves, here, today, may not be the most convenient structure for our future selves, other researchers in general, or from a long term storage perspective.
 
 Thus, we need to settle for a file structure and data organization process that works for us in both the short and long term, while also being viable in the future. 
-
-<!--- Y: the section above (whom) and the section below (third-person) are overlapping, consider merging and reducing -->
-
-## The third-person view
-When settling for a data and file structure we need to take into account more than our own personal preferences. The ultimate goal for research data is making it FAIR, thereby increasing its usefulness for the scientific society of today and tomorrow. Data can, should, and will, be important to more researchers than ourselves. It should therefore be prepared and treated in such a way that it can be read and interpreted by others, as well as adapted for indexing in a data repository. This may come in conflict with our everyday use of the data. The data and file structure we find most convenient for ourselves, here, today, may not be the most convenient structure for our future selves, other researchers in general, or from a long term storage perspective.
-
-Maintaining a file system adaptable to our own changing research requirements, while also being generally understandable tomorrow, can be a challenging task. We need to consider the present as well as tomorrow, and our own view as well as others.
 
 ### Reducing disorder
 The perfect file system does not exist. No matter the intention or effort, all file systems tend to accumulate disorder over time. Good file system management is better focused on practices decreasing the level of disorder than eliminating it completely. Managing a file system does not by necessity require a lot of time. By selecting a manageable interval for file system maintenance we can optimize effort vs. gain. Regular scheduled maintenance over a project life span can achieve more and require less time in total, than a single effort when the project is in an end phase.
@@ -102,7 +95,7 @@ Having a well defined idea of our intended file system prior to beginning data c
 <!--- Bilder på disorder vs. time --->
 
 ## Exercise 1
-Rank the following data organization steps from 1-5 (1 being the one you believe you (will) spend most time doing, and 5 the least). Also mark with an "X" the steps you have implemented in your own research. 
+Rank the following data organization steps from 1-5 (1 being the one you believe you think is most important, and 5 the least). Also mark with an "X" the steps you have implemented in your own research. 
 
 - File naming convention
 - Folder naming convention
@@ -110,12 +103,16 @@ Rank the following data organization steps from 1-5 (1 being the one you believe
 - File organisation documentation (README.txt)
 - File and folder maintenance (moving, deleting)
 
-<!--- Y: I misinterpreted the exercise, thought it was about what I think is most important, not most time-consuming... I suggest emphasizing 'spend most time' with italics or bold in case others misinterpret aw well 
-
-Also, add a solution, so those not participating in course get some feedback --->
+> ### Example of solution
+>> 1 X File naming convention
+>> 2   Folder naming convention
+>> 4   File versioning system 
+>> 5 X File organisation documentation (README.txt) 
+>> 3   File and folder maintenance (moving, deleting)
+> {: .solution}
+{: .discussion}
 
 ## Preserving file/data timelines
-
 As data and files are created and used, they tend to split in different versions. Reasons may include modifying the contents of files, adding and/or subtracting data, or creating versions for trying different kinds of analyses or analysis setups. Versions tend to accumulate over time, and without an explicit strategy may eventually make file structure overview difficult or even impossible. We can take measures to decrease such disorder:
 
 - A coherent file naming strategy. 

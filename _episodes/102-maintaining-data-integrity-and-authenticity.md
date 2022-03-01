@@ -180,7 +180,6 @@ project/
 
 
 ### Conditions and use:
-Knowing who does what to what, when it happens, and why, is essential in maintaining data integrity. If not already present, consider upgrading your file structure with an explicit Conditions and use agreement, and apply it in file permissions. When considering raw data this is particularly important. Edits and changes to raw data should be restricted and limited to only a few trusted individuals with particular responsibilities.
+Knowing who does what to what, when it happens, and why, is essential in maintaining data integrity. If not already present, consider upgrading your file structure with an explicit 'Conditions and use' agreement, and apply it in file permissions. When considering raw data this is particularly important. Edits and changes to raw data should be restricted to only a few trusted individuals with particular responsibilities.
 
-The same may be true for other files and folders as well. Large projects including many collaborators should have explicit permissions on file access. While it may seem democratic and trustful in allowing everyone equal access to everything, restricted and/or limited access will reduce the risk of accidents and mistakes.
-<!--- Y: what is the difference btw restricted and limited? Either explain or use only one of the words --->
+The same may be true for other files and folders as well. Large projects including many collaborators should have explicit permissions on file access. While it may seem democratic and trustful in allowing everyone equal access to everything, restricted access will reduce the risk of unintended mistakes and accidents.
