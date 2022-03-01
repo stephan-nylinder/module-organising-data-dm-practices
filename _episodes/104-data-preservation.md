@@ -111,3 +111,17 @@ A backup strategy in one sentence would be: Make at least three backup copies of
 > - [--- (2021) Processing. In Research Data Management Kit. A deliverable from the EU-funded ELIXIR-CONVERGE project (grant agreement 871075).](https://rdmkit.elixir-europe.org/processing)
 > - [--- (2021) Data analysis. In Research Data Management Kit. A deliverable from the EU-funded ELIXIR-CONVERGE project (grant agreement 871075).](https://rdmkit.elixir-europe.org/data_analysis.html)
 >
+>> ### Examples of practices
+>> Some best practice rules (UK Data Service, 2017a; Krejčí, 2014) can be summarised as follows:
+>> - Establish the terms and conditions of data use and make them known to team members and other users;
+>> - Create a ‘master file’ and take measures to preserve its authenticity, i.e. place it in an adequate location and define access rights and responsibilities – who is authorised to make what kind of changes;
+>> - Distinguish between versions shared by researchers and working versions of individuals;
+>> - Decide how many versions of a file to keep, which versions to keep (e.g. major versions rather than minor versions (keep version 02-00 but not 02-01)), for how long and how to organise versions;
+>> - Introduce clear and systematic naming of data file versions and editions;
+>> - Record relationships between items where needed, for example between code and the data file it is run against, between data file and related documentation or metadata or between multiple files;
+>> - Document which changes were made in any version;
+>> - Keep original (raw) versions of data files, or keep documentation that allows the reconstruction of original files;
+>> - Track the location of files if they are stored in a variety of locations;
+>> - Regularly synchronise files in different locations, such as using MS SyncToy (2016).
+> {: .solution}
+{: .discussion}

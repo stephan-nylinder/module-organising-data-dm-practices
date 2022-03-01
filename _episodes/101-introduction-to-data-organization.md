@@ -17,8 +17,9 @@ keypoints:
 
 ---
 
-[//]: # "[Provenance]: ../fig/storage/Provenance.jpg"
-[//]: # "[life-cycle]: ../fig/storage/life-cycle.png"
+"[life-cycle]: ../fig/101-intro/rdmkit-data-lifecycle.png"
+"[high-disorder]: ../fig/101-intro/High_disorder.png"
+"[low-disorder]: ../fig/101-intro/Low_disorder.png"
 
 > ## About this episode 
 > The data that you collect, organise, prepare, and analyse to answer your research questions, and the documentation describing it, is the lifeblood of your research. However, doing so without a prior idea of structure and how data will be used or viewed in the future, by yourself or someone else, can cause the data to become difficult to understand, or even useless. Working structures will accumulate deviations and become more unorganised over time regardless of the care we take.
@@ -44,7 +45,7 @@ Question: What measures do you take in order to avoid file chaos in your data or
 
 When we consider different aspects of data organization, we can benefit from considering the general data lifecycle.
 
-[//]: # "[life-cycle]: ../fig/storage/life-cycle.png"
+![Data Life Cycle][life-cycle]
 
 Throughout its lifecycle, data can, and will, be subject to many possible types of changes:
 
@@ -92,7 +93,8 @@ The perfect file system does not exist. No matter the intention or effort, all f
 
 Having a well defined idea of our intended file system prior to beginning data collection can have substantial impact on the time required for file system maintenance later in a project. Starting data collection without such an idea can require a major effort by the time the project ends. 
 
-<!--- Bilder på disorder vs. time --->
+![High level of disorder][high-disorder]
+![Low level of disorder][low-disorder]
 
 ## Exercise 1
 Rank the following data organization steps from 1-5 (1 being the one you believe you think is most important, and 5 the least). Also mark with an "X" the steps you have implemented in your own research. 
@@ -111,38 +113,6 @@ Rank the following data organization steps from 1-5 (1 being the one you believe
 >> 3   File and folder maintenance (moving, deleting)
 > {: .solution}
 {: .discussion}
-
-## Preserving file/data timelines
-As data and files are created and used, they tend to split in different versions. Reasons may include modifying the contents of files, adding and/or subtracting data, or creating versions for trying different kinds of analyses or analysis setups. Versions tend to accumulate over time, and without an explicit strategy may eventually make file structure overview difficult or even impossible. We can take measures to decrease such disorder:
-
-- A coherent file naming strategy. 
-    By avoiding non-hierarchical file names (file.txt, file_new.txt, file_newer.txt, file_try.txt, file_add.txt etc.) we can circumvent having to re-interpret file chronology in the future. This is of particular importance when we publish data. There should never be confusion over which file was e.g. the published version. One way to prevent this is to version files.
-<!--- Y: it is a bit confusing when file naming strategy talks about chronology and version files, when file versioning comes as a separate bullet. Also, as file naming is covered in depth in next episode, at least refer to this ('More on file naming later', or something like that) Or, perhaps this section about preserving file/data timelines should be in next episode? --->
-- File versioning
-    An easy-to-track and widely used way to document file history is to do file versioning (file_1.0.txt, file_1.1.txt, file_2.0.txt, etc.), where each new version of the file receives a new version number. Coupled with a separate document, or registration system, where each version is explained, anyone will be able to track changes through time.
-
-<!---
-## Exercise 2
- 
-## Exercise on filename interpretability?
-Add exercise --->
-
-<!--- Y: the examples below seems to span the whole module? If so, consider either dividing the bullets to the page they belong, or put this section on last (104) page --->
->> ### Examples of practices
->> Some best practice rules (UK Data Service, 2017a; Krejčí, 2014) can be summarised as follows:
->> - Establish the terms and conditions of data use and make them known to team members and other users;
->> - Create a ‘master file’ and take measures to preserve its authenticity, i.e. place it in an adequate location and define access rights and responsibilities – who is authorised to make what kind of changes;
->> - Distinguish between versions shared by researchers and working versions of individuals;
->> - Decide how many versions of a file to keep, which versions to keep (e.g. major versions rather than minor versions (keep version 02-00 but not 02-01)), for how long and how to organise versions;
->> - Introduce clear and systematic naming of data file versions and editions;
->> - Record relationships between items where needed, for example between code and the data file it is run against, between data file and related documentation or metadata or between multiple files;
->> - Document which changes were made in any version;
->> - Keep original (raw) versions of data files, or keep documentation that allows the reconstruction of original files;
->> - Track the location of files if they are stored in a variety of locations;
->> - Regularly synchronise files in different locations, such as using MS SyncToy (2016).
-> {: .solution}
-{: .discussion}
-
 
 #
 {: .callout}

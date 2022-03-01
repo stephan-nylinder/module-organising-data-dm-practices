@@ -11,7 +11,7 @@ objectives:
 - Data and structure documentation 
 
 keypoints:
-- Data integrity and authenticity is dependent on knowing what the data files contain, and who does what to what file. This requires a findable and accessible file structure, an explicit file naming concept, knowledge of whom has access to what data, and documentation of data treatment procedures. 
+- Data integrity and authenticity is dependent on knowing what the data files contain, and who does what to what file. This requires both a findable, interpretable, and accessible file structure, an explicit file naming concept, knowledge of whom has access to what data, and documentation of data treatment procedures. 
 
 ---
 
@@ -23,6 +23,7 @@ By raw data we mean collected or assembled data in a project that has not been s
 
 Raw data should be treated in such a way that it:
 
+* Has a clear and interpretable structure
 * Prevents unintended modification
 * Is clear who has read/write privileges
 * Can be published and reused
@@ -136,6 +137,17 @@ Examples of good file names:
 - Cropped image of an ant head taken on the third of December 2020 by Meg Megson
     * 20201203_MM_HEAD_CROPPED_V1.psd
     * Time_CreatorData_TypeModification_Version
+
+Examples of poor file names:
+- Honeybee project, experiment 2 done in Helsinki, data file created on the second of December 2020
+    * File name: Runnew_again_2NDTRY.xls
+    * Explanation: N/A
+
+- Cropped image of an ant head taken on the third of December 2020 by Meg Megson
+    * Image_antclose_first_PUBLISHTHISONE3?.psd
+    * N/A
+
+- Any name like file.txt, file_new.txt, file_newer.txt, file_try.txt, file_add_new.txt etc.
 
 ### Bulk file names
 Data producing equipment (and software) sometimes generate files with pre-defined names. These can be made up of a serial number or text string along with machine specific information. To a non-user such files can be incomprehensible, and may require explanation in order to make sense. To preserve the third-person view of files where the file name does not provide information of content or origin, sufficient documentation is required. Use sub-folders to cluster such files in manageable numbers and add README-files for orientation and explanation (Remember your future self!).
