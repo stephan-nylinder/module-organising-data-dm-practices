@@ -3,13 +3,13 @@ title: Introduction to data organization
 teaching: 20
 exercises: 10
 questions:
-- What is our data, and how do we keep it in order?
+- Knowing your data, and how to keep it in order?
 
 objectives:
 - Understand what to consider for maintaining data organization strategies in a project
 - Develop good practices for data storage, processing and documentation
 - Understand what to consider when settling for a file structure
-- How we take the future into account in everyday research 
+- How to take the future into account in everyday research 
 
 keypoints:
 - Good data organization is fundamental to any research project
@@ -17,20 +17,27 @@ keypoints:
 
 ---
 
-"[life-cycle]: ../fig/101-intro/rdmkit-data-lifecycle.png"
-"[high-disorder]: ../fig/101-intro/High_disorder.png"
-"[low-disorder]: ../fig/101-intro/Low_disorder.png"
+[life-cycle]: ../fig/101-intro/rdmkit-data-lifecycle.png
+[high-disorder]: ../fig/101-intro/High_disorder.png
+[low-disorder]: ../fig/101-intro/Low_disorder.png
 
 > ## About this episode 
 > The data that you collect, organise, prepare, and analyse to answer your research questions, and the documentation describing it, is the lifeblood of your research. However, doing so without a prior idea of structure and how data will be used or viewed in the future, by yourself or someone else, can cause the data to become difficult to understand, or even useless. Working structures will accumulate deviations and become more unorganised over time regardless of the care we take.
+> 1. TOC
+> {:toc}
+> {: .toc}
+{: .callout .toc}
 
 In this episode we will look at data organization from a data life cycle perspective. 
 
 
-### Mentimeter exercise
-Question: What measures do you take in order to avoid file chaos in your data organisation?
 
->> ### Examples of measures to take in order to avoid file chaos
+
+
+> ### Mentimeter exercise
+> Question: What measures do you take in order to avoid file chaos in your data organisation?
+> 
+>> ### Example of activities
 >> * Proper file naming 
 >> * Versioning of files 
 >> * Performing regular data cleaning 
@@ -45,7 +52,10 @@ Question: What measures do you take in order to avoid file chaos in your data or
 
 When we consider different aspects of data organization, we can benefit from considering the general data lifecycle.
 
-![Data Life Cycle][life-cycle]
+<!-- ![Data Life Cycle][life-cycle]  -->
+<p align="center">
+<img src="../fig/101-intro/rdmkit-data-lifecycle.png" width="400" height="400"/>
+</p>
 
 Throughout its lifecycle, data can, and will, be subject to many possible types of changes:
 
@@ -56,7 +66,7 @@ Throughout its lifecycle, data can, and will, be subject to many possible types 
 * New information may be added from external sources;
 * File formats may be changed;
 * New data may be included;
-* The data file structure may be changed for the purpose of increasing operability, etc.;
+* The data file structure may be changed for the purpose of increasing operability, etc;
 * Long term storage may require additional documentation
 
 There are also possible types of changes to the data structure itself:
@@ -89,32 +99,31 @@ In research, when settling for a data and file structure we need to take into ac
 Thus, we need to settle for a file structure and data organization process that works for us in both the short and long term, while also being viable in the future. 
 
 ### Reducing disorder
-The perfect file system does not exist. No matter the intention or effort, all file systems tend to accumulate disorder over time. Good file system management is better focused on practices decreasing the level of disorder than eliminating it completely. Managing a file system does not by necessity require a lot of time. By selecting a manageable interval for file system maintenance we can optimize effort vs. gain. Regular scheduled maintenance over a project life span can achieve more and require less time in total, than a single effort when the project is in an end phase.
+The perfect file system does not exist. No matter the intention or effort, all file systems accumulate disorder over time. Good file system management is better focused on practices decreasing the level of disorder than eliminating it completely. Managing a file system does not by necessity require a lot of time. By selecting a manageable interval for file system maintenance we can optimize effort vs. gain. Regular scheduled maintenance over a project life span can achieve more and require less time in total, than a single effort when the project is in an end phase.
 
 Having a well defined idea of our intended file system prior to beginning data collection can have substantial impact on the time required for file system maintenance later in a project. Starting data collection without such an idea can require a major effort by the time the project ends. 
 
 ![High level of disorder][high-disorder]
 ![Low level of disorder][low-disorder]
 
-## Exercise 1
-Rank the following data organization steps from 1-5 (1 being the one you believe you think is most important, and 5 the least). Also mark with an "X" the steps you have implemented in your own research. 
-
-- File naming convention
-- Folder naming convention
-- File versioning system
-- File organisation documentation (README.txt)
-- File and folder maintenance (moving, deleting)
-
-> ### Example of solution
->> 1 X File naming convention
->> 2   Folder naming convention
->> 4   File versioning system 
->> 5 X File organisation documentation (README.txt) 
->> 3   File and folder maintenance (moving, deleting)
+> ### Exercise
+> Rank the following data organization steps from 1-5 (1 being the one you believe you think is most important, and 5 the least). Also mark with an "X" the steps you have implemented in your own research. 
+>
+> - File naming convention
+> - Folder naming convention
+> - File versioning system
+> - File organisation documentation (README.txt)
+> - File and folder maintenance (moving, deleting)
+>
+>> ### Example of outcome
+>> * 1&nbsp;X&nbsp;File naming convention
+>> * 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Folder naming convention
+>> * 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File versioning system 
+>> * 5&nbsp;X&nbsp;File organisation documentation (README.txt) 
+>> * 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File and folder maintenance (moving, deleting)
 > {: .solution}
 {: .discussion}
 
-#
 {: .callout}
 
 {% include links.md %}
