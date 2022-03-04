@@ -15,6 +15,14 @@ keypoints:
 
 ---
 
+"[life-cycle]: ../fig/101-intro/rdmkit-data-lifecycle.png"
+"[life-cycle]: ../fig/101-intro/rdmkit-data-lifecycle.png"
+"[life-cycle]: ../fig/101-intro/rdmkit-data-lifecycle.png"
+"[life-cycle]: ../fig/101-intro/rdmkit-data-lifecycle.png"
+"[life-cycle]: ../fig/101-intro/rdmkit-data-lifecycle.png"
+
+
+
 > ## About this episode 
 > Scientific results are no stronger than the data they are based on, and the data strength is dependent on its integrity and authenticity. Developing good practise for maintaining data integrity and authenticity is therefore essential to guarantee high quality results.
 
@@ -43,7 +51,6 @@ Each version of data is stored separately. All relevant information on what was 
     Pros: Easy to identify file versions for specific uses. Data in file not obscured by non-data information. 
     Cons: Increased file management. Long term storage and publication of data can be complicated. 
 
-
 ## Analyses and code
 Analyses and data modifications should be documented in such a way that your treatment and results are reproducible. For example:
 
@@ -59,11 +66,12 @@ Consider the spatial organisation of data even before you begin adding data to y
 
 1. Put all your **variables in columns** - The thing you're measuring, like 'Length', 'Attendance', or 'Gene'
 2. Put each **observation in its own row** - The individual measures, like '180', 'Present', or 'MTND1-6'
-3. **Don't combine multiple pieces of information in one cell** - Sometimes it just seems like one thing, but it is easier to later combine single cell information, than to separate combined data into single cells
-4. Do not split combinable data in separate tables - Even if it makes sense from a human perspective, it can make export and analysis of your data unnecessarily complex. 
-5. For storage, export and interoperability, export the cleaned data to a **text based format** like TSV, or CSV. This ensures that anyone can use the data, and is the format required by most data repositories.
-<!-- Y: perhaps also mention data dictionary here, i.e. recommend to explain what column headings mean and units of measure (and to keep this metadata close to file, eg in separate tab)? -->
-An additional advice - If you are multiple contributors collecting data in the same spreadsheet, make sure you enter the data in the same way. Having a spreadsheet containing data in multiple formats is guaranteed to cause problems! 
+3. **Do not combine multiple pieces of information in one cell** - Sometimes it just seems like one thing, but it is easier to later combine single cell information, than to separate combined data into single cells
+4. Do not split combinable data in separate tables - Even if it makes sense from a human perspective, it can make export and analysis of your data unnecessarily complex.
+5. Create a **data dictionary**! Explain, to yourself and future users, what column headers mean, the units of measure, if you use abbreviations, etc. Store the dictionary as a separate document in proximity to data. Avoid including the information in the data file! 
+6. For storage, export and interoperability, export the cleaned data to a **text based format** like TSV, or CSV. This ensures that anyone can use the data, and is the format required by most data repositories.
+
+An additional advice - If multiple contributors collect data in the same spreadsheet, make sure you enter the data in the same way. Having a spreadsheet containing data in multiple formats is a guarantee for errors and confusion! 
 
 Things to avoid (at all costs!) when working with tabular data, is to enrich or visually enhance the data to facilitate human interpretation. Try to always avoid:
 
@@ -72,7 +80,11 @@ Things to avoid (at all costs!) when working with tabular data, is to enrich or 
 * Mix data with analyses (Such as including data visualisations in Excel, e.g. Diagrams)
 * Not treating null values (missing for humans is not equal to missing for a computer)
 
-For more in depth knowledge on spreadsheet clean-up we recommend the self guided exercise **here** <!-- add link to tabular data module -->
+<!-- Images -->
+
+
+
+For more in depth knowledge on spreadsheet clean-up we recommend the self guided exercise **here** <!-- add link to separate tabular data module -->
 
 A more practical take on working with spreadsheet data is available in our **OpenRefine module** <!-- add link to OpenRefine module --> 
 
