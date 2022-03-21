@@ -2,12 +2,12 @@
 title: Introduction to data organization
 teaching: 20
 exercises: 10
-questions:
+questions: 5
 - Knowing your data, and how to keep it in order?
 
 objectives:
 - Understand what to consider for maintaining data organization strategies in a project
-- Develop good practices for data storage, processing and documentation
+- Understanding good practices for data storage, processing and documentation
 - Understand what to consider when settling for a file structure
 - How to take the future into account in everyday research 
 
@@ -22,28 +22,24 @@ keypoints:
 [low-disorder]: ../fig/101-intro/Low_disorder.png
 
 > ## About this episode 
-> The data that you collect, organise, prepare, and analyse to answer your research questions, and the documentation describing it, is the lifeblood of your research. However, doing so without a prior idea of structure and how data will be used or viewed in the future, by yourself or someone else, can cause the data to become difficult to understand, or even useless. Working structures will accumulate deviations and become more unorganised over time regardless of the care we take.
+> The data that you collect, organise, prepare, and analyse to answer your research questions, and the documentation describing it, is the lifeblood of your research. However, without a prior idea of structure and how data will be used or viewed in the future, by yourself or someone else, the data can become difficult to understand, or even be rendered useless. A proper file and data structure will safeguard the data in both short and long term. Planning for file, folder and data maintainance can save researchers a lot of future time and effort. 
 > 1. TOC
 > {:toc}
 > {: .toc}
 {: .callout .toc}
 
-In this episode we will look at data organization from a data life cycle perspective. 
-
-
-
-
-
-> ### Mentimeter exercise
+> ### Exercise
 > Question: What measures do you take in order to avoid file chaos in your data organisation?
-> 
->> ### Example of activities
+> Wite your answer in the collaborative document
+>
+>> ### Example of measures
 >> * Proper file naming 
 >> * Versioning of files 
 >> * Performing regular data cleaning 
 >> * Agreeing on file access limitations 
 >> * Adopting ISO standards for dates/times 
->> * Having a well defined folder structure 
+>> * Having a well defined folder structure
+>> * Other (please state what) 
 > {: .solution}
 {: .discussion}
 
@@ -56,6 +52,7 @@ When we consider different aspects of data organization, we can benefit from con
 <p align="center">
 <img src="../fig/101-intro/rdmkit-data-lifecycle.png" width="400" height="400"/>
 </p>
+<br>
 
 Throughout its lifecycle, data can, and will, be subject to many possible types of changes:
 
@@ -78,7 +75,7 @@ There are also possible types of changes to the data structure itself:
 
 ## Overview of data
 
-Generation, processing, and analysis of data inevitably result in a number of edits in the data files and file structure. However, it is necessary to preserve the authenticity of the original research information contained in the data throughout the entire data lifecycle. At the same time we try to maintain our intended file structure. To develop a strategy for data management in a project you need to combine the project plan for data treatment with an overview of the data and documents your research will generate. The best time for planning is at the project startup phase, and a list of organisational considerations can consist of, but not be limited to:
+Generating, processing, and analysing data inevitably result in edits in the data files and file structures. While natural, we need to preserve the authenticity of the research information contained in the data throughout the entire data lifecycle. At the same time we also try to maintain our intended file structure. To develop a strategy for data management in a project we need to combine the project plan for data treatment, with an overview of the data and documents your research will generate. The best time for planning is at the project startup phase, and a list of organisational considerations can consist of, but not be limited to:
 
 * Initial and/or intended folder structure
 * Which data files to cluster
@@ -88,27 +85,32 @@ Generation, processing, and analysis of data inevitably result in a number of ed
 
 Preparing your project for receiving data and files should be a core aim in your research management, and should be documented in a data management plan (DMP). 
 
-Sometimes a project will increase in size and scope, sub-projects will form, and data production will expand as new data are required and generated. When this happens, it may require changes and adaptations to already existant file structures. A file structure should be treated as a living document, continuously adapting to changes. File structures are not intended to remain in a static state throughout the data life cycle. 
+Sometimes projects increase in both size and scope, sub-projects form, and data production expands as new data are required and generated. When this happens, it may require changes and adaptations to already existant file structures. A file structure should be treated as a living document, continuously adapting to changes.
 
 
-### Whom are we organizing the data for?
-Humans are an organizing species. We all recognize the benefits from keeping things in order, having an overview, and knowing where things are. It helps us being efficient in what we do, and brings a sense of relief and security not having to search for things we need. However, we also have individual measures and standards for interpreting the quality of data organization. What makes sense to me may be illogical to you, and vice versa.
+## Whom are we organizing the data for?
+We all recognize the benefits from keeping things in order, having an overview, and knowing where things are. Not having to search for things we need reduces stress. But, we also have individual measures and standards for interpreting the quality of data organization. What makes sense to me may be illogical to you, and vice versa.
 
-In research, when settling for a data and file structure we need to take into account more than our own personal preferences. The ultimate goal for research data is making it FAIR, thereby increasing its usefulness for the scientific society of today and tomorrow. Data can, should, and will, be important to more researchers than ourselves. It should therefore be prepared and treated in such a way that it can be read and interpreted by others, as well as adapted for indexing in a data repository. This may come in conflict with our everyday use of the data. The data and file structure we find most convenient for ourselves, here, today, may not be the most convenient structure for our future selves, other researchers in general, or from a long term storage perspective.
+The ultimate goal for research data is making it **FAIR** (**F**indable, **A**ccessible, **I**nteroperable, **R**eusable), thereby increasing its usefulness for the scientific community and society of today and tomorrow. Data can, should, and will, be important to more researchers than ourselves. It should be prepared and treated in such a way that it can be interpreted and used by others, as well as being adapted for indexing in a data repository. This may come in conflict with our everyday use of the data. The data and file structure we find most convenient for ourselves, here, today, may not be the most convenient structure for our future selves, other researchers in general, or from a long term storage perspective.
 
-Thus, we need to settle for a file structure and data organization process that works for us in both the short and long term, while also being viable in the future. 
+We need to settle for a file structure and data organization process that works for us now and tomorow, while also being usable in the distant future. 
 
-### Reducing disorder
-The perfect file system does not exist. No matter the intention or effort, all file systems accumulate disorder over time. Good file system management is better focused on practices decreasing the level of disorder than eliminating it completely. Managing a file system does not by necessity require a lot of time. By selecting a manageable interval for file system maintenance we can optimize effort vs. gain. Regular scheduled maintenance over a project life span can achieve more and require less time in total, than a single effort when the project is in an end phase.
+## Reducing disorder
+The perfect file system does not exist. No matter the intention or effort, all file systems accumulate disorder over time. Good file system management is better focused on practices decreasing the level of disorder than eliminating it completely. Lack of data management practises will more likely end up in a more chaotic state. 
+<br>
 
-Having a well defined idea of our intended file system prior to beginning data collection can have substantial impact on the time required for file system maintenance later in a project. Starting data collection without such an idea can require a major effort by the time the project ends. 
-
+<br>
 ![High level of disorder][high-disorder]
-![Low level of disorder][low-disorder]
 
-> ### Exercise
+Managing a file system does not by necessity require a lot of time. By selecting an interval for file system maintenance we can optimize effort vs. gain. Regular scheduled maintenance over a project life span can achieve more and require less time in total, than a single effort when the project is in its end phase.
+
+![Low level of disorder][low-disorder]<br>
+
+<br>
+
+
+> ## Exercise
 > Rank the following data organization steps from 1-5 (1 being the one you believe you think is most important, and 5 the least). Also mark with an "X" the steps you have implemented in your own research. 
->
 > - File naming convention
 > - Folder naming convention
 > - File versioning system

@@ -1,29 +1,34 @@
 ---
-title: Data preservation
+title: Data storage
 teaching: 10
 exercises: 10
 questions:
-- What can we do to maintain data integrity and authenticity?
+- What are good practices for storing the data that will be processed during your project?
+
 objectives:
-- Incresing file findability
-- File naming concepts
-- 
+- Understand what to consider when planning for data storage and processing
+- Adopt good practices for data storage, processing and documentation
+- Identify and address requirements on storage and processing workflows
 
 keypoints:
-- Endpoint perspective is important
-- Be careful not to settle for a too rigid file system
+- Good data storage is the backbone and safety line of any research project
 ---
 
-<!-- Slå ihop med 005 --->
-
 > ## About this episode 
-> Research data can be organized in nearly an infinite number of different ways. When settling for a system we need to consider our own preferences, the ones we share project or data with, and how data will be preserved and reused in the future. We also need to consider that all file systems will accumulate disorder over time, and what measures we can take in order to make sure that the level of disorder does not become a problem. 
+> Research data storage may not seem like a pressing issue at the very beginning of a project. Depending on kind of data, how it will be analysed, the amount of data needed, and what the data will or can be used for in the future, may require researchers to consider storage as a factor already in the early stages of a project. Failure to do so may require considerable time investment later on. 
+> 1. TOC
+> {:toc}
+> {: .toc}
+{: .callout .toc}
 
 
 # Plan a storage strategy
 It is an important aspect of your data management planning to determine what your storage needs are and select solutions accordingly. Factors that play a role are, for example, data sensitivity, ease of access, file size and overall data volume. You can also ask yourself where, how and by whom your data will be produced, accessed, transformed, and transferred throughout and beyond the project.
 
-![Data life cycle][life-cycle]
+<!-- ![Data Life Cycle][life-cycle]  -->
+<p align="center">
+<img src="../fig/101-intro/rdmkit-data-lifecycle.png" width="400" height="400"/>
+</p>
 
 One way of categorising different types of storage options is:
 * Portable devices – Laptops, tablets, external hard-drives, flash drives and Compact Discs
@@ -42,15 +47,15 @@ One way of categorising different types of storage options is:
 >> - Do: use for temporary, short-term storage for non-sensitive data, e.g. in the field or to transport data and files when online transmission is not possible.
 >> - Do: use in combination with encryption and strong password protection, especially if working with sensitive information (see 'Security').
 >> - Do: conduct regular checks to ensure your device is working and that files are accessible.
->> - Do not: use for long-term storage or master copies of your data and files.
+>> - **Do not**: use for long-term storage or master copies of your data and files.
 > {: .solution}
 >
 >> ### Cloud storage
 >> - Do: use cloud services for granting shared, remote and easy access to data and other files to all involved in the project.
 >> - Do: Read the terms of service. Especially focus on rights to use content given to the service provider.
 >> - Do: Opt for European, national, or institutional cloud services which store data in Europe if possible.
->> - Do not: make this your only storage and backup solution.
->> - Do not: use for unencrypted (sensitive) personal data.
+>> - **Do not**: make this your only storage and backup solution.
+>> - **Do not**: use for unencrypted (sensitive) personal data.
 > {: .solution}
 >
 >> ### Local storage
@@ -72,9 +77,7 @@ One way of categorising different types of storage options is:
 {: .discussion}
 
 ## Plan a backup and disaster recovery strategy
-A backup strategy in one sentence would be: Make at least three backup copies of the data on at least two different types of storage media, keep storage devices in separate locations with at least one off-site, regularly check whether they work, ensure you know the process and follow it.
-
-<!--- Y: three copies rather than three backup copies? if backuped copies, this means that you should have four copies of your files, which seems a bit over the top. Also, consider changing 'ensure you' to 'ensure everyone' or 'ensure all project members', or something similar, i.e. everyone working with the files needs to follow the backup strategy --->
+A backup strategy in one sentence would be: Have at least three copies of the original data on at least two different types of storage media, keep storage devices in separate locations with at least one off-site, regularly check whether they work, ensure all project members know the process and follow it. Doing so will ensure at least one of the three copies will be retrievable if something happens.
 
 > ### Discussion
 > What are examples of potential causes for data loss in a research project?
@@ -111,17 +114,16 @@ A backup strategy in one sentence would be: Make at least three backup copies of
 > - [--- (2021) Processing. In Research Data Management Kit. A deliverable from the EU-funded ELIXIR-CONVERGE project (grant agreement 871075).](https://rdmkit.elixir-europe.org/processing)
 > - [--- (2021) Data analysis. In Research Data Management Kit. A deliverable from the EU-funded ELIXIR-CONVERGE project (grant agreement 871075).](https://rdmkit.elixir-europe.org/data_analysis.html)
 >
->> ### Examples of practices
->> Some best practice rules (UK Data Service, 2017a; Krejčí, 2014) can be summarised as follows:
->> - Establish the terms and conditions of data use and make them known to team members and other users;
->> - Create a ‘master file’ and take measures to preserve its authenticity, i.e. place it in an adequate location and define access rights and responsibilities – who is authorised to make what kind of changes;
->> - Distinguish between versions shared by researchers and working versions of individuals;
->> - Decide how many versions of a file to keep, which versions to keep (e.g. major versions rather than minor versions (keep version 02-00 but not 02-01)), for how long and how to organise versions;
->> - Introduce clear and systematic naming of data file versions and editions;
->> - Record relationships between items where needed, for example between code and the data file it is run against, between data file and related documentation or metadata or between multiple files;
->> - Document which changes were made in any version;
->> - Keep original (raw) versions of data files, or keep documentation that allows the reconstruction of original files;
->> - Track the location of files if they are stored in a variety of locations;
->> - Regularly synchronise files in different locations, such as using MS SyncToy (2016).
-> {: .solution}
+> ### Examples of practices
+> Some best practice rules (UK Data Service, 2017a; Krejčí, 2014) can be summarised as follows:
+> - Establish the terms and conditions of data use and make them known to team members and other users;
+> - Create a ‘master file’ and take measures to preserve its authenticity, i.e. place it in an adequate location and define access rights and responsibilities – who is authorised to make what kind of changes;
+> - Distinguish between versions shared by researchers and working versions of individuals;
+> - Decide how many versions of a file to keep, which versions to keep (e.g. major versions rather than minor versions (keep version 02-00 but not 02-01)), for how long and how to organise versions;
+> - Introduce clear and systematic naming of data file versions and editions;
+> - Record relationships between items where needed, for example between code and the data file it is run against, between data file and related documentation or metadata or between multiple files;
+> - Document which changes were made in any version;
+> - Keep original (raw) versions of data files, or keep documentation that allows the reconstruction of original files;
+> - Track the location of files if they are stored in a variety of locations;
+> - Regularly synchronise files in different locations, such as using MS SyncToy (2016).
 {: .discussion}
