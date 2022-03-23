@@ -48,11 +48,11 @@ Shortcuts are an easy, feasible, and intuitive way to increase findability while
 ### Metadata<br>
 A good and informative file name is a great start, but there is a limit to how much information you can pack into a file name before the length itself becomes a problem. This is where metadata comes in. For the purpose of findability we can associate the file name with metadata stored elsewhere, for example in a text file kept together with the files.
 
-> ### Example
+> ### Example <!-- Exercise instead of Example? --> 
 > 20220115_MyFile_Project1_Location_Dataiteration1_V1.xml<br>
 > 20220115_MyFile_Project1_Location_Dataiteration2.xml<br>
->
-> Write an example of metadata information explaining the above file names and the file contents, and descibe where and how to provide it
+> <!-- I think the file names could be a bit more specific (not MyFile eg), and add in the text a bit of context that one would want to capture. Reason is that I don't think anyone would reach the solution without taking a peak on it -->
+> Write an example of metadata information explaining the above file names and the file contents, and descibe where and how to provide it.
 >
 >> ### Solution 
 >> In file folder:  
@@ -69,7 +69,7 @@ A good and informative file name is a great start, but there is a limit to how m
 >>20220115_MyFile_Project1_Location_Dataiteration2.xml
 >>Contains X data from Y, with additions of Z made only by A on 20220111 not including suggestions by C.
 >>```
->>Here the Metadata.txt lists the file name and associates it with additional data not possible to fit into the file name itself. By adding it separately and associating it with the file name we increase findability by a lot.
+>>Here the Metadata.txt lists the file name and associates it with additional data not possible to fit into the file name itself. By adding it separately and associating it with the file name we increase findability a lot.
 > {: .solution}
 {: .discussion}
 <br>
@@ -97,8 +97,8 @@ Keyword Published
 
 Deliberately use "-" and "_" to allow recovery of meta-data from the filenames:
 
-- "_" underscore used to delimit units of meta-data to be used in searches.
-- "-" hyphen used to delimit words to increase readability<br> (Compare to an URL slug - www.scilifelab.se/this-is-a-slug).
+- "_" underscore is used to delimit units of meta-data to be used in searches.
+- "-" hyphen is used to delimit words to increase readability<br> (Compare to an URL slug - www.scilifelab.se/this-is-a-slug).
 <br>
 <br>
 
@@ -127,9 +127,9 @@ fig02_histogram-talk-attendance.png
 > ## Exercise
 > Download the [compressed example directory](../data/Example_project_begin.zip) and unzip the file on your laptop. The directory contains a collection of files from an imaginary project, somewhat resembling what the initial phase of a project can look like. Given the files provided:
 >
-> 1. Create a proper hierarchical folder system based on the file names and contents
+> 1. Create a proper hierarchical folder system based on the file names and contents.
 > 2. Rename files in a consistent manner if required, such that it reflects both contents and file version. Consider number and date formats as well.
-> 3. Optionally, create a file for meta tagging files with keywords according to file contents
+> 3. Optionally, create a file for meta tagging files with keywords according to file contents.
 > 
 >> ### Example of outcome
 >> 1. An example of a fully re-ordered directory can be downloaded [HERE](../data/Example_project_improved.zip) 
