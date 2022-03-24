@@ -15,7 +15,7 @@ keypoints:
 ---
 
 > ## About this episode 
-> Research data storage may not seem like a pressing issue at the very beginning of a project. Depending on kind of data, how it will be analysed, the amount of data needed, and what the data will or can be used for in the future, may require researchers to consider storage as a factor already in the early stages of a project. Failure to do so may require considerable time investment later on. 
+> Research data storage may not seem like a pressing issue at the very beginning of a project. Depending on the kind of data, how it will be analysed, the amount of data needed, and what the data will or can be used for in the future, researchers may need to consider storage as a factor already in the early stages of a project. Failure to do so may require considerable time investment later on. 
 > 1. TOC
 > {:toc}
 > {: .toc}
@@ -23,7 +23,7 @@ keypoints:
 
 
 # Plan a storage strategy
-It is an important aspect of your data management planning to determine what your storage needs are and select solutions accordingly. Factors that play a role are, for example, data sensitivity, ease of access, file size and overall data volume. You can also ask yourself where, how and by whom your data will be produced, accessed, transformed, and transferred throughout and beyond the project.
+It is an important aspect of your data management planning to determine what your storage needs are, and select solutions accordingly. Factors that play a role are, for example, data sensitivity, ease of access, file size and overall data volume. You can also ask yourself where, how and by whom your data will be produced, accessed, transformed, and transferred throughout and beyond the project.
 
 <!-- ![Data Life Cycle][life-cycle]  -->
 <p align="center">
@@ -52,8 +52,8 @@ One way of categorising different types of storage options is:
 >
 >> ### Cloud storage
 >> - Do: use cloud services for granting shared, remote and easy access to data and other files to all involved in the project.
->> - Do: Read the terms of service. Especially focus on rights to use content given to the service provider.
->> - Do: Opt for European, national, or institutional cloud services which store data in Europe if possible.
+>> - Do: read the terms of service. Especially focus on rights to use content given to the service provider.
+>> - Do: opt for European, national, or institutional cloud services which store data in Europe if possible.
 >> - **Do not**: make this your only storage and backup solution.
 >> - **Do not**: use for unencrypted (sensitive) personal data.
 > {: .solution}
@@ -67,7 +67,7 @@ One way of categorising different types of storage options is:
 > {: .solution}
 >
 >> ### Networked drives
->> - Do: Use for distributed collaborative projects involving many people who need access to data and files
+>> - Do: use for distributed collaborative projects involving many people who need access to data and files
 >> - Do: use in combination with a suitable security strategy to protect data and files against unauthorised access (see 'Security').
 >> - Do: use in combination with strict versioning rules (see 'Data authenticity, versions and editions')
 >> - Do: think about long-term archival solutions for data that is complete and has been analysed. Valuable storage space might be released in this way.
@@ -77,7 +77,7 @@ One way of categorising different types of storage options is:
 {: .discussion}
 
 ## Plan a backup and disaster recovery strategy
-A backup strategy in one sentence would be: Have at least three copies of the original data on at least two different types of storage media, keep storage devices in separate locations with at least one off-site, regularly check whether they work, ensure all project members know the process and follow it. Doing so will ensure at least one of the three copies will be retrievable if something happens.
+A backup strategy in one sentence would be: Have at least three copies of the original data on at least two different types of storage media, keep storage devices in separate locations with at least one off-site, regularly check whether they work, ensure all project members know the process and follow it. Doing so will ensure that at least one of the three copies will be retrievable if something happens.
 
 > ### Discussion
 > What are examples of potential causes for data loss in a research project?
