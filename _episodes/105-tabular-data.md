@@ -16,14 +16,14 @@ keypoints:
 
 ---
 
-[spreadsheet-setup-updated]: ../fig/tabular-data/spreadsheet-setup-updated.png
-[multiple-info]: ../fig/tabular-data/multiple-info.png
-[single-info]: ../fig/tabular-data/single-info.png
-[2_Multiple_Tables]: ../fig/tabular-data/2_Multiple_Tables.png
-[3_white_table_1]: ../fig/tabular-data/3_white_table_1.jpg
-[formatting]: ../fig/tabular-data/formatting.png
-[good_formatting]: ../fig/tabular-data/good_formatting.png
-[5_excel_dates_1]: ../fig/tabular-data/5_excel_dates_1.jpg
+[spreadsheet-setup-updated]: ../fig/105-tabular-data/spreadsheet-setup-updated.png
+[multiple-info]: ../fig/105-tabular-data/multiple-info.png
+[single-info]: ../fig/105-tabular-data/single-info.png
+[2_Multiple_Tables]: ../fig/105-tabular-data/2_Multiple_Tables.png
+[3_white_table_1]: ../fig/105-tabular-data/3_white_table_1.jpg
+[formatting]: ../fig/105-tabular-data/formatting.png
+[good_formatting]: ../fig/105-tabular-data/good_formatting.png
+[5_excel_dates_1]: ../fig/105-tabular-data/5_excel_dates_1.jpg
 
 > ## About this episode 
 > We organize data in spreadsheets in the ways that we as humans want to work with the data, but computers require that data is organized in particular ways. In order to use tools that make computation more efficient, we need to structure our data the way that computers need the data. This episode will cover:
