@@ -4,15 +4,14 @@ title: Setup
 ---
 
 > ## Data
-> You will be instructed to download data during the exercises but may also choose to [download it from here](./data/training_attendance.xlsx).
+> You will be instructed to download data during the exercises but may also choose to [download it from here](./data/Example_project_begin.zip).
 >
 {: .prereq}
 
 > ## Software
 >
-> For this lesson, you are expected to have access to Microsoft Excel – a commercial spreadsheet software, please consult your IT department for instructions on how to get access to the software.
+> For this lesson, you need to know how to extract conmpressed zip-directories. Please consult your IT department for instructions if you lack access to the software.
 >
-> You may use another spreadsheet software but you will be expected to know how to navigate the menus to access features for data validation, value formatting (numbers/dates/etc) and importing and exporting CSV/TSV files. You can use LibreOffice, it's a free, open source spreadsheet program.
 {: .prereq}
 
 > ## Presentation
