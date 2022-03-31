@@ -7,13 +7,15 @@ Good data organisation is the foundation of any research project. It not only se
 Much of the information of a project is digital, and we need to keep track of our digital records in the same way we have a lab notebook and sample freezer. In this lesson, we’ll go through the project organisation and documentation that will make an efficient research workflow possible. Not only will this make you a more effective researcher, it also prepares your data and project for publication. Grant agencies and publishers increasingly require this information.
 
 <!--In this lesson, we’ll be using examples from published studies with different types of data and digital files. You will learn:-->
-This lesson is divided into five episodes where you will learn:
+This lesson is divided into four episodes where you will learn:
 
-* How to organise and store the data that will be produced or acquired during your project
+* The recipients of data organisation and how and why they should be considered 
 * How to organise files and documentation to support your workflows
-* How to structure your metadata, tabular data and information about experiments in spreadsheets
+* How to structure and store your metadata, tabular data and information about experiments
+
+An additional episode is available for a more in depth lesson on tabular data, mainly for self-study purposes. 
 
 > ## Preparation
 >
-> Before you begin this lesson you need to 1) download a copy of the supporting data and 2) make sure that you have a spreadsheet software, such as Microsoft Excel, installed on your computer. See [Setup]({% link setup.md %}) for futher instructions.
+> See [Setup]({% link setup.md %}) for futher instructions.
 {: .prereq}

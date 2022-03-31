@@ -2,14 +2,14 @@
 title: Introduction to data organization
 teaching: 20
 exercises: 10
-questions: 5
-- Knowing your data, and how to keep it in order?
+questions:
+- What do I need to know to keep my data in order?
+- Who are the recipients of my data?
 
 objectives:
 - Understand what to consider for maintaining data organization strategies in a project
 - Understanding good practices for data storage, processing and documentation
 - Understand what to consider when settling for a file structure
-- How to take the future into account in everyday research 
 
 keypoints:
 - Good data organization is fundamental to any research project
@@ -91,12 +91,18 @@ Sometimes projects increase in both size and scope, sub-projects form, and data 
 ## Whom are we organizing the data for?
 We all recognize the benefits from keeping things in order, having an overview, and knowing where things are. Not having to search for things we need reduce stress. But, we also have individual measures and standards for interpreting the quality of data organization. What makes sense to me may be illogical to you, and vice versa.
 
+<!-- ![FAIR]  -->
+<p align="center">
+<img src="../fig/101-intro/FAIR_data_principles-Reduced.jpg" width="600" height="400"/>
+</p>
+<br>
+
 The ultimate goal for research data is making it **FAIR** (**F**indable, **A**ccessible, **I**nteroperable, **R**eusable), thereby increasing its usefulness for the scientific community and society of today and tomorrow. Data can, should, and will, be important to more researchers than ourselves. It should be prepared and treated in such a way that it can be interpreted and used by others, as well as being adapted for indexing in a data repository. This may come in conflict with our everyday use of the data. The data and file structure we find most convenient for ourselves, here, today, may not be the most convenient structure for our future selves, other researchers in general, or from a long term storage perspective.
 
-We need to settle for a file structure and data organization process that works for us now and tomorrow, while also being usable in the distant future. 
+We need to settle for a file structure and data organization process that accomodates for the different phases of the data life cycle. 
 
 ## Reducing disorder
-The perfect file system does not exist. No matter the intention or effort, all file systems accumulate disorder over time. Good file system management is better focused on practices decreasing the level of disorder rather than eliminating it completely. Lack of data management practises will more likely end up in a more chaotic state. 
+The perfect file system does not exist. No matter the intention or effort, all file systems accumulate disorder over time. Good file system management is better focused on practices decreasing the level of disorder rather than eliminating it completely. Systems lacking data management practises will more likely end up in a more chaotic state than maintained systems. 
 <br>
 
 <br>
@@ -109,9 +115,11 @@ Managing a file system does not by necessity require a lot of time. By selecting
 
 <br>
 
+Do not postpone data organisation and file maintainance until the very last phase of your project!
+
 
 > ## Exercise
-> Rank the following data organization steps from 1-5 (1 being the one you think is most important, and 5 the least). Also mark with an "X" the steps you have implemented in your own projects. 
+> Rank the following data organisation steps from **1-5** (**1** being the one you think is most important, and **5** the least). Also mark with an "X" the steps you have implemented in your own projects. 
 > - File naming convention
 > - Folder naming convention
 > - File versioning system

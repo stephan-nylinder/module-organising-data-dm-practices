@@ -23,7 +23,7 @@ keypoints:
 
 
 # Plan a storage strategy
-It is an important aspect of your data management planning to determine what your storage needs are, and select solutions accordingly. Factors that play a role are, for example, data sensitivity, ease of access, file size and overall data volume. You can also ask yourself where, how and by whom your data will be produced, accessed, transformed, and transferred throughout and beyond the project.
+It is an important aspect of your data management planning to determine what your storage needs are, and select solutions accordingly. Factors that play a role are, for example, data sensitivity, ease of access, file size and overall data volume. You can also ask yourself where, how and by whom your data will be produced, accessed, transformed, and transferred throughout and beyond the project. If necessary, design a backup plan for data storage, in case an intended form of storage becomes unavailable or is considered unsuitable for certain kinds of data. 
 
 <!-- ![Data Life Cycle][life-cycle]  -->
 <p align="center">

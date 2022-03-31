@@ -1,14 +1,15 @@
 ---
 title: Maintaining data integrity and authenticity
-teaching: 20
+teaching: 30
 exercises: 10
 questions:
-- What can we do to maintain data integrity and authenticity?
+- What can we do to maintain data integrity and authenticity over the course of a project?
 objectives:
-- File naming concepts
-- Conditions and use
-- Data structure
-- Data documentation 
+- Understanding the special case of raw data
+- Adopt a file naming concept
+- Consider the conditions and use for data
+- Find a data structure
+- What to document in a data structure 
 
 keypoints:
 - Data integrity and authenticity is dependent on knowing what the data files contain, and who does what to what file. This requires both a findable, interpretable, and accessible file structure, an explicit file naming concept, knowledge of whom has access to what data, and documentation of data treatment procedures. 
@@ -35,28 +36,30 @@ Raw data should be treated in such a way that it:
 * Can be published and reused
 
 ### Versions of raw data
-Consider a data collection. The data is compiled in a file and given a file name. Some time later we want to add new data. We collect and add it to the original file. Even later we add a second layer of additional data. Three potential versions of our raw data now exist. Do we acknowledge all three as independent files/sets, or do we only recognise a single, final version? The answer depends on the project and what data organisation strategy we apply!
+Consider a data collection compiled in a file and given a file name. Some time later we collect new data and add it to the original file. Even later a second layer of additional data is added. Three potential versions of our raw data now exist. Do we acknowledge all three as independent files/sets, or only a single, final version? The answer depends on the project and what data organisation strategy we apply!
 
-- **Single file + Internal documentation**
+We should also consider where we document the contents of the data versions. It can either be included in the data file as integrated metadata, or stored separate in an external file. Depending on the choice of combination of data and documentation we may end up with very different scenarios, such as:
+
+- **Example 1 - Single file + Internal documentation**
 <br>
-All relevant information on what was added to the orignal data, and when, are stored in the data file itself and explained by labeling. Retrieval of the original data sets can be achieved based on the included information.<br>
+All relevant information (what, how, when) is added to the orignal data, stored in the data file itself, and explained by labeling. Retrieval of the original data sets can be achieved based on the included information.<br>
 <br>
-    *Pros*: One data file. Information and data stored together.
+    **Pros**: One data file. Information and data stored in close proxomity.
     <br>
-    *Cons*: May be difficult to extract versions of data without introducing human error. May end up mixing data that should be stored separately (e.g. restricted vs. non-restricted data). Information added in file may affect data readability.
+    **Cons**: May be difficult to extract versions of data without introducing human error. May end up mixing data that should be stored separately (e.g. restricted vs. non-restricted data). Information added in file may affect data readability.
 
-- **Multiple files + External documentation**
+- **Example 2 - Multiple files + External documentation**
 <br>
-Each version of data is stored separately. All relevant information on what was added to the original data and when are stored in a separate (README-)file.
+Each version of data is stored separately. All relevant information is stored in one or more separate (README-)files.
 
-    *Pros*: Easy to identify file versions for specific uses. Data in file not obscured by non-data information.<br> 
-    *Cons*: Increased file management. Long term storage and publication of data can be complicated. 
+    **Pros**: Easy to identify file versions for specific uses. Data in file not obscured by non-data information.<br> 
+    **Cons**: Increased file management.
 
 ## Analyses and code
-Analyses and data modifications should be documented in such a way that your treatment and results are reproducible (think **FAIR**). Avoid adding to the reproducibility crisis.
+Analyses and data modifications should be documented in such a way that your treatment and results are reproducible (think **FAIR**). Avoid adding to the reproducibility crisis!
 
-For results based on a subset of data:<br>
-* Documentation should describe *how* (and *why*) the data subset was selected from raw data and *if* the subset was subject to *what* modifications prior to analysis<br>
+Consider that:<br>
+* Documentation should describe *how* (and *why*) the data used for an analysis was selected from raw data, (or if all the data was used), and *if* the data was subject to (*what*) modifications prior to analysis<br>
 * The analyses should be described in such a way that the results are reproducible by others, *using only that information*<br>
 * Any script used should be stored in proximity with the results, referencing the data it was used with<br> 
 
@@ -74,10 +77,10 @@ Consider the spatial organisation of data even before you begin adding data to y
 2. Put each **observation in its own row** - The individual measures (e.g. *180*, *Present*, or *MTND1-6*)
 3. **Do not combine multiple pieces of information in one cell** - Sometimes it just seems like one thing, but it is easier to later combine single cell information, than to separate combined data into single cells
 4. **Do not split combinable data in separate tables** - Even if it makes sense for a human, it can make export and analysis of your data unnecessarily complex.
-5. Create a **data dictionary**! Explain, to yourself and future users, what column headers mean, the units of measure, if you use abbreviations, etc. Store the dictionary as a separate document in proximity to data. Avoid including the information in the data file! <!-- For me, this is 'confusing'. The dictionary should not be in the sheet itself, but unless it is a tsv file, I would like to have the explanation of data in a separate sheet/tab in the file, to ensure it always accompany the data file if moved/copied (just as you do with a controlled vocabulary). If point 6 is done, then yes, the dictionary should also be exported into a separate file. --> 
+5. Create a **data dictionary**! Explain, to yourself and future users, what column headers mean, the units of measure, if you use abbreviations, etc. Store the dictionary separate from, but in in proximity to, data. For example, either in a separate table, or a separate file.
 6. For storage, export and interoperability, export the cleaned data to a **text based format** like **TSV**, or **CSV**. This ensures that anyone can use the data, and is the format required by most data repositories.
 
-An additional advice - If multiple contributors collect data in the same spreadsheet, make sure you enter the data in the same way. A spreadsheet containing data in multiple formats is a guarantee for errors and confusion! 
+An additional advice - If multiple contributors collect data in the same spreadsheet, make sure you enter the data in the same way. A spreadsheet containing data in multiple formats can cause errors and confusion! 
 
 Things to consider when working with tabular data:
 
@@ -126,7 +129,7 @@ In practice, we may end up with a combination of top-down and bottom-up structur
 
 Working in projects where data is shared among several collaborators, a pre-defined top-down file structure may not fit any single individual, but will likely benefit the greater good of the project. It is a good idea to have one or two individuals responsible for overviewing and maintaining data structure in a shared environment.
 
-Last but not least, always make sure to properly name your project folders so anyone can understand what project the contents are associated with. Full project name with funding serial number makes the data easily identifiable. <!-- with funding? Why is that relevant? One project can have several sources of funding. Also the funding number is mostly only known by PI. -->
+Last but not least, try to properly name your project folders so anyone can understand which project(s) the contents are associated with. Full (or abbreviation of) project name with funding serial number(s) makes the data easily identifiable and traceable across multiple administrative systems.
 
 > ## Exercise
 > Considering your own file structure, or the file structure used in your research group, write in the shared document: 
@@ -146,16 +149,20 @@ Last but not least, always make sure to properly name your project folders so an
 ## File naming
 A file naming convention is a framework, or protocol, for naming your files in a way that describes the file contents and, importantly, how they relate to other files. Adopting a good file naming convention will increase file findability, and make it easier to locate and search for specific files. 
 
-A well suited file naming protocol should:
-<!-- have 'machine readable' and 'default ordering' been lost in this list? the principles are summarized further down, but that is the first time they are mentioned. -->
-- Make it easy to understand what the file is and what it contains, from just reading the file name (**Human readable**)
-    * Balance the amount of elements: too many makes it difficult to understand vs. too few makes it generic
-    * Order elements from general to specific
-    * Use meaningful abbreviations
-    * Use underscore (_), hyphen (-) or capitalized letters to separate elements in the name. Don’t use spaces or special characters: ?!& , * % # ; * ( ) @$ ^ ~ ‘ { } [ ] < >
-    * Use date format ISO8601: YYYYMMDD, and time if needed HHMMSS, or in combination YYYYMMDD:HHMMSS
-    * Include a version number if appropriate
-    * Write your file naming convention down and explain abbreviations in your data documentation
+A well suited file naming protocol should be:
+1. **Human readable** - A name describes the content of the file, connects to concept of a *slug* from semantic URLs (e.g. www.scilifelab.se/*this-is-a-slug*). Makes it easy to understand what the file is and what it contains, from just reading the file name
+2. **Machine readable** – Avoid spaces, deliberate punctuation, accented or odd characters, inconsistent letter casing 
+3. **Default ordered** – Put something numeric first, use the ISO 8601 standard for dates (YYYYMMDD, or YYYY-MM-DD), left pad single digits with zeros (01, 02, 03... 10)
+
+In practise:
+* Balance the amount of elements: too many makes it difficult to understand vs. too few makes it generic (**Human readable**)
+* Order elements from general to specific (**Human readable**)
+* Use meaningful abbreviations (**Human readable**)
+* Replace whitespace with underscore (_), hyphen (-) or capitalized letters to separate elements in the name. 
+* Avoid using special characters: ?!& , * % # ; * ( ) @$ ^ ~ ‘ { } [ ] < > (**Machine readable**)
+* Use date format ISO8601: YYYYMMDD, and time if needed HHMMSS, or in combination YYYYMMDD:HHMMSS (**Machine readable**)
+* Include a version number if appropriate (**Human readable**)
+* Write your file naming convention down and explain abbreviations in your data documentation (**Human readable**)
 
 Examples of **good file names**:
 
@@ -175,21 +182,11 @@ Examples of **poor file names**:
 - Cropped image of an ant head taken on the third of December 2020 by Meg Megson
     * *File name*: Image_antclose_first_PUBLISHTHISONE1?.psd
     * *Explanation*: N/A
-
-- Avoid any name like file.txt, file_new.txt, file_newer.txt, file_try.txt, file_add_new.txt etc. <!-- not really written as examples of poor file names, could this bullet be removed? -->
-<br>
-<br>
-
-
-### Summary of principles for (file) names:
-1. **Human readable** - A name describes the content of the file, connects to concept of a *slug* from semantic URLs (e.g. www.scilifelab.se/*this-is-a-slug*)
-2. **Machine readable** – Avoid spaces, deliberate punctuation, accented characters, inconsistent letter casing 
-3. **Default ordering** – Put something numeric first, use the ISO 8601 standard for dates (YYYYMMDD, or YYYY-MM-DD), left pad single digits with zeros (01, 02, 03... 10)
 <br>
 <br>
 
 ### Bulk file names
-Data producing equipment (and software) might generate files with pre-defined names (e.g. a serial number or text string along with machine specific information. To a non-user such files can be incomprehensible, and requires explanation in order to make sense. To preserve the third-person view of files where the file name does not provide information of content or origin, documentation is required. Use sub-folders to cluster such files in manageable numbers, and add README-files for orientation and explanation (Remember your future self!).
+Data producing equipment (and software) might generate files with pre-defined names (e.g. a serial number or text string together with machine specific information. Such files can be incomprehensible to a non-user and require explanation in order to make sense. To preserve the third-person view of files where the file name does not provide information of content or origin, documentation is required. Use sub-folders to cluster such files in manageable numbers, and add README-files for orientation and explanation (Remember your future self!).
 
 Continuous file name changes are sometimes required for generated data or analysis files. Manual modifications can be time consuming and introduce typos. Consider using a bulk file name change tool to save time, prevent errors and maintain consistency.
 
@@ -201,13 +198,13 @@ Tools for bulk renaming:
 <br>
 
 ### Documentation of file organisation
-A well documented file organisation where structure and hierarchy is explained may appear unnecessary, but can be an essential tool for the longevity of the data. There are two cases where this is particularly important:
+A well documented file organisation where structure and hierarchy is explained can be added to a top level folder to ensure orientation and longevity of the data. There are two cases where this is particularly important:
 
 - **Shared projects**<br>
 Settings where data is shared in a research group or among colleagues. A documented file system can guarantee files to be handled in a similar fashion by all involved. In settings where some individuals are more focused on data production while others do data analysis, explicit documentation may safeguard data integrity and authenticity.
 
 - **Project ending**<br>
-After a project ends our memory will begin to fade on the specifics of file names and data contents. Considering yourself as a future "third person", a file structure documentation will be beneficial when revisiting your data, and aid in reusing the data and/or results.
+After a project ends our memory will begin to fade on the specifics of file names and data contents. Considering yourself as a future "third person", a file structure documentation will be beneficial when revisiting your data, and aid others when reusing the data and/or results.
 
 File structures are best explained in plain text README-files. A good practice is to summarize contents of folders on separate levels, trying to answer the question "*What do someone else need to know about the contents of this folder in order to understand it?*". Adding such information will increase both data findability and reusability.
 
