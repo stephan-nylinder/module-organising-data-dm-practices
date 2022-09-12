@@ -43,6 +43,8 @@ keypoints:
 [logical_order]: ../fig/files-and-folders/logical_order.png
 [chronological_order]: ../fig/files-and-folders/chronological_order.png
 [logical_order]: ../fig/files-and-folders/logical_order.png
+[mona_lisa]: ../fig/files-and-folders/Mona_Lisa_naming.jpg
+[file_organisation]: ../fig/files-and-folders/file_organisation.png
 
 > ## About this episode 
 > This episode addresses some of the reasons to why file organisation is important for data management and a selection of good practices for organising research folders and files. The aim is to get you started and thinking about what will work for you and your project or team. Depending on your research area and the type of research you're involved in; you may find a more optimal way to organize your work.
@@ -52,6 +54,8 @@ keypoints:
 > {: .toc}
 {: .callout .toc}
 
+![Mona_Lisa_naming][mona_lisa]
+<!-- https://www.instagram.com/p/CQZl6NlBdHz/ Copyright David Owens -->
 ## Good practices for organising files and folders
 Depending on your background and experiences you could be thinking of different reasons to why it would be beneficial or useful to systematically organise your research and data files. The following is a selection of common reasons:
 
@@ -68,103 +72,85 @@ It’s natural for some of your files to become unorganised from time to time—
 
 ![Unorganised files on desktop][files_messy_tidy]
 
-In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or—more commonly—that someone could be your future self not remembering what you were up to when you created a particular set of files.  Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time reproducing results from previous experiments or completely reconstructing an analysis to address minor flaws, new data or a new technique.
+In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or—more commonly—that someone could be your future self not remembering what you were up to when you created a particular set of files.  Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time re-organising yourself among files and contents you once knew.
 
+## File and folder naming 
 
-## How to organise files and folders
-Spend some time planning how you are going to organise your data at the beginning of a project. Consider how you and others will look for and access the files throughout the project’s life cycle and ensure that all people involved can commit to using the folder hierarchy, file naming conventions, and a strategy for onboarding new contributors. You can start small and expand as you develop your practices.
+Names for files and folders should be consistent and meaningful to yourself and collaborators, allow for easy tracking/searching, and be somewhat descriptive of content.
 
+An example:
 
-### Organise files hierarchically
-Folders are containers for your files and are sometimes called directories. A folder can contain other folders—sometimes called subfolders (or subdirectories)—and you can organise your files hierarchically by creating a structure of folders and subfolders. Each folder corresponds to a category that should be mutually exlusive with other folders at the same level. And since a file can only be placed in one folder—at one place in the hierarchy—you should aim to create a structure that make it easy for yourself and your collaborators to determine where any given file should be located.
+`LD_phyA_off_t04_2020-08-12_norm.xlsx`
 
-![data][hierarchy]
+Based on the name, the file could contain information about:
 
-In cases where files needs to be disperserd across several storage solutions, it can be a good idea to imagine a virtual top level of the folder hierarchy where each subfolder corresponds to a storage solution. This virtual hierarchy can be described in a shared document to allow your collaborators to determine on which storage solution any given file should be located.
+* `LD` - Long day sampling, of the
+* `phyA` - Phytochrome A genotype, in a 
+* `off` - Media without sucrose, at
+* `t04` - Time point 4,
+* `2020-08-12` - Sampled on Aug 12th, 2020, with
+* `norm` - Normalised data
 
-### Use folders to divide files into categories
-Put each project in its own folder named after that project. Ideally you want to keep the folder’s name under 32 characters long while at the same time including a combination of the project title, a unique identifier and the date. 
+However, this is not obvious from the text and letters alone. Some sort of explanation is usually required, which could be added to a README-file stored in proximity to the data files.
 
-Consider the best hierarchy for the files in the project and decide whether a deep or shallow hierarchy is preferable. If you have several independent data collections, it is advisable to create a separate data folder for each collection. But you can use any meaningful characteristic or file attribute as a basis for organising your files, which of them will be most helpful varies widely across domains and specific projects. 
-
-The following examples illustrate some caveats in naming files, folders and versions.
-
-![data][data1]
-![data][data2]
-![data][data3]
-{: .img-box}
-
-The following examples illustrates how nesting can vary 
-
-![data][slide_attribute2]
-![data][slide_attribute3]
-{: .img-box}
-
-> ### Discussion
-> What characteristics do you use to create folders and subfolders in your projects? \
-> E.g., data type, collection year, ...
+> ### Exercise - Naming and Sorting
+> The following example contain files from an imaginary project, similar to the above example. To facilitate the exercise file name convention state that:
+> - *phyA/phyB* are genotypes
+> - *sXX* is the sample number
+> - *LD/SD* are light conditions (Long Day, Short Day)
+> - *on/off* are different growth media (on sucrose, off sucrose)
+> - *date format* is the sample date
+> - *tXX* is the sample timepoint 
+> - *raw*, *norm* indicates raw or normalised data
 >
->> ### Examples of helpful characteristics or file attributes
->> * Year or other date
->> * Type of data, document or file
->> * Project stages
->> * Analysis version or revision
->> * Experiments 
->> * Instruments
->> * Time periods
->> * Geographic location
->> * Storage requirements
->> * Team member, institution or project site
-> {: .solution}
+---
+```
+2020-07-14_s12_phyB_on_SD_t04.raw.xlsx  
+2020-07-14_s1_phyA_on_LD_t05.raw.xlsx  
+2020-07-14_s2_phyB_on_SD_t11.raw.xlsx  
+2020-08-12_s03_phyA_on_LD_t03.raw.xlsx  
+2020-08-12_s12_phyB_on_LD_t01.raw.xlsx  
+2020-08-13_s01_phyB_on_SD_t02.raw.xlsx  
+2020-7-12_s2_phyB_on_SD_t01.raw.xlsx  
+AUG-13_phyB_on_LD_s1_t11.raw.xlsx  
+JUL-31_phyB_on_LD_s1_t03.raw.xlsx  
+LD_phyA_off_t04_2020-08-12.norm.xlsx  
+LD_phyA_on_t04_2020-07-14.norm.xlsx  
+LD_phyB_off_t04_2020-08-12.norm.xlsx  
+LD_phyB_on_t04_2020-07-14.norm.xlsx  
+SD_phyB_off_t04_2020-08-13.norm.xlsx  
+SD_phyB_on_t04_2020-07-12.norm.xlsx  
+SD_phya_off_t04_2020-08-13.norm.xlsx  
+SD_phya_ons_t04_2020-07-12.norm.xlsx  
+ld_phyA_ons_t04_2020-08-12.norm.xlsx
+```
+---
+> Try to answer the following questions:
+> - Should dates be put first, and if not, why?
+> - What is the difference between using leading 0 (zero) or not?
+> - Is there a difference between using upper and lower case letters?
+> - What is the difference between using two letters for *on* compared to three letters *ons*?
+> - What are the effects if we, as in the above example, mix naming conventions?
+>> ### Solutions
+>>> * Using dates as leading information in file names makes finding data quickly harder as the more interesting information may be samples or timepoints. 
+>>> * Wihtout leading zeros, sorting will make 10 and 11 appear before 2.
+>>> * Upper and lower cases may sort differently 
+>>> * Comparing files is easier if the file name lenghts are constant.  
+>>> * Mixed naming conventions can make it very difficult to locate particular files, and/or sort a large number of files. 
+>> {: .solution}
 {: .discussion}
 
+
 ### Choose a file naming strategy
-Two important starting points for your file naming strategy are:
+Two starting points for your file naming strategy are:
 
 - #### A file name is a principal identifier of a file
-    Good file names provide useful clues to the content, status and version of a file, uniquely identify a file and help in classifying and sorting files. File names that reflect the file content also facilitate searching and discovering files. In collaborative research, it is essential to keep track of changes and edits to files via the file name.
+    Good file names contain useful clues to the content, status and version of a file, uniquely identify a file and help in classifying and sorting files. File names that reflect the file content also facilitate searching and discovering files. In collaborative research, it is essential to keep track of changes and edits to files via the file name.
 - #### File naming strategy should be consistent in time and among different people
     In both quantitative and qualitative research file naming should be systematic and consistent across all files in the study. A group of cooperating researchers should follow the same file naming strategy and file names should be independent of the location of the file on a computer.
 
 
-![data][slide_files]
-
-
-### Create documentation files
-Systematically documented research data is the key to making the data publishable, discoverable, citable and reusable. Clear and sufficiently detailed documentation improve the overall data quality. It is vital to document both the study for which the data has been collected and the data itself. These two levels of documentation are called project-level and data-level documentation and can both be saved as files and stored in your file hierarchy.
-
-A common practice it to use plain text files – a very simple form of text documents that only contain characters. These files are often called README-files and can be placed strategically across your file hierarchy to help people find what they want or direct them to where further project-level or data-level documentations can be found. 
-
-![data][slide_docs2]
-
-### Examples
-How many folders and how deeply nested subfolders you use will depend on many factors, such as the complexity or length of the project or the number of collaborators working on a project. A multi-year project with many contributors and subcontractors may result in lots of folders and files.
-
-You should try to establish a structure early and be prepared to adapt it as needed to remain organized throughout the duration of the project. The best way to organize your folders really depends on the attributes that are most helpful to your project and, again, how many files you will be working with. 
-
-![data][slide_ex1]
-
-![data][slide_ex2]
-
-![data][slide_ex3]
-
-The following is a structure proposed for computational biology projects. The data folder is for storing our fixed data sets and we see data sets are organized by date. You can see README  files in each of the yeast and worm data folders. The src folder contains source code and code, the bin folder contains compiled binaries and scripts, and the results directory is for tracking  computational experiments performed on the data. This could be a helpful structure to follow  if you are running a computational experiment.
-
-![data][slide_ex4]
-
-<!--
-### Summary
-
-* There is a folder for the raw data, which do not get altered, or intermixed with data that is the result of manual or programmatic manipulation. I.e., derived data is kept separate from raw data, and raw data are not duplicated.
-* Code is kept separate from data.
-* Use a version control system (at least for code) 
-* There is a scratch fodler for experimentation. Everything in the scratch fodler can be deleted at any time without negative impact.
-* There should be a README in every fodler, describing the purpose of the fodler and its contents.
-* Use file naming schemes that makes it easy to find files and understand what they are (for humans and machines)
-* Use non-proprietary formats – .csv rather than .xlsx
--->
-
-## How to name files and folders
+### Naming files and folders
 
 A File Naming Convention is a framework, or protocol if you like, for naming your files in a way that describes what the files contain and, importantly, how they relate to other files. 
 
@@ -177,26 +163,72 @@ A File Naming Convention is a framework, or protocol if you like, for naming you
 | fig 2.png                                           | fig02_histogram-talk-attendance.png |
 | JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt     | 1986-01-28_raw-data-from-challenger-o-rings.txt |
 
+<br>
+
+## Information vs. Name length
+Long file and folder names are always good because they contain more information, right? Wrong! Long names do hold more information, but also make them cumbersome. Certain software have hard coded limitations on path lengths, e.g. since Windows95 the Windows OS usually have problems with combined path lenghts exceeding 260 characters. And even in case your OS supports longer paths, some software may not. Truncated folder or file names may seriously impact findability and sortability, or even cause errors. As a problem, this also increases with folder naming and file system depth. 
+
 > ### Discussion
 > What are examples of potential benefits of agreeing on a File Naming Convention for a project?
 >
 >> ### Potential benefits of a File Naming Convention
->> - Easier to process - All team members won’t have to over think the file naming process
+>> - Easier to process - Team members will not have to over think the file naming process
 >> - Easier to facilitate access, retrieval and storage of files
 >> - Easier to browse through files, saving time and effort
 >> - Harder to lose!
->> - Having logical and known naming conventions in place can also help you with version control (See Version Control for more information).
+>> - Having logical and known naming conventions in place can also help you with version control.
 >> - Check for obsolete or duplicate records
 > {: .solution}
 {: .discussion}
 
 ### Three principles for (file) names:
 
-1. Machine readable – avoid spaces, deliberate punctuation, no accented characters, consistent letter casing
-1. Human readable - a name describes the content of the file, connects to concept of a *slug* from semantic URLs
+1. Machine readable – Avoid spaces, deliberate punctuation, no accented characters, consistent letter casing
+1. Human readable - A name describes the content of the file
 1. Plays well with default ordering – put something numeric first, use the ISO 8601 standard for dates, left pad other numbers with zeros
 
+### Do's:
+
+* For dates use the YYYY-MM-DD standard and place at the end of the file UNLESS you need to organize your files chronologically
+
+* Include version number (if applicable), use leading zeroes (i.e.: v005 instead of v5).
+make sure the 3-letter file format extension is present at the end of the name (e.g. .doc, .xls, .mov, .tif)
+
+* Add a README (or PROJECT_STRUCTURE) file in your top directory which details your naming convention, directory structure and abbreviations
+
+
+### Avoid (Don'ts):
+
+* Using spaces (use _ or - instead)
+
+* Dots, commas and special characters (e.g. ~ ! @ # $ % ^ & * ( ) ` ; < > ? , [ ] { } ‘ “)
+
+* Using language specific characters (e.g óężé), unfortunately they still cause problems with most software or between operating systems (OS)
+
+* Long names
+
+* Repetition, e.g if directory name is Electron_Microscopy_Images, and file ELN_MI_IMG_20200101.img then ELN_MI_IMG is redundant
+
+* Deep paths with long names (i.e. deeply nested folders with long names), as archiving or moving between OS may fail
+
+
+![data][slide_files]
+.....
+
+## How to organise files and folders
+Spend some time planning how you are going to organise your data at the beginning of a project. Consider how you and others will look for and access the files throughout the project’s life cycle and ensure that all people involved can commit to using the folder hierarchy, file naming conventions, and a strategy for onboarding new contributors. You can start small and expand as you develop your practices.
+
+### Use folders to divide files into categories
+Put each project in its own folder named after that project. Ideally you want to keep the folder’s name under 32 characters long while at the same time including a combination of the project title, a unique identifier and the date. 
+
+Consider the best hierarchy for the files in the project and decide whether a deep or shallow hierarchy is preferable. If you have several independent data collections, it is advisable to create a separate data folder for each collection. But you can use any meaningful characteristic or file attribute as a basis for organising your files, which of them will be most helpful varies widely across domains and specific projects. 
+
+
+### Examples
+
 ![][awesome_names]
+
+---
 
 #### Search and filtering friendly
 
@@ -213,6 +245,8 @@ A File Naming Convention is a framework, or protocol if you like, for naming you
 
 ![][plasmid_regex]
 
+---
+
 #### Encode/extract metadata from filenames
 
 Deliberate use of "-" and "_" allows recovery of meta-data from the filenames:
@@ -227,17 +261,15 @@ Deliberate use of "-" and "_" allows recovery of meta-data from the filenames:
 
 This happens to be `R` but also possible in the `shell`, `Python`, etc.
 
+---
+
 #### Descriptive filenames
 
 **Which set of file(name)s do you want at 3 a.m. before a deadline**?
 
 ![][human_readable_not_options]
 
-
-#### Embrace the *slug*
-
-![][slug_filenames]
-
+---
 
 ### Plays well with default ordering
 
@@ -259,10 +291,39 @@ This happens to be `R` but also possible in the `shell`, `Python`, etc.
 If you don’t left pad, you may get this:
 
 ```
- 10_final-figs-for-publication.R
  1_data-cleaning.R
+ 10_final-figs-for-publication.R
+ 11_final-fig-for-poster.R
  2_fit-model.R
+ 3_sort-values.R
+ 4_plot-graph.R
+ 5_histogram.R
+ 6_subdata-extraction.R
+ 7_calculate-median.R
+ 8_scatterplots.R
+ 9_experimental.R
 ```
+---
+
+### Folder organisation
+Consider the following four different folder structures.
+
+![file_organisation][file_organisation]
+
+The first two (**A** and **B**) are recommended for computing.
+The other two (**C** and **D**) are recommended for wet lab or biological projects.
+
+> ### Exercise
+> * Which one is the most similar one to your own project structure?
+> * When/why would you use **A** compared to **B**?
+> * When/why would you use **C** compared to **D**? 
+>
+>> ### Solution
+>> - **A** could be preferred when you analyse different data under one unifying research question, while **B** could be preferred when you need/want to break down the data and analysis into separate variables.
+>> - **C** is preferred when you organise data (in this case digital images from scans) by research object (e.g. pigs aka "patients"), while **D** is preferred when the focus of interest is an outcome of a treatment rather than the individuals themselves. 
+> {: .solution}
+{: .discussion}
+
 
 > ### Create your own File Naming Convention 
 > [Briney, Kristin A. (2020) File Naming Convention Worksheet. [Teaching Resource] (Unpublished)](https://resolver.caltech.edu/CaltechAUTHORS:20200601-161923247)
@@ -273,7 +334,7 @@ If you don’t left pad, you may get this:
 > 1. What characters will you use to separate each piece of metadata in the file name?
 > 1. Will you need to track different versions of each file?
 > 1. Write down your naming convention pattern
-> 1. Document this convention in a README.txt (or save this worksheet) and keep it with your files
+> 1. Document this convention in a README.md (or save this worksheet) and keep it with your files
 {: .callout}
 
 > ### Further reading

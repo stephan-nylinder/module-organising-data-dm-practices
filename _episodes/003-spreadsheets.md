@@ -26,7 +26,7 @@ keypoints:
 [5_excel_dates_1]: ../fig/tabular-data/5_excel_dates_1.jpg
 
 > ## About this episode 
-> We organize data in spreadsheets in the ways that we as humans want to work with the data, but computers require that data is organized in particular ways. In order to use tools that make computation more efficient, we need to structure our data the way that computers need the data. This episode will cover:
+> We organize data in spreadsheets in the ways that we as humans want to work with the data, but computers and humans see data in different ways. In order to use tools that make computation more efficient, we need to structure our data the way that computers need the data. This episode will cover:
 >
 > 1. TOC
 > {:toc}
@@ -34,29 +34,15 @@ keypoints:
 {: .callout .toc}
 
 ## Good practices for structuring data tables
-The most common mistake made is treating spreadsheet programs like lab notebooks, that is,
-relying on context, notes in the margin,
-spatial layout of data and fields to convey information. As humans, we
-can (usually) interpret these things, but computers don't view information the same way, and
-unless we explain to the computer what every single thing means (and
-that can be hard!), it will not be able to see how our data fits
-together.
+The most common mistake made is treating spreadsheet programs like lab notebooks, i.e relying on context, colors, notes in the margin, and spatial layout of data and fields, to convey information. As humans, we can (usually) interpret these things, but computers don't view information the same way, and unless we explain hat every single thing means (and that can be hard!), a computer will not be able to see how our data fits together.
 
-Using the power of computers, we can manage and analyze data in much more 
-effective and faster ways, but to use that power, we have to set up
-our data for the computer to be able to understand it (and computers are very 
-literal).
+This is why it is extremely important to set up well-formatted
+tables from the outset – **before** you even start entering data. Once data is entered, even from a trial or test, we are less motivated to changing the input format.
 
-This is why it’s extremely important to set up well-formatted
-tables from the outset – **before** you even start entering data from
-your very first preliminary experiment. Data organization is the
-foundation of your research project. It can make it easier or harder
-to work with your data throughout your analysis, so it's worth
-thinking about when you're doing your data entry or setting up your
-experiment. You can set things up in different ways in spreadsheets,
-but some of these choices can limit your ability to work with the data in other programs or
-have the you-of-6-months-from-now or your collaborator work with the
-data.
+Data organization is the foundation of your research project. It can make it easier or harder to work with your data throughout your analysis, so it is worth considering when you are doing your data entry or setting up your experiment. Your future self might not agree with your present self on the data input format. 
+
+## Early metadata
+Another thing to consider is to adapt to metadata standards early in the data entry phase. Adopting an early metadata standard and sticking to it, will make later phases much easier. A dataset pre-adapted to publication will be the source of far less headache than a non-adapted. 
 
 > ### Note
 > The best layouts/formats (as well as software and
@@ -67,20 +53,15 @@ data.
 
 ### Keeping track of your analyses
 
-When working with spreadsheets during data clean up or analyses, it's
-very easy to end up with a spreadsheet that looks very different from the one
-you started with. In order to be able to reproduce your analyses or figure out
-what you did when your leadership team asks for a different analysis,
-you **must:**
+When working with spreadsheets during data clean up or analyses, it is very easy to end up with a spreadsheet that looks different from what you started with. In order to be able to reproduce your analyses or figure out what you did when your leadership team asks for a different analysis, you **must:**
 
-- **create a new file or tab with your cleaned or analyzed data.** Do
-  not modify the original dataset, or you will never know where you
-  started!
-- **keep track of the steps you took in your clean up or analysis.**
-  You should track these steps as a scientist would each step in an
-  experiment. You can do this in another text file, or a good option
-  is to create a new tab in your spreadsheet with your notes. This way
-  the notes and data stay together.
+- **...create a new file or tab with your cleaned or analyzed data.**
+<br>
+Do not modify the original dataset, or you will never know where you started!
+
+- **...keep track of the steps you took in your clean up or analysis.**
+<br>
+You should track these steps as a scientist would each step in an experiment. You can do this in another text file, or a good option is to create a new tab in your spreadsheet with your notes. This way the notes and data stay together.
 
 This might be an example of a spreadsheet setup:
 
@@ -94,28 +75,20 @@ We will put these principles into practice today during your exercises.
 
 The cardinal rules of using spreadsheet programs for data:
 
-1. Put all your **variables in columns** - the thing you're measuring,
-   like 'length' or 'attendance'.
+1. Put all your **variables in columns** - the thing you are measuring, like 'length' or 'attendance'.
 2. Put each **observation in its own row**.
-3. **Don't combine multiple pieces of information in one
-   cell**. Sometimes it just seems like one thing, but think if that's
-   the only way you'll want to be able to use or sort that data.
+3. **Don't combine multiple pieces of information in one cell**. Sometimes it just seems like one thing, but think if that is the only way you want to be able to use or sort that data.
 4. **Leave the original (raw) data raw** - don't mess with it!
-5. Export the cleaned data to a **text based format** like CSV. This
-   ensures that anyone can use the data, and is the format required by
-   most data repositories.
+5. Export the cleaned data to a **text based format** like CSV. This ensures that anyone can use the data (remember *Interoperability*?), and is the format required by most data repositories.
 
-For instance, we have data from attendance and instruction for previous
-research data management workshops. Different people have entered data in to a
-spreadsheet. They keep track of things like date, number of attendees, and who
+To illustrate, we will use participant data from a workshop. Different people have entered data in to a spreadsheet to keep track of things like date, number of attendees, and who
 delivered the workshop.
 
 If they were to keep track of the data like this:
 
 ![multiple-info example][multiple-info]
 
-the problem is that the number of attendees of different types (post-graduate
-researcher (PGR), post-doctoral research associate (PDRA), and other) are in
+the problem is that the number of attendees of different types (post-graduate researcher (PGR), post-doctoral research associate (PDRA), and other) are in
 the same field. So if they wanted to look at attendance by post-graduate
 researchers, it would be hard to set up the data to do this. If instead we
 put attendee categories in different columns, you can see that it would be much
