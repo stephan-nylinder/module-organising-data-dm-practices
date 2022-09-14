@@ -11,7 +11,7 @@ objectives:
 keypoints:
 - Create a new file or tab with your cleaned or analyzed data
 - Keep track of the steps you took in your clean up or analysis
-- Keep your spreadsheets simple – put each observation in its own row and each variables in its own column
+- Keep your spreadsheets simple – put each observation in its own row and each variable in its own column
 - Export the cleaned data to a text based format
 
 ---
@@ -34,7 +34,7 @@ keypoints:
 {: .callout .toc}
 
 ## Good practices for structuring data tables
-The most common mistake made is treating spreadsheet programs like lab notebooks, i.e relying on context, colors, notes in the margin, and spatial layout of data and fields, to convey information. As humans, we can (usually) interpret these things, but computers don't view information the same way, and unless we explain hat every single thing means (and that can be hard!), a computer will not be able to see how our data fits together.
+The most common mistake made is treating spreadsheet programs like lab notebooks, i.e relying on context, colors, notes in the margin, and spatial layout of data and fields, to convey information. As humans, we can (usually) interpret these things, but computers don't view information the same way, and unless we explain what every single thing means (and that can be hard!), a computer will not be able to see how our data fits together.
 
 This is why it is extremely important to set up well-formatted
 tables from the outset – **before** you even start entering data. Once data is entered, even from a trial or test, we are less motivated to changing the input format.
@@ -42,7 +42,7 @@ tables from the outset – **before** you even start entering data. Once data is
 Data organization is the foundation of your research project. It can make it easier or harder to work with your data throughout your analysis, so it is worth considering when you are doing your data entry or setting up your experiment. Your future self might not agree with your present self on the data input format. 
 
 ## Early metadata
-Another thing to consider is to adapt to metadata standards early in the data entry phase. Adopting an early metadata standard and sticking to it, will make later phases much easier. A dataset pre-adapted to publication will be the source of far less headache than a non-adapted. 
+Another thing to consider is to adapt to metadata standards early in the data entry phase. Adopting an early metadata standard and sticking to it, will make later phases much easier. A dataset pre-adapted to publication will be the source of far less headache than a non-adapted. <!-- adapt or adopt? both are used, is this intentionally? Also, it is not the metadata standard that is early, but rather the process of using it -->
 
 > ### Note
 > The best layouts/formats (as well as software and
@@ -119,7 +119,7 @@ So, instead we should have:
 > 1. With the person next to you, work on the messy data so that a
   computer will be able to understand it. Clean up the 2016 and 2017
   tabs, and put them all together in one spreadsheet.
-> 1. What do you think was wrong with this data and how would you fix it?
+> 1. What do you think was wrong with this data and how would you fix it? <!-- the exercise is to fix, while this seems to be a discussion point? Also, under solution I would expect a link to an actual solution of the exercise, when everything is cleaned (plus the solution duplicates everything is next section, so seems unnecessarily redunant) -->
 >
 >> ### Solution
 >> - [Multiple tables](#tables)
@@ -137,7 +137,7 @@ So, instead we should have:
 > {: .solution}
 {: .challenge}
 
-
+<!-- I could not validate that the links above works, it doesn't render well in Visual studio, so this needs to be done in 'carpentry mode' -->
 ## How to address common issues with spreadsheet software
 
 > ### Discussion
@@ -236,7 +236,7 @@ From White et al, 2013, [Nine simple ways to make it easier to (re)use your data
 
 ### Placing comments or units in cells {#units}
 
-**Example**: Your data was collected, in part, by a summer student who you later found out was mis-recording the duration of training sessions, some of the time. You want a way to note these data are suspect.
+**Example**: Your data was collected, in part, by a summer student who you later found out was mis-recording the duration of training sessions, sometimes. You want a way to note that these data are suspect.
 
 **Solution**: Most statistical programs can’t see Excel’s comments, and would be confused by comments placed within your data cells. As described above for formatting, create another field if you need to add notes to cells. Similarly, don’t include units in cells (such as "hours","min"): ideally, all the units or measurements you place in one column should be of the same standard, but if for some reason they aren’t, insert another column and specify the units.
 
@@ -272,7 +272,7 @@ Underscores (`_`) are a good alternative to spaces and consider writing names in
 
 **Example**: You treat Excel as a word processor when writing notes, even copying data directly from Word or other applications.
 
-**Solution**: This is a common strategy. For example, when writing longer text in a cell, people often include line breaks, em-dashes, et al in their spreadsheet.  Worse yet, when copying data in from applications such as Word, formatting and fancy non-standard characters (such as left- and right-aligned quotation marks) are included.  When exporting this data into a coding/statistical environment or into a relational database, dangerous things may occur, such as lines being cut in half and encoding errors being thrown.
+**Solution**: This is a common strategy. For example, when writing longer text in a cell, people often include line breaks, em-dashes, etc in their spreadsheet.  Worse yet, when copying data in from applications such as Word, formatting and fancy non-standard characters (such as left- and right-aligned quotation marks) are included.  When exporting this data into a coding/statistical environment or into a relational database, dangerous things may occur, such as lines being cut in half and encoding errors being thrown.
 
 General best practice is to avoid adding characters such as newlines, tabs, and vertical tabs.  In other words, treat a text cell as if it were a simple web form that can only contain text and spaces.
 
@@ -290,14 +290,13 @@ General best practice is to avoid adding characters such as newlines, tabs, and 
 **Example**: You enter a full date as the value in a column. 
 
 **Solution**: Whilst this seems the most natural way to record dates and
-Spreadsheet programs have numerous “useful features” which allow them to “handle” dates, it actually is not a good practice. 
-A spreadsheet application will display the dates in
-seemingly correct way (for the human eye) but how it actually handles
+spreadsheet programs have numerous “useful features” which allow them to “handle” dates, it actually is not a good practice. 
+A spreadsheet application will display the dates in seemingly correct way (for the human eye) but how it actually handles
 and stores the dates may be problematic. 
 
 ![Many formats, many ambiguities][5_excel_dates_1]
 
-Excel **stores dates as a number** - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
+Excel **stores dates as numbers** - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
 
 It is safer to store dates with MONTH, DAY and YEAR in separate columns or as YEAR and DAY-OF-YEAR in separate columns.
 

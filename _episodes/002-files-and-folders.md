@@ -73,7 +73,7 @@ It’s natural for some of your files to become unorganised from time to time—
 ![Unorganised files on desktop][files_messy_tidy]
 
 In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or—more commonly—that someone could be your future self not remembering what you were up to when you created a particular set of files.  Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time re-organising yourself among files and contents you once knew.
-
+<!-- it is not yourself that you will re-organise... -->
 ## File and folder naming 
 
 Names for files and folders should be consistent and meaningful to yourself and collaborators, allow for easy tracking/searching, and be somewhat descriptive of content.
@@ -94,7 +94,7 @@ Based on the name, the file could contain information about:
 However, this is not obvious from the text and letters alone. Some sort of explanation is usually required, which could be added to a README-file stored in proximity to the data files.
 
 > ### Exercise - Naming and Sorting
-> The following example contain files from an imaginary project, similar to the above example. To facilitate the exercise file name convention state that:
+> The following example contain files from an imaginary project, similar to the above example. To facilitate the exercise file name convention state that: <!-- I don't understand the preceeding sentence, is it 'To facilitate the exercise, the file name convention states that:'? -->
 > - *phyA/phyB* are genotypes
 > - *sXX* is the sample number
 > - *LD/SD* are light conditions (Long Day, Short Day)
@@ -147,7 +147,7 @@ Two starting points for your file naming strategy are:
 - #### A file name is a principal identifier of a file
     Good file names contain useful clues to the content, status and version of a file, uniquely identify a file and help in classifying and sorting files. File names that reflect the file content also facilitate searching and discovering files. In collaborative research, it is essential to keep track of changes and edits to files via the file name.
 - #### File naming strategy should be consistent in time and among different people
-    In both quantitative and qualitative research file naming should be systematic and consistent across all files in the study. A group of cooperating researchers should follow the same file naming strategy and file names should be independent of the location of the file on a computer.
+    In both quantitative and qualitative research, file naming should be systematic and consistent across all files in the study. A group of cooperating researchers should follow the same file naming strategy and file names should be independent of the location of the file on a computer.
 
 
 ### Naming files and folders
@@ -211,7 +211,7 @@ make sure the 3-letter file format extension is present at the end of the name (
 
 * Deep paths with long names (i.e. deeply nested folders with long names), as archiving or moving between OS may fail
 
-
+<!-- shouldn't this fig be under the heading? Also, what is the meaning of the five dots? -->
 ![data][slide_files]
 .....
 
@@ -225,13 +225,13 @@ Consider the best hierarchy for the files in the project and decide whether a de
 
 
 ### Examples
-
+<!-- i'm totally lost with these examples, what has this to do with how to organise files and folders? is the 'error' that the heading should be ## Examples rather than ### Examples, i.e. this section gives examples of everything / all sections above? -->
 ![][awesome_names]
-
+<!-- why have this picture, without explanation, when you have almost the same under next heading? -->
 ---
 
 #### Search and filtering friendly
-
+<!-- the heading is the same size as the 'subheadings' below -->
 **Except of complete file listing**:
 
 ![][plasmid_names]

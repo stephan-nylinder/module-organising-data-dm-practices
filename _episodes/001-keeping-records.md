@@ -12,10 +12,10 @@ objectives:
 
 keypoints:
 - Good data organization is the foundation of any research project!
-- Leave behind the research and notes you would wish to find yourself!
+- Leave behind the research and notes you would wish to find yourself! 
 
 ---
-
+<!-- leave behind sounds more like stop doing it rather than make sure you do -->
 [Provenance]: ../fig/keeping-records/Provenance.jpg
 [life-cycle]: ../fig/keeping-records/life-cycle.png
 [notes]: ../fig/keeping-records/analogue_notes.jpeg
@@ -29,7 +29,7 @@ keypoints:
 {: .callout .toc}
 
 
-## Section 1
+## Section 1 <!-- a bit more informative heading, perhaps? -->
 Congratulations researcher! You have been recruited to the lab of Famous Scientist, an authority in the field with many benchmark publications in the CV. It is truly an honor to work here, and you outcompeted quite a few applicants to earn the position. It will be a major addition to your CV, and will likely increase your chances to receive funding for your own projects in the future.
  
 The road to success is open!
@@ -82,30 +82,31 @@ Good scientific practise depends on keeping and maintaining good records. Good r
 
 Keeping good records will prevent future issues, where revelations about the past data handling and metadata quality can question not only the original results, but also the subsequent research building on such data; [(A recent example)](https://www.nature.com/articles/s41597-022-01602-0). As science is cumulative, uncorrected mistakes in a process may multiply over time.
 
-Good practise reduces the risk for data mistakes, data manipulation and research fraud. Making data and documentation open and transparent promotes the values of open science, and in the longer perspecive, safeguards the integrity of science itself. Inability to share data and documentation, or inconsistencies in published results has revealed high level fraud in the realm of science (e.g. the infamous cases of [Dr. Yoshitaka Fuji](https://web.archive.org/web/20140812021223/http://www.anesth.or.jp/english/pdf/news20121019.pdf) ,or [Joachim Boldt](https://retractionwatch.com/category/joachim-boldt-retractions/)), who both fabricated data and results, resulting in hundereds of retracted papers. 
+Good practise reduces the risk for data mistakes, data manipulation and research fraud. Making data and documentation open and transparent promotes the values of open science, and in the longer perspective, safeguards the integrity of science itself. Inability to share data and documentation, or inconsistencies in published results has revealed high level fraud in the realm of science (e.g. the infamous cases of [Dr. Yoshitaka Fuji](https://web.archive.org/web/20140812021223/http://www.anesth.or.jp/english/pdf/news20121019.pdf), or [Joachim Boldt](https://retractionwatch.com/category/joachim-boldt-retractions/)), who both fabricated data and results, resulting in hundereds of retracted papers. 
 
 Not only is the fabrication of data and/or results a threat to the integrity of science itself. Once published, [fraudulent papers can keep on being cited years after being retracted](https://retractionwatch.com/the-retraction-watch-leaderboard/top-10-most-highly-cited-retracted-papers/). 
 
-While fraudulent activity is indeed a problem, the more positive arguments for keeping good quality records can be described by the **FAIR** principles. Good records promote data and documentaiton being 
+While fraudulent activity is indeed a problem, the more positive arguments for keeping good quality records can be described by the **FAIR** principles. Good records promote data and documentation being 
 
 - **F**indable,
 - **A**ccessible,
 - **I**nteroperable, and
 - **R**euseable
 
-In that context written lab notes on paper can still fulfil the FAIR principles, but to a lesser degree than digital notes. Making your lab notes and protocols digital, and even available online, promotes sharing them with anyone who need them for a publication, and submitting them to a public repository (e.g. [Zenodo](https://zenodo.org/), or [FigShare](https://figshare.com/) provide them with persisitent identifiers (PIDs) and make them readily citeable. 
+In that context written lab notes on paper can still fulfil the FAIR principles, but to a lesser degree than digital notes. Making your lab notes and protocols digital, and even available online, promotes sharing them with anyone who need them for a publication, and submitting them to a public repository (e.g. [Zenodo](https://zenodo.org/), or [FigShare](https://figshare.com/)) provide them with persistent identifiers (PIDs) and make them readily citeable. 
 
 There are several platforms for keeping digital lab notes, documenting your workflow and making the data and documentation easier to access and share among people and across time. 
+<!-- since public repo:s are exemplified above, perhaps examples of platforms for lab notes would be suitable? -->
 
 ## Principles for good records
 
-Protocols and lab notes should be kept detailed, up to date, and accurate. They should be possible to access and be easily understood by both yourself and others regardless of time. Keeping records in digital format ensures easy back up and increased shareability, and this is especially true if you are working with sensitive (ethically approved) data, data regarding endangered species, or private enterprise property. Guidelines for keeping protocols can include, but should not be limited to:
+Protocols and lab notes should be kept detailed, up to date, and accurate. They should be possible to access and be easily understood by both yourself and others regardless of time. <!-- the sentence that follows makes no sense, what has sensitive data to do with easy back up and increased shareability? Also, the interpretation we have in e.g. DSW is that all the data you mention is sensitive i.e. it would be 'sensitive data (ethically approved, data regarding endangered species, private enterprise property) --> Keeping records in digital format ensures easy back up and increased shareability, and this is especially true if you are working with sensitive (ethically approved) data, data regarding endangered species, or private enterprise property. Guidelines for keeping protocols can include, but should not be limited to:
 
 - Your name, affiliation and contact information
 - Who the originator of the protocol is (if not you)
 - Detailed and structured information on why and how an experiment was done
 - Health and safety advice
-- Required hardware, software, or materials/instuments being used and when/where they were obtained
+- Required hardware, software, or materials/instruments being used and when/where they were obtained
 - Sufficient information so that someone can understand what has been done without having to ask anyone else
 - Described mistakes, so they can be avoided in future applications of the protocol
 
@@ -144,18 +145,18 @@ While the protocol is a confirmed recipe for making research data in an experime
 
 README-files are good for a lot of things, perhaps most often encountered when installing software, and the mere presence of a README-file attracts attention when encountered. 
 
-Unless you are of the opinion that data speaks for itself, explanation of file content and folder structure might be require, and why not include it in a README and place it easily findable? 
+Unless you are of the opinion that data speaks for itself, explanation of file content and folder structure might be required, and why not include it in a README and place it easily findable? 
 
 Such files can be added at many levels in the file hierarchy:
 
-- Folder level, aiming at explaing the contents, naming, file history, and organisation of a folder structure, and/or
+- Folder level, aiming at explaining the contents, naming, file history, and organisation of a folder structure, and/or
 - Together with e.g. data, explaining file naming convention and/or file contents.
 
 The purpose of adding README-files is to explicitly document everything you (and others) need in order to understand the files and folders in the future.
 
 ## Using Markdown for documentation
 
-Markdown was developed as a lightweight easy-to-read and easy-to-write web text format emphasizing readability, (for example, the web pages for this course is written in Markdown). By creating your README-files using Markdown (.md) you guarantee the files only to include plain text with powerful yet simple formatting syntax, which can be combined with i.e. HTML tags.
+Markdown was developed as a lightweight easy-to-read and easy-to-write web text format emphasizing readability, (for example, the web pages for this course is written in Markdown). By creating your README-files using Markdown (.md) you guarantee that the files only include plain text with powerful yet simple formatting syntax, which can be combined with e.g. HTML tags.
 
 But why use Markdown, why not make a plain text file (.txt)?
 
@@ -224,7 +225,7 @@ Even if memory serves you well, technology might not. Know your storage needs an
 > ### Further reading
 >
 > - [ELIXIR (2021) Data storage. In Research Data Management Kit. A deliverable from the EU-funded ELIXIR-CONVERGE project (grant agreement 871075).](https://rdmkit.elixir-europe.org/storage.html)
-> - [--- (2021) Processing. In Research Data Management Kit. A deliverable from the EU-funded ELIXIR-CONVERGE project (grant agreement 871075).](https://rdmkit.elixir-europe.org/processing)
+> - [ELIXIR (2021) Processing. In Research Data Management Kit. A deliverable from the EU-funded ELIXIR-CONVERGE project (grant agreement 871075).](https://rdmkit.elixir-europe.org/processing)
 >
 {: .callout}
 
