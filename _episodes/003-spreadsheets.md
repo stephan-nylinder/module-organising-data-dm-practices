@@ -11,7 +11,7 @@ objectives:
 keypoints:
 - Create a new file or tab with your cleaned or analyzed data
 - Keep track of the steps you took in your clean up or analysis
-- Keep your spreadsheets simple – put each observation in its own row and each variables in its own column
+- Keep your spreadsheets simple – put each observation in its own row and each variable in its own column
 - Export the cleaned data to a text based format
 
 ---
@@ -26,7 +26,7 @@ keypoints:
 [5_excel_dates_1]: ../fig/tabular-data/5_excel_dates_1.jpg
 
 > ## About this episode 
-> We organize data in spreadsheets in the ways that we as humans want to work with the data, but computers and humans see data in different ways. In order to use tools that make computation more efficient, we need to structure our data the way that computers need the data. This episode will cover:
+> We organize data in spreadsheets in the ways that we as humans want to work with the data, but computers and humans see data in different ways. In order to use tools that make computation more efficient, we need to structure our data the way that computers need it. This episode will cover:
 >
 > 1. TOC
 > {:toc}
@@ -34,15 +34,14 @@ keypoints:
 {: .callout .toc}
 
 ## Good practices for structuring data tables
-The most common mistake made is treating spreadsheet programs like lab notebooks, i.e relying on context, colors, notes in the margin, and spatial layout of data and fields, to convey information. As humans, we can (usually) interpret these things, but computers don't view information the same way, and unless we explain hat every single thing means (and that can be hard!), a computer will not be able to see how our data fits together.
+The most common mistake made is treating spreadsheet programs like lab notebooks, i.e relying on context, colors, notes in the margin, and spatial layout of data and fields, to convey information. Humans can (usually) interpret such information, but computers view information differently. Unless we explain what everything means (and that can be hard!), a computer will not be able to see how our data fits together.
 
-This is why it is extremely important to set up well-formatted
-tables from the outset – **before** you even start entering data. Once data is entered, even from a trial or test, we are less motivated to changing the input format.
+Setting up well-formatted tables early in the research process is extremely important – **before** you even start entering data. Once data is entered, even from a trial or test, we are less motivated to make changes to the format itself.
 
-Data organization is the foundation of your research project. It can make it easier or harder to work with your data throughout your analysis, so it is worth considering when you are doing your data entry or setting up your experiment. Your future self might not agree with your present self on the data input format. 
+Data organization can make it easier or harder to work with data. Your future self might not agree with your present self on the best input format! 
 
 ## Early metadata
-Another thing to consider is to adapt to metadata standards early in the data entry phase. Adopting an early metadata standard and sticking to it, will make later phases much easier. A dataset pre-adapted to publication will be the source of far less headache than a non-adapted. 
+An important thing to consider is to adapt to using metadata standards early in the research phase. Adopting a metadata standard for your collected data, and sticking to it, will make later phases much easier. A dataset pre-adapted to publication will be the source of far less headache than a non-adapted. 
 
 > ### Note
 > The best layouts/formats (as well as software and
@@ -70,8 +69,7 @@ This might be an example of a spreadsheet setup:
 We will put these principles into practice today during your exercises.
 
 
-## How to structure data tables in spreadsheets
-
+### How to structure data tables in spreadsheets
 
 The cardinal rules of using spreadsheet programs for data:
 
@@ -88,11 +86,7 @@ If they were to keep track of the data like this:
 
 ![multiple-info example][multiple-info]
 
-the problem is that the number of attendees of different types (post-graduate researcher (PGR), post-doctoral research associate (PDRA), and other) are in
-the same field. So if they wanted to look at attendance by post-graduate
-researchers, it would be hard to set up the data to do this. If instead we
-put attendee categories in different columns, you can see that it would be much
-easier.
+the problem is that the number of attendees of different types (post-graduate researcher (PGR), post-doctoral research associate (PDRA), and other) are in the same field. If we want to look at attendance by post-graduate researchers, it would be hard to set up the data. If instead we put attendee categories in different columns, it would be much easier.
 
 ### Columns for variables and rows for observations
 
@@ -103,68 +97,14 @@ So, instead we should have:
 
 ![single-info example][single-info]
 
-> ### Exercise
->
-> We're going to take a messy version of some data and clean it up.
-> (Remember to **create a new file** for the cleaned data, and **never
-> modify the original (raw) data**.)
->
-> 1. First [download the data](../data/training_attendance.xlsx)
-> 1. Open up the data in a spreadsheet program.
-> 1. You can see that there are three tabs. Various people have recorded
-  training attendance statistics over 2016 and 2017, and they have
-  kept track of the data in their own way. Now you're being asked to
-  evaluate the training programme and you want to be able to start
-  doing statistics with the data.
-> 1. With the person next to you, work on the messy data so that a
-  computer will be able to understand it. Clean up the 2016 and 2017
-  tabs, and put them all together in one spreadsheet.
-> 1. What do you think was wrong with this data and how would you fix it?
->
->> ### Solution
->> - [Multiple tables](#tables)
->> - [Multiple tabs](#tabs)
->> - [Not filling in zeros](#zeros)
->> - [Using bad null values](#null)
->> - [Using formatting to convey information](#formatting)
->> - [Using formatting to make the data sheet look pretty](#formatting_pretty)
->> - [Placing comments or units in cells](#units)
->> - [More than one piece of information in a cell](#info)
->> - [Field name problems](#field_name)
->> - [Special characters in data](#special)
->> - [Inclusion of metadata in data table](#metadata)
->> - [Using software specific date formats](#dates)
-> {: .solution}
-{: .challenge}
+## Tips and tricks for working with spreadsheets
 
+Many things can happen when we enter data into a spreadsheet. Without claiming a comprehensibel list, some of the things we can consider to make it easier for ourselves are: 
 
-## How to address common issues with spreadsheet software
-
-> ### Discussion
->
-> What structural issues do you often find in spreadsheets and how do you address them?
->
->> ### Possible things avoid
->> - [Multiple tables](#tables)
->> - [Multiple tabs](#tabs)
->> - [Not filling in zeros](#zeros)
->> - [Using bad null values](#null)
->> - [Using formatting to convey information](#formatting)
->> - [Using formatting to make the data sheet look pretty](#formatting_pretty)
->> - [Placing comments or units in cells](#units)
->> - [More than one piece of information in a cell](#info)
->> - [Field name problems](#field_name)
->> - [Special characters in data](#special)
->> - [Inclusion of metadata in data table](#metadata)
->> - [Using software specific date formats](#dates)
-> {: .solution}
-{: .discussion}
-
-### Multiple tables {#tables}
+### Avoiding multiple tables {#tables}
 
 A common strategy is creating multiple data tables within one
-spreadsheet. **This confuses the computer, so don't do this!** When
-you create multiple tables within one spreadsheet, you’re drawing
+spreadsheet tab. **This confuses the computer, avoid at all cost!** Creating multiple tables within one spreadsheet, you’re drawing
 false associations between things for the computer, which sees each
 row as an observation. You’re also potentially using the same field
 name in multiple places, which will make it harder to clean your data
@@ -173,87 +113,64 @@ up into a usable form. The example below depicts the problem:
 ![Screengrab of spreadsheet showing formatting errors - multiple tables in one sheet][2_Multiple_Tables]
 
 
-### Multiple tabs {#tabs}
+### Avoiding multiple tabs {#tabs}
 
-But what about worksheet tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there (you have to introduce spreadsheet application-specific functions or scripting to ensure this connection). Say, for instance, you make a separate tab for each year.
+Many tabs are good tabs, right? Well, yes and no. Creating extra tabs make the computer miss data connections that are there (which must be re-introduced using spreadsheet application-specific functions, or scripting). Say, for instance, you make a separate tab for each year.
 
-This is bad practice for two reasons:
-**1)** you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and
-**2)** even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the data because you will have to combine these data into a single data table. You will have to explicitly tell the computer how to combine tabs - and if the tabs are inconsistently formatted, you might even have to do it by hand!
+Try to avoid for two reasons:
+* You are more likely to accidentally add inconsistencies to your data.
+* You add an extra step for yourself before an analysis because you need to combine the data into a single data table. 
 
-The next time you’re entering data, and you go to create another tab or table, I want you to ask yourself “Self, could I avoid adding this tab by adding another column to my original spreadsheet?”
-
-Your data sheet might get very long over the course of recording data. This makes it harder to enter data if you can’t see your headers at the top of the spreadsheet. But do NOT repeat headers. These can easily get mixed into the data, leading to problems down the road.
-
-Instead you can Freeze the column headers.
+Your data sheet might end up being very extensive over the course of recording data, making it harder to enter data and maintaining an overview. For spreadsheets with many rows, use fixed a Freeze Pane or Fixed Header function (do NOT repeat header rows!).
 
 [Documentation on how to freeze column headers in Microsoft Excel](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a)
 
 [Documentation on how to freeze column headers in LibreOffice Calc](https://help.libreoffice.org/Calc/Freezing_Rows_or_Columns_as_Headers)
 
 
-### Not filling in zeroes {#zeros}
+### Zero vs. Missing data {#zeros}
 
-It might be that when you're measuring something, it's
-usually a zero, say the number of participants at a training event. Why bother
-writing in the number zero in that column, when it's mostly zeros?
+A spreadsheet cell missing data can be replaced with a zero (0), right? Zero participants at an event can be replaced by no value, because none showed up. Wrong!
 
+To a computer, a zero is data. You measured or counted it, and it was zero. A blank cell means no measurement at all, and the computer will interpret it as a null value. Leaving zero data blank is not good in a written format, but NEVER okay when you move your data into a digital format.
 
+### Bad null values (missing data) {#null}
 
-However, there's a difference between a zero and a blank cell in a spreadsheet. To the computer, a zero is actually data. You measured or counted it. A blank cell means that it wasn't measured and the computer will interpret it as a null value.
-
-The spreadsheets or statistical programs will likely mis-interpret blank cells that are meant to be zero. This is equivalent to leaving out data. Zero observations are real data! Leaving zero data blank is not good in a written format, but NEVER okay when you move your data into a digital format.
-
-
-### Using bad null values (missing data) {#null}
+How do you make explicit something that do not exist (a null value)? 
 
 **Example**: using -999 or other numerical values (or zero).
 
-**Solution**: Many statistical programs will not recognize that numeric values of null are indeed null. It will depend on the final application of your data and how you intend to analyse it, but it is essential to use a clearly defined and CONSISTENT null indicator. Blanks (most applications) and NA (for R) are good choices.
+**Solution**: To many statistical programs a numeric value can never be a null. It will depend on the final application of your data and how you intend to analyse it, but it is essential to use a clearly defined and CONSISTENT null indicator. Blanks (most applications) and NA (for R) are good choices.
 
 From White et al, 2013, [Nine simple ways to make it easier to (re)use your data.](https://ojs.library.queensu.ca/index.php/IEE/article/view/4608) Ideas in Ecology and Evolution:
 
 ![White et al.][3_white_table_1]
 
 
-### Using formatting to convey information  {#formatting}
+### Avoid using formatting to add information  {#formatting}
 
-**Example**: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.
+**Example**: Colours! (The more the merrier). Separating data by blank rows. Merging cells to make text viewable. 
 
-![formatting][formatting]
-
-**Solution**: create a new field to encode which data should be excluded.
-
-![good formatting][good_formatting]
-
-
-### Using formatting to make the data sheet look pretty {#formatting_pretty}
-
-**Example**: merging cells.
-
-**Solution**: If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise your computer’s ability to see associations in the data. Merged cells are an absolute formatting NO-NO if you want to make your data readable by statistics software. Consider restructuring your data in such a way that you will not need to merge cells to organize your data.
-
+**Solution**: Simple. If you cannot add information as data in a row, move it to documentation/README. If you cannot see all text in a cell, make cell wider. Merged cells can really mess up machine readbility of data!
 
 ### Placing comments or units in cells {#units}
 
-**Example**: Your data was collected, in part, by a summer student who you later found out was mis-recording the duration of training sessions, some of the time. You want a way to note these data are suspect.
+**Example**: You doubt the data quality of a cell and want to make a comment about it.
 
-**Solution**: Most statistical programs can’t see Excel’s comments, and would be confused by comments placed within your data cells. As described above for formatting, create another field if you need to add notes to cells. Similarly, don’t include units in cells (such as "hours","min"): ideally, all the units or measurements you place in one column should be of the same standard, but if for some reason they aren’t, insert another column and specify the units.
+**Solution**: Add comments in separate cells, or in separate tab referencing the cells in question. 
 
-
-### More than one piece of information in a cell {#info}
+### More than one kind of information in a cell {#info}
 
 **Example**: 
-One table recorded attendance by the different types of attendees. This table recorded number of attendees of different types: post-graduate researcher (PGR), post-doctoral research associate (PDRA), and other. 
+You want to add linked but static data to a cell in a spreadsheet. For example, an experiement was run on mice `mus` with phenotype wrinkled skin `wrinsk`, caused by presence `+` of gene variant `Prss21`. So I can add that data in a single column as `mus_wrinsk_Prss21+`, right? No. 
 
 **Solution**: 
-Never include more than one piece of information in a cell. Design your data sheet to include a column for each type of attendee, if this information is important to collect, rather than just a total number.
-
-
+Never include more than one piece of information in a cell! Design your data sheet to include a column for each type of data. The organism is one kind of data, the phenotype a separate kind, etc. Place each one in their own column, *even if it seems unnecessary*! 
 
 ### Field name problems {#field_name}
-Choose descriptive field names, but be careful not to include: spaces, numbers, or special characters of any kind. Spaces can be misinterpreted by parsers that use whitespace as delimiters and some programs don’t like field names that are text strings that start with numbers.
-Underscores (`_`) are a good alternative to spaces and consider writing names in camel-case to improve readability. Remember that abbreviations that make sense at the moment may not be so obvious in 6 months but don't overdo it with names that are excessively long. Including the units in the field names avoids confusion and enables others to readily interpret your fields.
+If possible, decide on a pre-defined controlled vocabulary prior to collecting your data. Doing so will make later data publications much easier since your data is pre-adapted to the submission requirements.
+
+For field names do not to include: spaces, numbers, or special characters of any kind. Underscores (`_`) are a good alternative to spaces and consider writing names in camel-case to improve readability. Remember that abbreviations making sense today may not be so obvious tomorrow.
 
 **Examples**  
 
@@ -268,38 +185,52 @@ Underscores (`_`) are a good alternative to spaces and consider writing names in
 | Observation\_01    | first\_observation | 1st Obs              |
 
 
-### Special characters in data {#special}
+### Avoid special characters in data {#special}
 
 **Example**: You treat Excel as a word processor when writing notes, even copying data directly from Word or other applications.
 
-**Solution**: This is a common strategy. For example, when writing longer text in a cell, people often include line breaks, em-dashes, et al in their spreadsheet.  Worse yet, when copying data in from applications such as Word, formatting and fancy non-standard characters (such as left- and right-aligned quotation marks) are included.  When exporting this data into a coding/statistical environment or into a relational database, dangerous things may occur, such as lines being cut in half and encoding errors being thrown.
+**Solution**: When writing longer text in a cell, avoid using things like line breaks and em-dashes. Be careful when copying data/test in from applications such as Word. Formatting and fancy non-standard characters can cause issues when exported to other software, such as appearance of sudden lines breaks. Treat all text as simple unformatted text.
 
-General best practice is to avoid adding characters such as newlines, tabs, and vertical tabs.  In other words, treat a text cell as if it were a simple web form that can only contain text and spaces.
-
-
-### Inclusion of metadata in data table {#metadata}
+### Avoid including metadata in spreadsheet {#metadata}
 
 **Example**: You add a legend at the top or bottom of your data table explaining column meaning, units, exceptions, etc.
 
-**Solution**: While recording data about your data ("metadata") is essential, this information should not be contained in the data file itself. Unlike a table in a paper or a supplemental file, metadata (in the form of legends) should not be included in a data file since this information is not data, and including it can disrupt how computer programs interpret your data file. Rather, metadata should be stored as a separate file in the same directory as your data file, preferably in plain text format with a name that clearly associates it with your data file. Because metadata files are free text format, they also allow you to encode comments, units, information about how null values are encoded, etc. that are important to document but can disrupt the formatting of your data file.
+**Solution**: Same as before, move all explanations to a separate tab or a separate cross-referenced document.
 
-
-
-### Date formats in spreadsheets {#dates}
+### Using different date formats {#dates}
 
 **Example**: You enter a full date as the value in a column. 
 
-**Solution**: Whilst this seems the most natural way to record dates and
-Spreadsheet programs have numerous “useful features” which allow them to “handle” dates, it actually is not a good practice. 
-A spreadsheet application will display the dates in
-seemingly correct way (for the human eye) but how it actually handles
+**Solution**: It may seem the most natural way to record dates is to write them as you say them. Spreadsheet programs have numerous “useful features” which allow them to “handle” dates, but it actually is not a good practice. Even if the spreadsheet application will display the dates in
+seemingly correct way (to the human eye), how it actually handles
 and stores the dates may be problematic. 
 
 ![Many formats, many ambiguities][5_excel_dates_1]
 
 Excel **stores dates as a number** - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
 
-It is safer to store dates with MONTH, DAY and YEAR in separate columns or as YEAR and DAY-OF-YEAR in separate columns.
+If possible, stick to the international ISO standard date format - YYYY-MM-DD, especially if you are collaborating with colleagues used to other date formats. It will save you a lot of headache, we promise! 
+
+> ### Exercise
+>
+> We are going to take a messy version of some data and begin cleaning it up using the information, tips and tricks listed above.
+> (Remember to **create a new file** for the cleaned data, and **never modify the original (raw) data**.)
+>
+> 1. First [download the data](../data/training_attendance_start.xlsx)
+> 1. Open up the data in a spreadsheet program (i.e. Excel).
+> 1. You can see that there are two tabs. Various people have recorded training attendance statistics over 2016 and 2017 for two kind of training activities, and they have made notes and kept track of the data in their own way. Now you are being asked to evaluate the training programme, and you want to be able to run a few statistical analysis. You need to make the data more **machine readable**
+> 1. Together with the person next to you, work on the data to make it **both human readable and machine readable**. Clean up the 2016 and 2017 tabs, and see if all data can be merged in an easier way.
+> 1. Think of a way to document what you have done, so that your future you understands the changes that was made. Where do you store that information?
+>
+>> ### Hints and Solution
+>> 1. Can the data potentially be merged into a single tab?
+>> 1. The colours used to mark cells are not explained. Is it useful to retain such information? 
+>> 1. The diagrams are only visualisations of some of the data. They can be easily reproduced elsewhere and may mask other information. Can they be removed from the spreadsheet?
+>> 1. It seems the attendee data is entered in a non-compatible way across the different tabs. Is there a risk of information loss, or can you merge data using a smallest common denominator approach?
+>> 1. Would you store documentation of changes within or outside of the spreadsheet? Why and how?
+>> 1. A suggestion on how the data can be cleaned and organised can be downloaded [here](.../data/training_attendance_end.xlsx) 
+> {: .solution}
+{: .challenge}
 
 
 > ### Further reading

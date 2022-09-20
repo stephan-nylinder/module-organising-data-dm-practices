@@ -72,7 +72,7 @@ It’s natural for some of your files to become unorganised from time to time—
 
 ![Unorganised files on desktop][files_messy_tidy]
 
-In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or—more commonly—that someone could be your future self not remembering what you were up to when you created a particular set of files.  Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time re-organising yourself among files and contents you once knew.
+In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or—more commonly that someone could be your future self not remembering what you were up to when you created a particular set of files. Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time re-orienting yourself among files and contents you once knew.
 
 ## File and folder naming 
 
@@ -94,7 +94,7 @@ Based on the name, the file could contain information about:
 However, this is not obvious from the text and letters alone. Some sort of explanation is usually required, which could be added to a README-file stored in proximity to the data files.
 
 > ### Exercise - Naming and Sorting
-> The following example contain files from an imaginary project, similar to the above example. To facilitate the exercise file name convention state that:
+> The following example contain files from an imaginary project, similar to the above example. To facilitate the exercise, the file name convention states that:
 > - *phyA/phyB* are genotypes
 > - *sXX* is the sample number
 > - *LD/SD* are light conditions (Long Day, Short Day)
@@ -147,7 +147,7 @@ Two starting points for your file naming strategy are:
 - #### A file name is a principal identifier of a file
     Good file names contain useful clues to the content, status and version of a file, uniquely identify a file and help in classifying and sorting files. File names that reflect the file content also facilitate searching and discovering files. In collaborative research, it is essential to keep track of changes and edits to files via the file name.
 - #### File naming strategy should be consistent in time and among different people
-    In both quantitative and qualitative research file naming should be systematic and consistent across all files in the study. A group of cooperating researchers should follow the same file naming strategy and file names should be independent of the location of the file on a computer.
+    In both quantitative and qualitative research, file naming should be systematic and consistent across all files in the study. A group of cooperating researchers should follow the same file naming strategy and file names should be independent of the location of the file on a computer.
 
 
 ### Naming files and folders
@@ -212,9 +212,6 @@ make sure the 3-letter file format extension is present at the end of the name (
 * Deep paths with long names (i.e. deeply nested folders with long names), as archiving or moving between OS may fail
 
 
-![data][slide_files]
-.....
-
 ## How to organise files and folders
 Spend some time planning how you are going to organise your data at the beginning of a project. Consider how you and others will look for and access the files throughout the project’s life cycle and ensure that all people involved can commit to using the folder hierarchy, file naming conventions, and a strategy for onboarding new contributors. You can start small and expand as you develop your practices.
 
@@ -222,75 +219,31 @@ Spend some time planning how you are going to organise your data at the beginnin
 Put each project in its own folder named after that project. Ideally you want to keep the folder’s name under 32 characters long while at the same time including a combination of the project title, a unique identifier and the date. 
 
 Consider the best hierarchy for the files in the project and decide whether a deep or shallow hierarchy is preferable. If you have several independent data collections, it is advisable to create a separate data folder for each collection. But you can use any meaningful characteristic or file attribute as a basis for organising your files, which of them will be most helpful varies widely across domains and specific projects. 
+<br>
+<br>
+![data][slide_files]
+<br>
 
 
-### Examples
-
-![][awesome_names]
-
----
-
-#### Search and filtering friendly
-
-**Except of complete file listing**:
-
-![][plasmid_names]
-
-
-**Same using Mac OS Finder search facilities**:
-
-![][plasmid_mac_os_search]
-
-**Same using regex in `R`**:
-
-![][plasmid_regex]
-
----
-
-#### Encode/extract metadata from filenames
-
-Deliberate use of "-" and "_" allows recovery of meta-data from the filenames:
-
-- "_" underscore used to delimit units of meta-data I want later.
-- "-" hyphen used to delimit words so my eyes don't bleed.
-
-![][plasmid_delimiters]
-
-
-![][plasmid_delimiters_code]
-
-This happens to be `R` but also possible in the `shell`, `Python`, etc.
-
----
-
-#### Descriptive filenames
-
-**Which set of file(name)s do you want at 3 a.m. before a deadline**?
-
-![][human_readable_not_options]
-
----
-
-### Plays well with default ordering
-
-**Chronological order**:
-
-![][chronological_order]
-
-**Logical order**: Put something numeric first
-
-![][logical_order]
-
-**Dates**: Use the ISO 8601 standard for dates: YYYY-MM-DD
-![][chronological_order]
-
-**Left pad other numbers with zeros**
-
-![][logical_order]
-
-If you don’t left pad, you may get this:
-
+> ### Exercise 1
+> Consider the following batch of file names
 ```
+ 1_data-cleaning.R
+ 2_fit-model.R
+ 3_sort-values.R
+ 4_plot-graph.R
+ 5_histogram.R
+ 6_subdata-extraction.R
+ 7_calculate-median.R
+ 8_scatterplots.R
+ 9_experimental.R
+ 10_final-figs-for-publication.R
+ 11_final-fig-for-poster.R
+```
+> From a findability and file sorting perspective, what is the main issue with the above file names? 
+>> ### Solution
+>> If you do not left pad with zeroes (0) you will end up with the following order of files when you sort the files in descending order. 
+>> ```
  1_data-cleaning.R
  10_final-figs-for-publication.R
  11_final-fig-for-poster.R
@@ -303,6 +256,9 @@ If you don’t left pad, you may get this:
  8_scatterplots.R
  9_experimental.R
 ```
+> {: .solution}
+{: .discussion}
+
 ---
 
 ### Folder organisation
@@ -313,7 +269,7 @@ Consider the following four different folder structures.
 The first two (**A** and **B**) are recommended for computing.
 The other two (**C** and **D**) are recommended for wet lab or biological projects.
 
-> ### Exercise
+> ### Exercise 2
 > * Which one is the most similar one to your own project structure?
 > * When/why would you use **A** compared to **B**?
 > * When/why would you use **C** compared to **D**? 
