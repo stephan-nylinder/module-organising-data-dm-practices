@@ -1,7 +1,7 @@
 ---
-title: Structuring tabular data in spreadsheets
+title: Spreadsheet data
 teaching: 20
-exercises: 10
+exercises: 15
 questions:
 - What are good practices for structuring data and metadata in spreadsheets?
 objectives:
@@ -26,7 +26,7 @@ keypoints:
 [5_excel_dates_1]: ../fig/tabular-data/5_excel_dates_1.jpg
 
 > ## About this episode 
-> We organize data in spreadsheets in the ways that we as humans want to work with the data, but computers and humans see data in different ways. In order to use tools that make computation more efficient, we need to structure our data the way that computers need it. This episode will cover:
+> We tend to organize data in spreadsheets as we humans want to work with the data, but computers and humans see it in different ways. In order to use tools that make computation more efficient, we need to structure our data the way that computers need it. This episode will cover:
 >
 > 1. TOC
 > {:toc}
@@ -77,7 +77,7 @@ The cardinal rules of using spreadsheet programs for data:
 2. Put each **observation in its own row**.
 3. **Don't combine multiple pieces of information in one cell**. Sometimes it just seems like one thing, but think if that is the only way you want to be able to use or sort that data.
 4. **Leave the original (raw) data raw** - don't mess with it!
-5. Export the cleaned data to a **text based format** like CSV. This ensures that anyone can use the data (remember *Interoperability*?), and is the format required by most data repositories.
+5. Export the cleaned data to a **text based format** like CSV. This ensures that anyone can use the data (remember the *I* in *FAIR*?), and is the format required by most data repositories.
 
 To illustrate, we will use participant data from a workshop. Different people have entered data in to a spreadsheet to keep track of things like date, number of attendees, and who
 delivered the workshop.
@@ -86,7 +86,7 @@ If they were to keep track of the data like this:
 
 ![multiple-info example][multiple-info]
 
-the problem is that the number of attendees of different types (post-graduate researcher (PGR), post-doctoral research associate (PDRA), and other) are in the same field. If we want to look at attendance by post-graduate researchers, it would be hard to set up the data. If instead we put attendee categories in different columns, it would be much easier.
+the problem is that attendees are split in types (post-graduate researcher (PGR), post-doctoral research associate (PDRA), and other), but retained in the same cells. If we want to look at attendance by type, it would be hard to set up the data. If instead we split attendee categories in different columns, it would be much easier.
 
 ### Columns for variables and rows for observations
 
@@ -104,35 +104,41 @@ Many things can happen when we enter data into a spreadsheet. Without claiming a
 ### Avoiding multiple tables {#tables}
 
 A common strategy is creating multiple data tables within one
-spreadsheet tab. **This confuses the computer, avoid at all cost!** Creating multiple tables within one spreadsheet, you’re drawing
-false associations between things for the computer, which sees each
-row as an observation. You’re also potentially using the same field
-name in multiple places, which will make it harder to clean your data
-up into a usable form. The example below depicts the problem:
+spreadsheet tab. **This confuses the computer, avoid at all cost!**. Multiple tables within one spreadsheet create
+false associations between cells for the computer, which sees each
+row as an observation. You are also potentially using the same field name in multiple places, which will make it harder to clean your data up into a usable form. 
+
+The example below depicts the problem:
 
 ![Screengrab of spreadsheet showing formatting errors - multiple tables in one sheet][2_Multiple_Tables]
 
+<br>
 
 ### Avoiding multiple tabs {#tabs}
 
 Many tabs are good tabs, right? Well, yes and no. Creating extra tabs make the computer miss data connections that are there (which must be re-introduced using spreadsheet application-specific functions, or scripting). Say, for instance, you make a separate tab for each year.
 
-Try to avoid for two reasons:
+Try to avoid it for two reasons:
 * You are more likely to accidentally add inconsistencies to your data.
 * You add an extra step for yourself before an analysis because you need to combine the data into a single data table. 
 
-Your data sheet might end up being very extensive over the course of recording data, making it harder to enter data and maintaining an overview. For spreadsheets with many rows, use fixed a Freeze Pane or Fixed Header function (do NOT repeat header rows!).
+Your data sheet might end up being very extensive over the course of recording data, making it harder to enter data and maintaining an overview. For spreadsheets with many rows, use a Freeze Pane or Fixed Header function (do NOT repeat header rows!).
 
 [Documentation on how to freeze column headers in Microsoft Excel](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a)
 
 [Documentation on how to freeze column headers in LibreOffice Calc](https://help.libreoffice.org/Calc/Freezing_Rows_or_Columns_as_Headers)
 
+<br>
 
 ### Zero vs. Missing data {#zeros}
 
-A spreadsheet cell missing data can be replaced with a zero (0), right? Zero participants at an event can be replaced by no value, because none showed up. Wrong!
+A spreadsheet cell missing data can be replaced with a zero (0), right? Zero participants at an event can be replaced by no value, because none showed up, right? 
+
+Wrong!
 
 To a computer, a zero is data. You measured or counted it, and it was zero. A blank cell means no measurement at all, and the computer will interpret it as a null value. Leaving zero data blank is not good in a written format, but NEVER okay when you move your data into a digital format.
+
+<br>
 
 ### Bad null values (missing data) {#null}
 
@@ -146,6 +152,7 @@ From White et al, 2013, [Nine simple ways to make it easier to (re)use your data
 
 ![White et al.][3_white_table_1]
 
+<br>
 
 ### Avoid using formatting to add information  {#formatting}
 
@@ -153,26 +160,32 @@ From White et al, 2013, [Nine simple ways to make it easier to (re)use your data
 
 **Solution**: Simple. If you cannot add information as data in a row, move it to documentation/README. If you cannot see all text in a cell, make cell wider. Merged cells can really mess up machine readbility of data!
 
+<br>
+
 ### Placing comments or units in cells {#units}
 
 **Example**: You doubt the data quality of a cell and want to make a comment about it.
 
 **Solution**: Add comments in separate cells, or in separate tab referencing the cells in question. 
 
+<br>
+
 ### More than one kind of information in a cell {#info}
 
 **Example**: 
-You want to add linked but static data to a cell in a spreadsheet. For example, an experiement was run on mice `mus` with phenotype wrinkled skin `wrinsk`, caused by presence `+` of gene variant `Prss21`. So I can add that data in a single column as `mus_wrinsk_Prss21+`, right? No. 
+You want to add linked but static data to a cell in a spreadsheet. For example, an experiement was run on mice `mus` with phenotype wrinkled skin `wrinsk`, caused by presence `+` of gene variant `Prss21`. So I can add that data in a single column as `mus_wrinsk_Prss21+`, and code data as present/absent, right? No. 
 
 **Solution**: 
 Never include more than one piece of information in a cell! Design your data sheet to include a column for each type of data. The organism is one kind of data, the phenotype a separate kind, etc. Place each one in their own column, *even if it seems unnecessary*! 
 
+<br>
+
 ### Field name problems {#field_name}
 If possible, decide on a pre-defined controlled vocabulary prior to collecting your data. Doing so will make later data publications much easier since your data is pre-adapted to the submission requirements.
 
-For field names do not to include: spaces, numbers, or special characters of any kind. Underscores (`_`) are a good alternative to spaces and consider writing names in camel-case to improve readability. Remember that abbreviations making sense today may not be so obvious tomorrow.
+For field names do not to include spaces, numbers, or special characters of any kind. Underscores (`_`) are a good alternative to spaces and consider writing names in camel-case (LikeThis.txt) to improve readability. Remember that abbreviations making sense today may not be so obvious tomorrow.
 
-**Examples**  
+**Examples:**  
 
 | Good Name          | Good Alternative   | Avoid                |
 |--------------------+--------------------+----------------------|
@@ -184,6 +197,7 @@ For field names do not to include: spaces, numbers, or special characters of any
 | cell\_type         | CellType           | Cell Type            |
 | Observation\_01    | first\_observation | 1st Obs              |
 
+<br>
 
 ### Avoid special characters in data {#special}
 
@@ -191,11 +205,15 @@ For field names do not to include: spaces, numbers, or special characters of any
 
 **Solution**: When writing longer text in a cell, avoid using things like line breaks and em-dashes. Be careful when copying data/test in from applications such as Word. Formatting and fancy non-standard characters can cause issues when exported to other software, such as appearance of sudden lines breaks. Treat all text as simple unformatted text.
 
+<br>
+
 ### Avoid including metadata in spreadsheet {#metadata}
 
 **Example**: You add a legend at the top or bottom of your data table explaining column meaning, units, exceptions, etc.
 
 **Solution**: Same as before, move all explanations to a separate tab or a separate cross-referenced document.
+
+<br>
 
 ### Using different date formats {#dates}
 
@@ -210,6 +228,8 @@ and stores the dates may be problematic.
 Excel **stores dates as a number** - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
 
 If possible, stick to the international ISO standard date format - YYYY-MM-DD, especially if you are collaborating with colleagues used to other date formats. It will save you a lot of headache, we promise! 
+
+<br>
 
 > ### Exercise
 >

@@ -1,10 +1,10 @@
 ---
 title: Keeping records
-teaching: 10
+teaching: 20
 exercises: 10
 questions:
 - Why and how do we keep good research records?
-- How to keep your records FAIR 
+- How do we keep our records FAIR? 
 
 objectives:
 - Identify the pros and cons with analogue vs. digital notes
@@ -21,7 +21,7 @@ keypoints:
 [notes]: ../fig/keeping-records/analogue_notes.jpeg
 
 > ## About this episode 
-> The data that you collect, organise, prepare, and analyse to answer your research questions, and the documentation describing it are the lifeblood of your research. Put bluntly: Without data, there is no research. And while data is important, without proper documentation, your data might be useless for others as well as yourself in the future.
+> The data that you collect, organise, prepare, and analyse to answer your research questions, and the documentation describing it, are the lifeblood of your research. Put bluntly: Without data, there is no research. And while data is important, without proper documentation, your data might be useless for others as well as yourself in the future.
 >
 > 1. TOC
 > {:toc}
@@ -34,7 +34,7 @@ Congratulations researcher! You have been recruited to the lab of Famous Scienti
  
 The road to success is open!
 
-On your first day of work Famous lets you know that you will continue, and build on, the work left behind by a previous PhD, Wang Fang (王芳), who left the Famous lab six months ago to pursue a career somewhere else (former co-workers claim she is in China, or the USA. Or maybe the UK. Or Germany. Nobody knows for sure). Before leaving, Wang sent Famous a photo of her lab notes documenting the data you will work with.
+On your first day of work Famous lets you know that you will continue, and build on, the work left behind by a previous PhD, Wang Fang (王芳), who left the Famous lab six months ago to pursue a career elsewhere (former co-workers claim she is in China, or the USA. Or maybe the UK. Or Germany. Nobody knows for sure). Before leaving, Wang sent Famous a photo of her lab notes documenting the data you will work with.
 
 She also left behind a USB-stick containing all known files and folders in a zip-file.
 
@@ -168,7 +168,7 @@ But why use Markdown, why not make a plain text file (.txt)?
 * Easily editable, versatile but not requiring particular skills.
 
 > ### Discussion
-> Think of an example where you would have benefited from having access to a README-file when working with data. Describe to your desktop neighbor what you would have wanted such a file to contain. 
+> Think of an example where you would have benefited from having access to a README-file when working with data. Describe to your neighbor what you would have wanted such a file to contain. 
 {: .discussion}
 
 ## Backing up your files and folders

@@ -1,7 +1,7 @@
 ---
 title: "Organising files and folders"
 teaching: 20
-exercises: 5
+exercises: 10
 questions:
 - What are good practices for organising files and documentation to support your project?
 objectives:
@@ -68,11 +68,11 @@ Depending on your background and experiences you could be thinking of different 
 * Helps you to keep and maintain a record of the project
 * Projects can easily be understood by others (including your future self)
 
-It’s natural for some of your files to become unorganised from time to time—perhaps your downloads or desktop folder—and in those cases there may be multiple copies and versions of files cluttering your view and making it challenging to find what you're looking for. You can avoid this clutter by planning for organising your files ahead of time, and any system is better than none.
+It is natural for some of your files to become unorganised from time to time, (e.g. downloads or desktop folder), and in those cases there may be multiple copies and versions of files making it challenging to find what you are looking for. You can avoid this clutter by organising your files ahead of time, and any system is better than none.
 
 ![Unorganised files on desktop][files_messy_tidy]
 
-In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or—more commonly that someone could be your future self not remembering what you were up to when you created a particular set of files. Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time re-orienting yourself among files and contents you once knew.
+In this context we will be looking into practices for classifying and structuring files and folders to make them more useful. Your guiding principle should be that someone unfamiliar with your project should be able to look at your files and understand, in detail, what you did and why. This someone could be a researcher who wants to reproduce the results in your article, a new collaborator who needs to understand the details of your experiments, or more commonly, that someone could be your future self not remembering why you created a particular set of files. Poor organisation practices can lead to significantly slower research progress and you may end up having to spend significant time re-orienting yourself among files and contents you once knew.
 
 ## File and folder naming 
 
@@ -86,7 +86,7 @@ Based on the name, the file could contain information about:
 
 * `LD` - Long day sampling, of the
 * `phyA` - Phytochrome A genotype, in a 
-* `off` - Media without sucrose, at
+* `off` - Medium without sucrose, at
 * `t04` - Time point 4,
 * `2020-08-12` - Sampled on Aug 12th, 2020, with
 * `norm` - Normalised data
@@ -127,16 +127,16 @@ ld_phyA_ons_t04_2020-08-12.norm.xlsx
 ---
 > Try to answer the following questions:
 > - Should dates be put first, and if not, why?
-> - What is the difference between using leading 0 (zero) or not?
+> - What is the difference between using leading 0 (zero) and not?
 > - Is there a difference between using upper and lower case letters?
 > - What is the difference between using two letters for *on* compared to three letters *ons*?
 > - What are the effects if we, as in the above example, mix naming conventions?
 >> ### Solutions
->>> * Using dates as leading information in file names makes finding data quickly harder as the more interesting information may be samples or timepoints. 
+>>> * Using dates as leading information in file names makes finding data quickly harder as the more interesting information may be samples or timepoints (unless date is crucial to data). 
 >>> * Wihtout leading zeros, sorting will make 10 and 11 appear before 2.
 >>> * Upper and lower cases may sort differently 
->>> * Comparing files is easier if the file name lenghts are constant.  
->>> * Mixed naming conventions can make it very difficult to locate particular files, and/or sort a large number of files. 
+>>> * Comparing files is easier if the file name lenghts are uniform.  
+>>> * Mixed naming conventions can make it difficult to locate particular files, and/or sort a large number of files. 
 >> {: .solution}
 {: .discussion}
 
@@ -154,19 +154,7 @@ Two starting points for your file naming strategy are:
 
 A File Naming Convention is a framework, or protocol if you like, for naming your files in a way that describes what the files contain and, importantly, how they relate to other files. 
 
-| ---- |---|
-| Bad                                                 | Better |
-| ---- |---|
-| myabstract.docx                                     | 2014-06-08_abstract-for-sla.docx |
-| Joe’s Filenames Use Spaces and Punctuation.xlsx     | joes-filenames-are-getting-better.xlsx |
-| figure 1.png                                        | fig01_scatterplot-talk-length-vs-interest.png |
-| fig 2.png                                           | fig02_histogram-talk-attendance.png |
-| JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt     | 1986-01-28_raw-data-from-challenger-o-rings.txt |
-
 <br>
-
-## Information vs. Name length
-Long file and folder names are always good because they contain more information, right? Wrong! Long names do hold more information, but also make them cumbersome. Certain software have hard coded limitations on path lengths, e.g. since Windows95 the Windows OS usually have problems with combined path lenghts exceeding 260 characters. And even in case your OS supports longer paths, some software may not. Truncated folder or file names may seriously impact findability and sortability, or even cause errors. As a problem, this also increases with folder naming and file system depth. 
 
 > ### Discussion
 > What are examples of potential benefits of agreeing on a File Naming Convention for a project?
@@ -180,6 +168,11 @@ Long file and folder names are always good because they contain more information
 >> - Check for obsolete or duplicate records
 > {: .solution}
 {: .discussion}
+
+<br>
+
+## Information vs. Name length
+Long file and folder names are always good because they contain more information, right? Wrong! Long names do hold more information, but also make them cumbersome. Certain software have hard coded limitations on path lengths, e.g. since Windows95 the Windows OS usually have problems with combined path lenghts exceeding 260 characters. And even in case your OS supports longer paths, some software may not. Truncated folder or file names may seriously impact findability and sortability, or even cause errors. As a problem, this also increases with folder naming and file system depth. 
 
 ### Three principles for (file) names:
 
@@ -211,6 +204,16 @@ make sure the 3-letter file format extension is present at the end of the name (
 
 * Deep paths with long names (i.e. deeply nested folders with long names), as archiving or moving between OS may fail
 
+<br>
+Examples:
+
+| Bad                                                 | Better |
+| ---- |---|
+| myabstract.docx                                     | 2014-06-08_abstract-for-sla.docx |
+| Joe’s Filenames Use Spaces and Punctuation.xlsx     | joes-filenames-are-getting-better.xlsx |
+| figure 1.png                                        | fig01_scatterplot-talk-length-vs-interest.png |
+| fig 2.png                                           | fig02_histogram-talk-attendance.png |
+| JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt     | 1986-01-28_raw-data-from-challenger-o-rings.txt |
 
 ## How to organise files and folders
 Spend some time planning how you are going to organise your data at the beginning of a project. Consider how you and others will look for and access the files throughout the project’s life cycle and ensure that all people involved can commit to using the folder hierarchy, file naming conventions, and a strategy for onboarding new contributors. You can start small and expand as you develop your practices.

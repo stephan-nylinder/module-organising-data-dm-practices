@@ -1,7 +1,7 @@
 ---
 title: File structure in practice 
-teaching: 10
-exercises: 15
+teaching: 5
+exercises: 20
 questions:
 - How do we reach for a more structured way to organize our files and folders?
 objectives:
