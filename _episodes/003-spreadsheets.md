@@ -40,7 +40,7 @@ Setting up well-formatted tables early in the research process is extremely impo
 
 Data organization can make it easier or harder to work with data. Your future self might not agree with your present self on the best input format! 
 
-## Early metadata
+## Early metadata <!-- should this be level 3 heading? -->
 An important thing to consider is to adapt to using metadata standards early in the research phase. Adopting a metadata standard for your collected data, and sticking to it, will make later phases much easier. A dataset pre-adapted to publication will be the source of far less headache than a non-adapted. 
 
 > ### Note
@@ -52,7 +52,7 @@ An important thing to consider is to adapt to using metadata standards early in 
 
 ### Keeping track of your analyses
 
-When working with spreadsheets during data clean up or analyses, it is very easy to end up with a spreadsheet that looks different from what you started with. In order to be able to reproduce your analyses or figure out what you did when your leadership team asks for a different analysis, you **must:**
+When working with spreadsheets during data clean up or analyses, it is very easy to end up with a spreadsheet that looks different from what you started with. In order to be able to reproduce your analyses or figure out what you did when your leadership team <!-- what is a leadership team? -->asks for a different analysis, you **must:**
 
 - **...create a new file or tab with your cleaned or analyzed data.**
 <br>
@@ -60,7 +60,7 @@ Do not modify the original dataset, or you will never know where you started!
 
 - **...keep track of the steps you took in your clean up or analysis.**
 <br>
-You should track these steps as a scientist would each step in an experiment. You can do this in another text file, or a good option is to create a new tab in your spreadsheet with your notes. This way the notes and data stay together.
+You should track these steps as a scientist <!-- I can also be a scientist, ie another name for the role? -->would each step in an experiment. You can do this in another text file, or a good option is to create a new tab in your spreadsheet with your notes. This way the notes and data stay together.
 
 This might be an example of a spreadsheet setup:
 
@@ -99,7 +99,7 @@ So, instead we should have:
 
 ## Tips and tricks for working with spreadsheets
 
-Many things can happen when we enter data into a spreadsheet. Without claiming a comprehensibel list, some of the things we can consider to make it easier for ourselves are: 
+Many things can happen when we enter data into a spreadsheet. Without claiming a comprehensible list, some of the things we can consider to make it easier for ourselves are: 
 
 ### Avoiding multiple tables {#tables}
 
@@ -192,13 +192,12 @@ For field names do not to include spaces, numbers, or special characters of any 
 | Max\_temp\_C       | MaxTemp            | Maximum Temp (°C)    |
 | Precipitation\_mm  | Precipitation      | precmm               |
 | Mean\_year\_growth | MeanYearGrowth     | Mean growth/year	 |
-| sex                | sex                | M/F                  |
-| length             | length             | l                   |
+| sex                | -                  | M/F                  |
+| length             | -                  | l                    |
 | cell\_type         | CellType           | Cell Type            |
 | Observation\_01    | first\_observation | 1st Obs              |
 
-<br>
-
+<!-- 'length' is the same term in both good and good alternative columns, is this correct? -->
 ### Avoid special characters in data {#special}
 
 **Example**: You treat Excel as a word processor when writing notes, even copying data directly from Word or other applications.
@@ -238,7 +237,7 @@ If possible, stick to the international ISO standard date format - YYYY-MM-DD, e
 >
 > 1. First [download the data](../data/training_attendance_start.xlsx)
 > 1. Open up the data in a spreadsheet program (i.e. Excel).
-> 1. You can see that there are two tabs. Various people have recorded training attendance statistics over 2016 and 2017 for two kind of training activities, and they have made notes and kept track of the data in their own way. Now you are being asked to evaluate the training programme, and you want to be able to run a few statistical analysis. You need to make the data more **machine readable**
+> 1. You can see that there are two tabs. Various people have recorded training attendance statistics over 2016 and 2017 for two kind of training activities, and they have made notes and kept track of the data in their own way. Now you are being asked to evaluate the training programme, and you want to be able to run a few statistical analysis. You need to make the data more **machine readable**.
 > 1. Together with the person next to you, work on the data to make it **both human readable and machine readable**. Clean up the 2016 and 2017 tabs, and see if all data can be merged in an easier way.
 > 1. Think of a way to document what you have done, so that your future you understands the changes that was made. Where do you store that information?
 >

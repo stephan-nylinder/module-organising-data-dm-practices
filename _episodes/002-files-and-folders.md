@@ -243,7 +243,7 @@ Consider the best hierarchy for the files in the project and decide whether a de
  10_final-figs-for-publication.R
  11_final-fig-for-poster.R
 ```
-> From a findability and file sorting perspective, what is the main issue with the above file names? 
+> From a findability and file sorting perspective, what is the main issue with the above file names? <!-- I don't even understand why they are numbered, what is the meaning of the numbers, apart from showing that they will not sort well? makes no sense to show this example -->
 >> ### Solution
 >> If you do not left pad with zeroes (0) you will end up with the following order of files when you sort the files in descending order. 
 >> ```
@@ -264,7 +264,7 @@ Consider the best hierarchy for the files in the project and decide whether a de
 
 ---
 
-### Folder organisation
+### Folder organisation <!-- this section doesn't render as a separate section, and the figure doesn't show, which makes it difficult to get a feeling of how it will work -->
 Consider the following four different folder structures.
 
 ![file_organisation][file_organisation]
