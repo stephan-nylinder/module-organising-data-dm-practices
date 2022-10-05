@@ -197,7 +197,8 @@ For field names do not to include spaces, numbers, or special characters of any 
 | cell\_type         | CellType           | Cell Type            |
 | Observation\_01    | first\_observation | 1st Obs              |
 
-<!-- 'length' is the same term in both good and good alternative columns, is this correct? -->
+<br>
+
 ### Avoid special characters in data {#special}
 
 **Example**: You treat Excel as a word processor when writing notes, even copying data directly from Word or other applications.
