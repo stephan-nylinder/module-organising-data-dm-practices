@@ -40,7 +40,7 @@ Setting up well-formatted tables early in the research process is extremely impo
 
 Data organization can make it easier or harder to work with data. Your future self might not agree with your present self on the best input format! 
 
-## Early metadata <!-- should this be level 3 heading? -->
+### Early metadata
 An important thing to consider is to adapt to using metadata standards early in the research phase. Adopting a metadata standard for your collected data, and sticking to it, will make later phases much easier. A dataset pre-adapted to publication will be the source of far less headache than a non-adapted. 
 
 > ### Note
@@ -52,7 +52,7 @@ An important thing to consider is to adapt to using metadata standards early in 
 
 ### Keeping track of your analyses
 
-When working with spreadsheets during data clean up or analyses, it is very easy to end up with a spreadsheet that looks different from what you started with. In order to be able to reproduce your analyses or figure out what you did when your leadership team <!-- what is a leadership team? -->asks for a different analysis, you **must:**
+When working with spreadsheets during data clean up or analyses, it is very easy to end up with a spreadsheet that looks different from what you started with. In order to be able to reproduce your analyses or figure out what you did when your team or supervisor asks for a different analysis, you **must:**
 
 - **...create a new file or tab with your cleaned or analyzed data.**
 <br>
@@ -60,13 +60,13 @@ Do not modify the original dataset, or you will never know where you started!
 
 - **...keep track of the steps you took in your clean up or analysis.**
 <br>
-You should track these steps as a scientist <!-- I can also be a scientist, ie another name for the role? -->would each step in an experiment. You can do this in another text file, or a good option is to create a new tab in your spreadsheet with your notes. This way the notes and data stay together.
+You should track these steps as a researcher would each step in an experiment. You can do this in another text file, or a good option is to create a new tab in your spreadsheet with your notes. This way the notes and data stay together.
 
 This might be an example of a spreadsheet setup:
 
 ![spreadsheet setup][spreadsheet-setup-updated]
 
-We will put these principles into practice today during your exercises.
+We will put these principles into practice today during the exercise.
 
 
 ### How to structure data tables in spreadsheets
@@ -231,7 +231,7 @@ If possible, stick to the international ISO standard date format - YYYY-MM-DD, e
 
 <br>
 
-> ### Exercise
+> ### Exercise 9
 >
 > We are going to take a messy version of some data and begin cleaning it up using the information, tips and tricks listed above.
 > (Remember to **create a new file** for the cleaned data, and **never modify the original (raw) data**.)
@@ -248,7 +248,7 @@ If possible, stick to the international ISO standard date format - YYYY-MM-DD, e
 >> 1. The diagrams are only visualisations of some of the data. They can be easily reproduced elsewhere and may mask other information. Can they be removed from the spreadsheet?
 >> 1. It seems the attendee data is entered in a non-compatible way across the different tabs. Is there a risk of information loss, or can you merge data using a smallest common denominator approach?
 >> 1. Would you store documentation of changes within or outside of the spreadsheet? Why and how?
->> 1. A suggestion on how the data can be cleaned and organised can be downloaded [here](.../data/training_attendance_end.xlsx) 
+>> 1. A suggestion on how the data can be cleaned and organised [can be downloaded here](.../data/training_attendance_end.xlsx) 
 > {: .solution}
 {: .challenge}
 

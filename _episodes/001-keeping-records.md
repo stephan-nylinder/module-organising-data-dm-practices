@@ -1,7 +1,7 @@
 ---
 title: Keeping records
-teaching: 20
-exercises: 10
+teaching: 15
+exercises: 15
 questions:
 - Why and how do we keep good research records?
 - How do we keep our records FAIR? 
@@ -42,7 +42,7 @@ She also left behind a USB-stick containing all known files and folders in a zip
 
 Puzzled by the note you ask Famous about additional information. The reply is that all researchers in the Famous lab work independently and are responsible for their own data and lab notes. If the information is not in the notes, the publication, or the zipped folder, it does not exist.
 
-> ### Discussion
+> ### Exercise 1
 > Can you list at least five major issues with the lab documentation in the image above?
 >> ### Examples of major issues
 >> - Unknown if more pages of the notes exist 
@@ -63,7 +63,7 @@ Puzzled by the note you ask Famous about additional information. The reply is th
 > {: .solution}
 {: .discussion}
 
-> ### Discussion
+> ### Exercise 2
 > Give one or more example(s) of what kind of general questions the note and Famous' answer raise about the work done in the lab? 
 >> ### Problem areas
 >> - Is this typical of all the work done in the lab?
@@ -115,11 +115,12 @@ While the protocol is a confirmed recipe for making research data in an experime
 - Your name and affiliation
 - What project the experiment is part of
 - Information on lot and batch numbers for used consumables (e.g. reagents and chemicals)
+- Information on what metadata is collected for each data type collected
 - What happened, and what did not happen
 - How the result was treated and analysed
 - Your interpretation of the outcome and how you plan to proceed
 
-> ## Test yourself on record keeping statements
+> ## Exercise 3 - Test yourself on record keeping statements
 >
 > Read the following statements and decide which ones are true (T) or false (F)
 >
@@ -167,7 +168,7 @@ But why use Markdown, why not make a plain text file (.txt)?
 
 * Easily editable, versatile but not requiring particular skills.
 
-> ### Discussion
+> ### Exercise 4
 > Think of an example where you would have benefited from having access to a README-file when working with data. Describe to your neighbor what you would have wanted such a file to contain. 
 {: .discussion}
 
@@ -178,9 +179,9 @@ Even if memory serves you well, technology might not. Know your storage needs an
  - Nearly all data, metadata and project information necessary to understand your analysis and results require some sort of backup strategy.
  - Try to keep backup in three separate locations, on at least two different kind of media (server, portable hard drive, cloud). Consider off-site backups.
  - Never back up your data on portable drives only (SSD or ATA), and particularly not on USB sticks!
- - Robust backups need to be automated
+ - Robust backups need to be automated.
 
- > ### Discussion
+ > ### Exercise 5
 > Discuss in pairs the validity of the following statements on data backup:
 > 
 > A. I have my most important data backed up on my laptop. I have never experienced a hard drive failure, and my current laptop has a new state-of-the-art hard drive. Therefore, I don't need external backups.

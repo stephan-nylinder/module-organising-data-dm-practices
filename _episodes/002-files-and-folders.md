@@ -93,7 +93,7 @@ Based on the name, the file could contain information about:
 
 However, this is not obvious from the text and letters alone. Some sort of explanation is usually required, which could be added to a README-file stored in proximity to the data files.
 
-> ### Exercise - Naming and Sorting
+> ### Exercise 6 - Naming and Sorting
 > The following example contain files from an imaginary project, similar to the above example. To facilitate the exercise, the file name convention states that:
 > - *phyA/phyB* are genotypes
 > - *sXX* is the sample number
@@ -156,7 +156,7 @@ A File Naming Convention is a framework, or protocol if you like, for naming you
 
 <br>
 
-> ### Discussion
+> ### Exercise 7
 > What are examples of potential benefits of agreeing on a File Naming Convention for a project?
 >
 >> ### Potential benefits of a File Naming Convention
@@ -185,9 +185,9 @@ Long file and folder names are always good because they contain more information
 * For dates use the YYYY-MM-DD standard and place at the end of the file UNLESS you need to organize your files chronologically
 
 * Include version number (if applicable), use leading zeroes (i.e.: v005 instead of v5).
-make sure the 3-letter file format extension is present at the end of the name (e.g. .doc, .xls, .mov, .tif)
+make sure the end-letter file format extension is present at the end of the name (e.g. .doc, .xls, .mov, .tif)
 
-* Add a README (or PROJECT_STRUCTURE) file in your top directory which details your naming convention, directory structure and abbreviations
+* Add a README.md (or PROJECT_STRUCTURE.md) file in your top directory which details your naming convention, directory structure and abbreviations
 
 
 ### Avoid (Don'ts):
@@ -215,6 +215,8 @@ Examples:
 | fig 2.png                                           | fig02_histogram-talk-attendance.png |
 | JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt     | 1986-01-28_raw-data-from-challenger-o-rings.txt |
 
+<br>
+
 ## How to organise files and folders
 Spend some time planning how you are going to organise your data at the beginning of a project. Consider how you and others will look for and access the files throughout the project’s life cycle and ensure that all people involved can commit to using the folder hierarchy, file naming conventions, and a strategy for onboarding new contributors. You can start small and expand as you develop your practices.
 
@@ -227,44 +229,6 @@ Consider the best hierarchy for the files in the project and decide whether a de
 ![data][slide_files]
 <br>
 
-
-> ### Exercise 1
-> Consider the following batch of file names
-```
- 1_data-cleaning.R
- 2_fit-model.R
- 3_sort-values.R
- 4_plot-graph.R
- 5_histogram.R
- 6_subdata-extraction.R
- 7_calculate-median.R
- 8_scatterplots.R
- 9_experimental.R
- 10_final-figs-for-publication.R
- 11_final-fig-for-poster.R
-```
-> From a findability and file sorting perspective, what is the main issue with the above file names? 
-
->> ### Solution
->> If you do not left pad with zeroes (0) you will end up with the following order of files when you sort the files in descending order. 
->> ```
- 1_data-cleaning.R
- 10_final-figs-for-publication.R
- 11_final-fig-for-poster.R
- 2_fit-model.R
- 3_sort-values.R
- 4_plot-graph.R
- 5_histogram.R
- 6_subdata-extraction.R
- 7_calculate-median.R
- 8_scatterplots.R
- 9_experimental.R
-```
-> {: .solution}
-{: .discussion}
-
----
-
 ### Folder organisation
 Consider the following four different folder structures.
 
@@ -273,7 +237,7 @@ Consider the following four different folder structures.
 The first two (**A** and **B**) are recommended for computing.
 The other two (**C** and **D**) are recommended for wet lab or biological projects.
 
-> ### Exercise 2
+> ### Exercise 8
 > * Which one is the most similar one to your own project structure?
 > * When/why would you use **A** compared to **B**?
 > * When/why would you use **C** compared to **D**? 
